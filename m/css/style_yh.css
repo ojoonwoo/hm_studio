@@ -159,7 +159,7 @@ input, button, pre {font-family: 'Hyundai Sans Head KR', sans-serif; font-weight
 }
 .section2-wrap .title-wrap .prize div {
     width: 187px;
-    display: inline-block;
+    margin: 0 auto;
 }
 .section2-wrap .title-wrap .prize div img {
     width: 100%;

@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="../lib/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+    <script type="text/javascript" src="../js/clipboard.min.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -80,7 +80,7 @@
                         <h4>2.인스타그램에</h4>
                         <h4>#현대모터스튜디오 #explore_the_possibilities</h4>
                         <h4>해시태그와 함께 업로드</h4>
-                        <button type="button">해시태그 복사하기</button>
+                        <button type="button" id="copyHashtag">해시태그 복사하기</button>
                     </div>
                     <div class="instagram">
                         <!-- 어트랙트 API 적용해야 할 부분 -->
@@ -160,13 +160,22 @@
                             </div>
                             <div class="slider-area">
                                 <div>
-                                    <img src="./images_yh/studio_slide1.png" alt="">
+                                    <img src="./images_yh/studio_slide1.jpg" alt="">
                                 </div>
                                 <div>
-                                    <img src="./images_yh/studio_slide1.png" alt="">
+                                    <img src="./images_yh/studio_slide2.jpg" alt="">
                                 </div>
                                 <div>
-                                    <img src="./images_yh/studio_slide1.png" alt="">
+                                    <img src="./images_yh/studio_slide3.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="./images_yh/studio_slide4.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="./images_yh/studio_slide5.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="./images_yh/studio_slide6.jpg" alt="">
                                 </div>
                             </div>
                             <div class="next">
@@ -175,7 +184,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="desc">
+                        <div class="desc" id="desc_txt">
                             <h2>현대 모터스튜디오 고양</h2>
                             <h4>자동차를 보고 듣고 느끼는 새로운 여행으로 초대합니다</h4>
                         </div>                        
@@ -225,6 +234,53 @@
     });
     $(".next-btn").on("click", function() {
         slider.slick("slickNext");
+    });
+    slider.on('afterChange', function(event, slick, currentSlide) {
+        switch (currentSlide) {
+            case 0 :
+                $("#desc_txt h2").html("현대 모터스튜디오 고양");
+                $("#desc_txt h4").html("자동차를 보고 듣고 느끼는 새로운 여행으로 초대합니다");
+            break;
+            case 1 :
+                $("#desc_txt h2").html("현대 모터스튜디오 서울");
+                $("#desc_txt h4").html("자동차를 넘어 문화를 이야기합니다");
+            break;
+            case 2 :
+                $("#desc_txt h2").html("현대 모터스튜디오 하남");
+                $("#desc_txt h4").html("현대자동차의 무한 가능성과 혁신적 시도가 펼처집니다");
+            break;
+            case 3 :
+                $("#desc_txt h2").html("현대 모터스튜디오 디지털");
+                $("#desc_txt h4").html("현대자동차를 가상으로 경험할 수 있습니다");
+            break;
+            case 4 :
+                $("#desc_txt h2").html("현대 모터스튜디오 베이징");
+                $("#desc_txt h4").html("창의적인 생각과 예술을 통해 고객과 소통합니다");
+            break;
+            case 5 :
+                $("#desc_txt h2").html("현대 모터스튜디오 모스크바");
+                $("#desc_txt h4").html("새로운 시도와 영감이 하나가 됩니다");
+            break;
+        }
+    });
+
+    $("#copyHashtag").on("click", function() {
+        var textarea = document.createElement('textarea');
+        textarea.textContent = '#현대모터스튜디오 #explore_the_possibilities';
+        document.body.appendChild(textarea);
+
+        var selection = document.getSelection();
+        var range = document.createRange();
+        //  range.selectNodeContents(textarea);
+        range.selectNode(textarea);
+        selection.removeAllRanges();
+        selection.addRange(range);
+
+        console.log('copy success', document.execCommand('copy'));
+        selection.removeAllRanges();
+
+        document.body.removeChild(textarea);				
+        alert("해시태그가 복사되었습니다");
     });
     </script>
 </body>
