@@ -3,5 +3,33 @@ body {font-family: 'Hyundai Sans Head KR', sans-serif; font-weight: normal; font
 input, button, pre {font-family: 'Hyundai Sans Head KR', sans-serif; font-weight: normal; font-style: normal;}
 
 /* common */
-
+._oh {
+	overflow: hidden;
+}
 /* end common */
+
+.section._main {
+	height: 100vh;
+}
+.section._main .video-thumb-layer {
+	position: relative;
+	height: 100%;
+	font-size: 0;
+}
+.section._main .video-thumb-layer .wrap {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.section._main .video-thumb-layer .main-copy {
+	margin-bottom: 29.3%;
+}
+.section._main .video-thumb-layer .main-copy .eng {
+	font-size: 47px;
+/*	font: 'Hyundai Sans Head KR'*/
+}
+.section._main .video-thumb-layer .video-play {
+	
+}
