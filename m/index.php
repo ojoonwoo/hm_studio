@@ -134,7 +134,7 @@
 					</div>
 				</div>
 				<div class="video-layer">
-					<video id="video_html5_api" class="video-js" preload="auto" data-setup='{}' onclick="toggleVideo();">
+					<video id="video_html5_api" class="video-js" preload="auto" data-setup='{}' onclick="toggleVideo();" playsinline controls>
 						<source src='./images/hyundaimotorstudio.mp4' type='video/mp4' />
 					</video>
 					<!-- <video class="video-js vjs-default-skin" controls preload="auto" width="400" height="300" data-setup="{}">
