@@ -52,6 +52,7 @@
         padding-top: 56.25%;
       }
 	</style>
+	<link type="image/icon" rel="shortcut icon" href="http://www.hyundaimotorstudio.co.kr/images/favi_HMS.ico" />
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/font.css">
 	<link rel="stylesheet" href="./css/style.css">
@@ -106,10 +107,10 @@
 					<a href="javascript:void(0)" onclick="movePage(4);click_tracking('이동 HYUNDAI MOTORSTUDIO')">HYUNDAI MOTORSTUDIO</a>
 				</div>
 				<div class="row share">
-					<a href="javascript:void(0)" class="fb" onclick="click_tracking('공유 페이스북')"></a>
-					<a href="javascript:void(0)" class="kt" onclick="click_tracking('공유 카카오톡')"></a>
-					<a href="javascript:void(0)" class="ks" onclick="click_tracking('공유 카카오스토리')"></a>
-					<a href="javascript:void(0)" class="url" onclick="click_tracking('공유 URL')"></a>
+					<a href="javascript:void(0)" class="fb" onclick="click_tracking('공유 페이스북');sns_share('fb')"></a>
+					<a href="javascript:void(0)" class="kt" onclick="click_tracking('공유 카카오톡');sns_share('kt')"></a>
+					<a href="javascript:void(0)" class="ks" onclick="click_tracking('공유 카카오스토리');sns_share('ks')"></a>
+					<a href="javascript:void(0)" class="url" onclick="click_tracking('공유 URL');sns_share('url')"></a>
 				</div>
 			</div>
 		</div>
@@ -339,6 +340,7 @@
 		</div>
 	</div>
 	<script>
+		Kakao.init('cf559a1b4265e66761ca6acfa705948f');
 		// $(document).load(function(){
 		// 	$("#video_html5_api").height($(window).height());
 		// });
@@ -484,6 +486,53 @@
 
 		});
 
+		function sns_share(media) {
+			switch (media) {
+				case "fb" :
+					var newWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent('http://www.hyundaimotorstudio.co.kr'+flag+'&govideo='+flag),'sharer','toolbar=0,status=0,width=600,height=325');
+				break;
+				case "ks" :
+				break;
+				case "kt" :
+					Kakao.Link.sendDefault({
+						objectType: 'feed',
+						content: {
+							// title: '불만족스러웠던 기존의 시카 제품들, 해결되지 않던 당신의 피부 고민!\n\n바이오더마의 특허 다프 성분과 안탈지신 기술을 담아 오랜 연구 끝에 탄생한 바이오더마 포마드로 A/S 받으세요!',
+							title: kt_title,
+							description: kt_desc,
+							// description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
+							imageUrl: "http://www.hyundaimotorstudio.co.kr/images/share_kt_img.jpg",
+							link: {
+								mobileWebUrl: 'http://www.hyundaimotorstudio.co.kr/m/',
+								webUrl: 'http://www.hyundaimotorstudio.co.kr/'
+							}
+						},
+						buttons: [
+							{
+								title: '현대모터스튜디오',
+								link: {
+									mobileWebUrl: 'http://www.hyundaimotorstudio.co.kr/m/',
+									webUrl: 'http://www.hyundaimotorstudio.co.kr/'
+								}
+							}
+						],
+						success: function(res) {
+							console.log("success");
+							console.log(res);
+						},
+						fail: function(res) {
+							console.log("fail");
+							console.log(res);
+						},
+						callback: function() {
+							// shareEnd();
+						}
+					});
+				break;
+				case "url" :
+				break;
+			}
+		}
 </script>
 </body>
 
