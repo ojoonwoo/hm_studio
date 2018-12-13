@@ -1,5 +1,5 @@
 <?
-    include_once "../include/autoload.php";
+    include_once "../../include/autoload.php";
 
     $mnv_f 			= new mnv_function();
     $my_db         = $mnv_f->Connect_MySQL();
@@ -15,9 +15,9 @@
     if ($mobileYN == "PC")
     {
 		if(isset($siteURL['query'])) {
-			echo "<script>location.href='../?".$siteURL['query']."';</script>";
+			echo "<script>location.href='../../en/?".$siteURL['query']."';</script>";
 		} else {
-			echo "<script>location.href='../';</script>";
+			echo "<script>location.href='../../en/';</script>";
 		}
     }else{
 		$saveMedia     = $mnv_f->SaveMedia();
@@ -31,7 +31,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-	<title>현대모터스튜디오</title>
+	<title>HYUNDAI MOTOR STUDIO</title>
 	<style class="vjs-styles-defaults">
       .video-js {
         width: 300px;
@@ -53,15 +53,15 @@
       }
 	</style>
 	<link type="image/icon" rel="shortcut icon" href="http://www.hyundaimotorstudio.co.kr/images/favi_HMS.ico" />
-	<link rel="stylesheet" href="./css/reset.css">
-	<link rel="stylesheet" href="./css/font.css">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/font.css">
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-	<link rel="stylesheet" href="../lib/videojs/videojs.css">
-	<link rel="stylesheet" href="./css/style.css">
-	<script src="../lib/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="../../lib/videojs/videojs.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<script src="../../lib/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-	<script type="text/javascript" src="../js/clipboard.min.js"></script>
-	<script src="../lib/videojs/videojs.js"></script>
+	<script type="text/javascript" src="../../js/clipboard.min.js"></script>
+	<script src="../../lib/videojs/videojs.js"></script>
 	<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 </head>
 
@@ -71,15 +71,15 @@
 			<div class="inner">
 				<h1 class="header-logo">
 					<a href="/">
-						<img src="./images/logo.svg" alt="HYUNDAI MOTORSTUDIO">
+						<img src="../images/logo.svg" alt="HYUNDAI MOTORSTUDIO">
 					</a>
 				</h1>
 			</div>
 			<div class="action-wrap">
 				<div class="lang-box">
-					<a href="javascript:void(0)" class="is-active"  onclick="click_tracking('한국어사이트')">KR</a>
+					<a href="#"  onclick="click_tracking('한국어사이트')">KR</a>
 					<span>/</span>
-					<a href="./en/" onclick="click_tracking('영어사이트')">EN</a>
+					<a href="#" class="is-active" onclick="click_tracking('영어사이트')">EN</a>
 				</div>
 				<div class="js-burger-trigger"></div>
 				<div id="gnb" class="burger-ui">
@@ -123,7 +123,7 @@
 							<h1>Explore</h1>
 							<h1>the</h1>
 							<h1>possibilities</h1>
-							<h3>당신의 가능성을 실험하라</h3>
+							<!-- <h3>당신의 가능성을 실험하라</h3> -->
 						</div>
 						<div class="button-wrap">
 							<button type="button" onclick="click_tracking('보기 풀영상');viewVideo();">
@@ -135,10 +135,10 @@
 				</div>
 				<div class="video-layer">
 					<video id="video_html5_api" class="video-js" preload="auto" data-setup='{}' onclick="toggleVideo();">
-						<source src='./images/hyundaimotorstudio.mp4' type='video/mp4' />
+						<source src='../images/hyundaimotorstudio.mp4' type='video/mp4' />
 					</video>
 					<!-- <video class="video-js vjs-default-skin" controls preload="auto" width="400" height="300" data-setup="{}">
-						<source src='./images/hyundaimotorstudio.mp4' type='video/mp4' />
+						<source src='../images/hyundaimotorstudio.mp4' type='video/mp4' />
 					</video> -->
 				</div>
 			</div>
@@ -165,17 +165,17 @@
 					</div>
 					<div class="prize">
 						<div class="_1">
-							<img src="./images/prize_beijing.png" alt="">
+							<img src="../images/prize_beijing.png" alt="">
 							<span class="first">현대 모터스튜디오 베이징</span>
 							<span>1등 (5명)</span>
 						</div>
 						<div class="_2">
-							<img src="./images/prize_moscow.png" alt="">
+							<img src="../images/prize_moscow.png" alt="">
 							<span class="first">현대 모터스튜디오 모스크바</span>
 							<span>1등 (5명)</span>
 						</div>
 						<div class="_3">
-							<img src="./images/prize_giftcard.png" alt="">
+							<img src="../images/prize_giftcard.png" alt="">
 							<span class="first">현대 백화점 5만원 상품권</span>
 							<span>2등 (15명)</span>
 						</div>
@@ -218,7 +218,7 @@
 					<div class="contents">
 						<div class="_1">
 							<div class="image-1">
-								<img src="./images/experience_image1.png" alt="">
+								<img src="../images/experience_image1.png" alt="">
 							</div>
 							<div class="desc">
 								<h3>EXPERIENCE</h3>
@@ -228,13 +228,13 @@
 								<h4>경험하라</h4>
 							</div>
 							<div class="image-2">
-								<img src="./images/experience_image2.png" alt="">
+								<img src="../images/experience_image2.png" alt="">
 							</div>
 							<div class="underline"></div>
 						</div>
 						<div class="_2">
 							<div class="image-1">
-								<img src="./images/experiment_image1.png" alt="">
+								<img src="../images/experiment_image1.png" alt="">
 							</div>
 							<div class="desc">
 								<h3>EXPERIENCE</h3>
@@ -244,13 +244,13 @@
 								<h4>경험하라</h4>
 							</div>
 							<div class="image-2">
-								<img src="./images/experiment_image2.png" alt="">
+								<img src="../images/experiment_image2.png" alt="">
 							</div>
 							<div class="underline"></div>
 						</div>
 						<div class="_3">
 							<div class="image-1">
-								<img src="./images/explore_image1.png" alt="">
+								<img src="../images/explore_image1.png" alt="">
 							</div>
 							<div class="desc">
 								<h3>EXPERIENCE</h3>
@@ -260,13 +260,13 @@
 								<h4>경험하라</h4>
 							</div>
 							<div class="image-2">
-								<img src="./images/explore_image2.png" alt="">
+								<img src="../images/explore_image2.png" alt="">
 							</div>
 						</div>
 					</div>
 					<div class="slider">
 						<div class="title">
-							<img src="./images/logo.svg" alt="">
+							<img src="../images/logo.svg" alt="">
 						</div>
 						<div class="sub-title">
 							<h3>자동차 문화를 경험하는 창의적인 실험 공간</h3>
@@ -274,32 +274,32 @@
 						<div class="studio-slide">
 							<div class="prev">
 								<button type="button" class="prev-btn">
-                                    <img src="./images/arrow_prev.png" alt="">
+                                    <img src="../images/arrow_prev.png" alt="">
                                 </button>
 							</div>
 							<div class="slider-area">
 								<div>
-									<img src="./images/studio_slide1.jpg" alt="">
+									<img src="../images/studio_slide1.jpg" alt="">
 								</div>
 								<div>
-									<img src="./images/studio_slide2.jpg" alt="">
+									<img src="../images/studio_slide2.jpg" alt="">
 								</div>
 								<div>
-									<img src="./images/studio_slide3.jpg" alt="">
+									<img src="../images/studio_slide3.jpg" alt="">
 								</div>
 								<div>
-									<img src="./images/studio_slide4.jpg" alt="">
+									<img src="../images/studio_slide4.jpg" alt="">
 								</div>
 								<div>
-									<img src="./images/studio_slide5.jpg" alt="">
+									<img src="../images/studio_slide5.jpg" alt="">
 								</div>
 								<div>
-									<img src="./images/studio_slide6.jpg" alt="">
+									<img src="../images/studio_slide6.jpg" alt="">
 								</div>
 							</div>
 							<div class="next">
 								<button type="button" class="next-btn">
-                                    <img src="./images/arrow_next.png" alt="">
+                                    <img src="../images/arrow_next.png" alt="">
                                 </button>
 							</div>
 						</div>
@@ -309,7 +309,7 @@
 						</div>
 					</div>
 					<button type="button" id="btn-go-top">
-						<img src="./images/btn_top.jpg" alt="">
+						<img src="../images/btn_top.jpg" alt="">
 					</button>
 				</div>
 			</div>
@@ -321,21 +321,21 @@
 			</div>
 			<div class="official">
 				<a href="https://www.facebook.com/hyundaimotorstudio/" target="_blank" class="fb" onclick="click_tracking('외부링크 오피셜페이스북')">
-                    <img src="./images/share_fb.png" alt="">
+                    <img src="../images/share_fb.png" alt="">
                 </a>
 				<a href="https://www.instagram.com/hyundai_motorstudio/" target="_blank" class="insta" onclick="click_tracking('외부링크 오피셜인스타그램')">
-                    <img src="./images/share_insta.png" alt="">
+                    <img src="../images/share_insta.png" alt="">
                 </a>
 				<a href="https://www.youtube.com/user/HyundaiWorldwide" target="_blank" class="youtube" onclick="click_tracking('외부링크 오피셜유튜브')">
-                    <img src="./images/share_youtube.png" alt="">
+                    <img src="../images/share_youtube.png" alt="">
                 </a>
 				<a href="https://story.kakao.com/ch/hyundai" target="_blank" class="ks" onclick="click_tracking('외부링크 오피셜카카오스토리')">
-                    <img src="./images/share_ks.png" alt="">
+                    <img src="../images/share_ks.png" alt="">
                 </a>
 			</div>
 			<div class="underline"></div>
 			<div class="copyright">
-				<img src="./images/copyright.png" alt="">
+				<img src="../images/copyright.png" alt="">
 			</div>
 		</div>
 	</div>
@@ -442,7 +442,7 @@
 			$.ajax({
 				type   : "POST",
 				async  : false,
-				url    : "../main_exec.php",
+				url    : "../../main_exec.php",
 				data:{
 					"exec" 			: "insert_click_info",
 					"click_name"	: click_name
