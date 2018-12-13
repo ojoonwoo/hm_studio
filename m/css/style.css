@@ -236,7 +236,30 @@ body.menu-open {
 .section1-wrap .inner .video-layer {
 	/* padding-top: 57px; */
 	display: none;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 100%;
 }
+.video_html5_api-dimensions {
+	width: 100%;
+	height: 100%;
+/*	font-size: 12px;*/
+}
+.video-js .vjs-control-bar {
+	display: none !important;
+	left: 50% !important;
+	right: inherit !important;
+	transform: translateX(-50%);
+}
+.video-js .vjs-progress-control {
+	min-width: 10em !important;
+}
+.video-js .vjs-control {
+	width: 4em !important;
+}
+.vjs-tech {object-fit: cover;}
 .section1-wrap .inner .title-wrap {
 	padding: 47.4% 0 29.3%;
 	text-align: center;
