@@ -133,7 +133,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="video-layer">
+				<div id="main-video-player" class="video-layer">
 					<video id="video_html5_api" class="video-js" preload="auto" data-setup='{}' onclick="toggleVideo();" controls>
 						<source src='./images/hyundaimotorstudio.mp4' type='video/mp4' />
 					</video>
@@ -454,7 +454,8 @@
 
 		var player = videojs('video_html5_api', options, function onPlayerReady() {
 			videojs.log('Your player is ready!');
-
+			resizeControls();
+			resizeVideo("main-video-player");
 			// In this context, `this` is the player that was created by Video.js.
 			// this.play();
 			// this.isFullscreen(true);
@@ -484,8 +485,36 @@
 					videojs.log('Your player is pause!');
 				}
 			}
-
 		});
+		
+		$(window).on('resize', function() {
+			resizeVideo("main-video-player");
+			resizeControls();
+		});
+		function resizeVideo(e) {
+			if (e = $("#" + e), $(e).length) {
+				var n = $(window).width(),
+					t, o = $(window).height(),
+					a, i = $(e),
+					s = 16 / 9;
+				n / s < o ? (t = Math.ceil(o * s), i.width(t).height(o).css({
+					left: (n - t) / 2,
+					top: 0
+				})) : (a = Math.ceil(n / s), i.width(n).height(a).css({
+					left: 0,
+					top: (o - a) / 2
+				}))
+			}
+		}
+		
+		function resizeControls() {
+			var e = $(window).width(),
+				i = parseFloat(.89 * e),
+				o = parseFloat(e / 10);
+			$(".vjs-control-bar").css({
+				width: i + "px"
+			});
+		}
 
 		function sns_share(media) {
 			switch (media) {

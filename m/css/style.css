@@ -250,10 +250,17 @@ body.menu-open {
 */
 }
 .section1-wrap .inner .video-js {
-	width: 100% !important;
-	height: 100% !important;
-/*	font-size: 12px;*/
+	width: 100%!important;
+	height: 100%!important;
+	position: relative;
 }
+.video-js .vjs-play-control {
+	width: 6%;
+}
+.video-js .vjs-mute-control, .video-js .vjs-volume-menu-button {
+	width: 7%;
+}
+/*
 .video-js .vjs-control-bar {
 	display: none !important;
 	left: 50% !important;
@@ -263,12 +270,15 @@ body.menu-open {
 .video-js .vjs-progress-control {
 	min-width: 10em !important;
 }
+
+*/
 .video-js .vjs-control {
-	width: 4em !important;
+	width: 6em !important;
 }
 .vjs-tech {object-fit: cover;}
 .video-js .vjs-time-control {
 	font-size: 1.2em;
+	margin-top: 0;
 }
 .section1-wrap .inner .title-wrap {
 	padding: 47.4% 0 29.3%;
