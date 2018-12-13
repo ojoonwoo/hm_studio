@@ -32,13 +32,35 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 	<title>현대모터스튜디오</title>
+	<style class="vjs-styles-defaults">
+      .video-js {
+        width: 300px;
+        height: 150px;
+      }
+
+      .vjs-fluid {
+        padding-top: 56.25%
+      }
+	</style>
+	<style class="vjs-styles-dimensions">
+      .video-dimensions {
+        width: 300px;
+        height: 300px;
+      }
+
+      .video-dimensions.vjs-fluid {
+        padding-top: 56.25%;
+      }
+	</style>
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/font.css">
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link href="../lib/videojs/videojs.css" rel="stylesheet">
 	<script src="../lib/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script type="text/javascript" src="../js/clipboard.min.js"></script>
+	<script src="../lib/videojs/videojs.js"></script>
 </head>
 
 <body>
@@ -102,7 +124,7 @@
 							<h3>당신의 가능성을 실험하라</h3>
 						</div>
 						<div class="button-wrap">
-							<button type="button" onclick="click_tracking('보기 풀영상')">
+							<button type="button" onclick="click_tracking('보기 풀영상');viewVideo();">
 								<p>Full version</p>
 								<p>Watch</p>
 							</button>
@@ -110,7 +132,12 @@
 					</div>
 				</div>
 				<div class="video-layer">
-
+				<video id="video_html5_api" class="video-js" preload="auto" data-setup='{}'>
+						<source src='./images/hyundaimotorstudio.mp4' type='video/mp4' />
+				</video>					
+					<!-- <video class="video-js vjs-default-skin" controls preload="auto" width="400" height="300" data-setup="{}">
+						<source src='./images/hyundaimotorstudio.mp4' type='video/mp4' />
+					</video> -->
 				</div>
 			</div>
 		</div>
@@ -417,7 +444,44 @@
 				}
 			});
 		}
-	</script>
+
+		var player = videojs('video_html5_api');
+
+		var options = {};
+
+		var player = videojs('video_html5_api', options, function onPlayerReady() {
+			videojs.log('Your player is ready!');
+
+			// In this context, `this` is the player that was created by Video.js.
+			// this.play();
+			this.isFullscreen(true);
+			this.loop(true);
+			// this.videoWidth($(window).width());
+			this.controls(true);
+			// this.fluid(true);
+			// How about an event listener?
+			this.on('ended', function() {
+				// videojs.log('Awww...over so soon?!');
+			});
+		});
+		function viewVideo() {
+			$(".video-thumb-layer").hide();
+			$(".video-layer").show();
+			player.play();			
+		}
+		$('.video-layer').on('click', function() {
+			// player.trigger('click');
+			if (player.paused()) {
+					player.play();
+					videojs.log('Your player is play!');
+				} else {
+					player.pause();
+					videojs.log('Your player is pause!');
+				}
+
+		});
+
+</script>
 </body>
 
 </html>

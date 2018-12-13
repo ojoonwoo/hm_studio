@@ -237,6 +237,10 @@ body.menu-open {
 .section1-wrap .inner .video-thumb-layer .wrapper {
 	height: 100%;
 }
+.section1-wrap .inner .video-layer {
+	/* padding-top: 57px; */
+	display: none;
+}
 .section1-wrap .inner .title-wrap {
 	padding: 47.4% 0 29.3%;
 	text-align: center;
