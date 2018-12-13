@@ -17,6 +17,9 @@ body > .wrap {
 	height: 94px;
 	background: #fff;
 	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 	z-index: 3;
 	box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.15);
 }
@@ -242,6 +245,21 @@ body > .wrap {
 	transform: translate(-50%, -50%);
 	margin-top: 40px;
 }
+.section1-wrap .inner .video-layer {
+	height: 100%;
+	position: relative;
+}
+.video_html5_api-dimensions {
+	height: 100%;
+	width: 100%;
+}
+.video-js .vjs-tech {
+	object-fit: cover;
+}
+.video-js .vjs-time-control {
+	margin-top: 0;
+	font-size: 1.2em;
+}
 .section1-wrap .inner .title-wrap {
 /*	padding: 21.7% 0 60px;*/
 	margin-bottom: 60px;
@@ -278,6 +296,7 @@ body > .wrap {
 	position: relative;
 	text-align: center;
 	overflow: hidden;
+	background: #ffffff;
 }
 .section2-wrap .title-wrap {
 }

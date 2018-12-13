@@ -260,6 +260,9 @@ body.menu-open {
 	width: 4em !important;
 }
 .vjs-tech {object-fit: cover;}
+.video-js .vjs-time-control {
+	font-size: 1.2em;
+}
 .section1-wrap .inner .title-wrap {
 	padding: 47.4% 0 29.3%;
 	text-align: center;
