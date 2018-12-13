@@ -249,14 +249,6 @@ body.menu-open {
 	top: 0;
 	left: 0;
 	height: 100%;
-	
-/*
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	height: 100%;
-*/
 }
 .section1-wrap .inner .video-js {
 	width: 100%!important;
@@ -290,7 +282,8 @@ body.menu-open {
 	margin-top: 0;
 }
 .section1-wrap .inner .title-wrap {
-	padding: 47.4% 0 29.3%;
+/*	padding: 47.4% 0 29.3%;*/
+	padding: 37.4% 0 20.3%;
 	text-align: center;
 }
 .section1-wrap .inner .title-wrap h1 {
@@ -303,10 +296,10 @@ body.menu-open {
 }
 .section1-wrap .inner .title-wrap h3 {
 	font-family: 'Hyundai Sans Head KR';
-	font-weight: normal;
+	font-weight: 300;
 	font-size: 19px;
 	color: #fff;
-	padding-top: 21px;
+	padding-top: 16px;
 }
 .section1-wrap .inner .button-wrap button {
 	background: #fff;
