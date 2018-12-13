@@ -183,6 +183,7 @@ body > .wrap {
 	padding: 0 64px;
 	background: #221e1f;
 	overflow: hidden;
+	z-index: 3;
 }
 .footer-wrap img {
 	width: 100%;
