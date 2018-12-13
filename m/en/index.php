@@ -150,23 +150,23 @@
 						<h1>EVENT</h1>
 					</div>
 					<div class="sub-title">
-						<span>경험하라 실험하라 탐험하라</span>
-						<span>그리고 당신의 가능성을 발견하라</span>
-						<span>일상에서 당신의 가능성을 발견할 수 있는</span>
-						<span>순간을 담아 인스타그램에 올려주세요!</span>
-						<span>추첨을 통해 현대 모터스튜디오에서</span>
-						<span>Explore the possibilities의 기회를 드립니다</span>
+						<span>Experience. Experiment. Explore.</span>
+						<span>Possibilities are nothing until discovered.</span>
+						<span>Show the world the moment you explore your possibilities</span>
+						<span>and share your moments on Instagram!</span>
+						<span>For those who inspire the most to explore the possibilities,</span>
+						<span>a journey to Hyundai Motorstudio awaits!</span>
 					</div>
 					<div class="date-winner">
 						<h3>Date</h3>
-						<h4 class="h4-first">2018.12.19 (수) – 2019.1.12 (토)</h4>
+						<h4 class="h4-first">2018.12.19 (wen) – 2019.1.12 (sat)</h4>
 						<h3>Winner</h3>
-						<h4>2019.1.18 (금)</h4>
+						<h4>2019.1.18 (fri)</h4>
 					</div>
 					<div class="prize">
 						<div class="_1">
 							<img src="../images/prize_beijing.png" alt="">
-							<span class="first">현대 모터스튜디오 베이징</span>
+							<span class="first">HYUNDAI 모터스튜디오 베이징</span>
 							<span>1등 (5명)</span>
 						</div>
 						<div class="_2">
