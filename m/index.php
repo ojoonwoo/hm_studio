@@ -45,16 +45,16 @@
 		<div class="menu-layer">
 			<div class="spread-layer">
 				<div class="row">
-					<a href="#">CAMPAIGN FILM</a>
+					<a href="javascript:void(0)" onclick="movePage(1)">CAMPAIGN FILM</a>
 				</div>
 				<div class="row">
-					<a href="#">EVENT</a>
+					<a href="javascript:void(0)" onclick="movePage(2)">EVENT</a>
 				</div>
 				<div class="row">
-					<a href="#">EXPLORE THE POSSIBILITIES</a>
+					<a href="javascript:void(0)" onclick="movePage(3)">EXPLORE THE POSSIBILITIES</a>
 				</div>
 				<div class="row">
-					<a href="#">HYUNDAI MOTORSTUDIO</a>
+					<a href="javascript:void(0)" onclick="movePage(4)">HYUNDAI MOTORSTUDIO</a>
 				</div>
 				<div class="row share">
 					<a href="#" class="fb"></a>
@@ -265,10 +265,10 @@
 				<span>MOTORSTUDIO</span>
 			</div>
 			<div class="official">
-				<a href="javascript:void(0)" class="fb">
+				<a href="https://www.facebook.com/hyundaimotorstudio" target="_blank" class="fb">
                     <img src="./images/share_fb.png" alt="">
                 </a>
-				<a href="javascript:void(0)" class="insta">
+				<a href="https://www.instagram.com/hyundai_motorstudio/" target="_blank" class="insta">
                     <img src="./images/share_insta.png" alt="">
                 </a>
 				<a href="javascript:void(0)" class="youtube">
@@ -354,6 +354,29 @@
 		$('.js-burger-trigger').on('click', function() {
 			$('body').toggleClass('menu-open');
 		});
+		$('#btn-go-top').on('click', function() {
+			$('html, body').animate({
+				scrollTop: 0
+			}, 1000);
+		});
+
+		function movePage(section) {
+			$('body').removeClass('menu-open');
+			switch(section) {
+				case 1 :
+					$('html, body').animate({scrollTop: $('.section1-wrap').offset().top}, 1000);
+				break;
+				case 2 :
+					$('html, body').animate({scrollTop: $('.section2-wrap').offset().top - 57}, 1000);
+				break;
+				case 3 :
+					$('html, body').animate({scrollTop: $('.section2-wrap .contents').offset().top -67}, 1000);
+				break;
+				case 4 :
+					$('html, body').animate({scrollTop: $('.section2-wrap .slider').offset().top - 57}, 1000);
+				break;
+			}
+		}
 	</script>
 </body>
 
