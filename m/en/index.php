@@ -400,7 +400,7 @@
 
 		$("#copyHashtag").on("click", function() {
 			var textarea = document.createElement('textarea');
-			textarea.textContent = '#현대모터스튜디오 #explore_the_possibilities';
+			textarea.textContent = '#HyundaiMotorStudio #explore_the_possibilities';
 			document.body.appendChild(textarea);
 
 			var selection = document.getSelection();
