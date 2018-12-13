@@ -7,7 +7,7 @@ input, button, pre {font-family: 'Hyundai Sans Head KR', sans-serif; font-weight
 	overflow: hidden;
 }
 body.menu-open {
-	overflow: hidden;
+/*	overflow: hidden;*/
 }
 .header-wrap {
 	width: 100vw;
