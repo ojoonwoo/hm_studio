@@ -10,7 +10,7 @@ body.menu-open {
 	overflow: hidden;
 }
 body > .wrap {
-	min-width: 1200px;
+/*	min-width: 1200px;*/
 }
 .header-wrap {
 	width: 100vw;
@@ -21,6 +21,7 @@ body > .wrap {
 	box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.15);
 }
 .header-wrap .inner {
+	box-sizing: border-box;
 	width: 1150px;
 	padding: 0 25px;
 /*	min-width: 1100px;*/
@@ -66,7 +67,7 @@ body > .wrap {
 	top: 0;
 	right: 0;
 	height: 100%;
-	width: 50px;
+	width: 70px;
 	z-index: 3;
 }
 .header-wrap .action-wrap .burger-ui {
@@ -90,14 +91,13 @@ body > .wrap {
 .menu-open .header-wrap .action-wrap .burger-ui .line._3 {transform: translateX(100%); transition-delay: 0.3s;}
 .header-wrap .action-wrap .burger-close {
 	position: absolute;
-	top: 26px;
-	right: 13px;
-	width: 21px;
+	top: 44px;
+	right: 55px;
 }
 .header-wrap .action-wrap .burger-close .line {
 	position: absolute;
-	width: 21px;
-	height: 3px;
+	width: 37px;
+	height: 4px;
 	background: #221e1f;
 	opacity: 0;
 }
@@ -138,20 +138,19 @@ body > .wrap {
 .menu-layer .spread-layer {
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: calc((100vw - 1200px)/2);
 	background: #ffffff;
-	padding-top: 57px;
-	width: 68.4vw;
-	min-width: 261px;
+	padding-top: 94px;
+	width: 430px;
 	transform: translateY(-100%);
 	opacity: 0;
 	transition: all 0.5s ease 0.3s;
 }
 .menu-layer .spread-layer .row {
 	border-bottom: 1px solid #d2d1d1;
-	height: 65px;
-	padding-right: 10px;
-	line-height: 65px;
+	height: 72px;
+	padding-right: 31px;
+	line-height: 72px;
 	text-align: right;
 	font-size: 0;
 }
@@ -160,43 +159,45 @@ body > .wrap {
 	height: 100%;
 	font-family: 'Hyundai Sans Head KR';
 	font-weight: 500;
-	font-size: 16px;
+	font-size: 17px;
 	vertical-align: middle;
 }
 .menu-layer .spread-layer .row.share a {
-	margin-right: 20px;
-	width: 20px;
-	height: 20px;
+	margin-right: 28px;
+	width: 30px;
+	height: 30px;
 }
 .menu-layer .spread-layer .row.share .fb {background: url(../images/menu_fb.png) 0 0 / cover no-repeat;}
 .menu-layer .spread-layer .row.share .kt {background: url(../images/menu_kt.png) 0 0 / cover no-repeat;}
 .menu-layer .spread-layer .row.share .ks {background: url(../images/menu_ks.png) 0 0 / cover no-repeat;}
-.menu-layer .spread-layer .row.share .url {background: url(../images/menu_url.png) 0 0 / cover no-repeat; width: 29px; height: 29px;}
+.menu-layer .spread-layer .row.share .url {background: url(../images/menu_url.png) 0 0 / cover no-repeat; width: 38px; height: 38px;}
 .menu-layer .spread-layer .row.share a:last-child {
 	margin-right: 0;
 }
 .footer-wrap {
 	position: relative;
-	width: 100vw;
-	height: 183px;
+	height: 218px;
+	padding: 0 64px;
 	background: #221e1f;
+	overflow: hidden;
 }
 .footer-wrap img {
 	width: 100%;
 }
 .footer-wrap .logo {
-	padding: 26px 0 0 9px;
+	padding: 94px 0 0 0;
+	float: left;
 }
-.footer-wrap .logo span {
-	font-size: 15px;
-	color: #7f7d7e;
-	font-weight: bold;
-	display: block;
-	line-height: 11px;
+.footer-wrap .logo img {
+	width: 218px;
+}
+.footer-wrap .right-wrap {
+	float: right;
+	padding-top: 76px;
 }
 .footer-wrap .official {
-	text-align: center;
-	padding: 32px 0 0 0;
+	text-align: right;
+	margin-bottom: 19px;
 }
 .footer-wrap .official img {
 	vertical-align: middle;
@@ -205,32 +206,19 @@ body > .wrap {
 	display: inline-block;
 }
 .footer-wrap .fb {
-	width: 7px;
-	margin-right: 26px;
+	margin-right: 40px;
 }
 .footer-wrap .insta {
-	width: 16px;
-	margin-right: 20px;
+	margin-right: 30px;
 }
 .footer-wrap .youtube {
-	width: 18px;
-	margin-right: 25px;
-	margin-top: 2px;
-}
-.footer-wrap .ks {
-	width: 8px;
-}
-.footer-wrap .underline {
-	background: #7f7d7e;
-	width: 94.9%;
-	height: 1px;
-	margin: 0 auto;
-	margin-top: 24px;
-	margin-bottom: 20px;
+	margin-right: 38px;
 }
 .footer-wrap .copyright {
-	width: 73.2%;
-	margin: 0 auto;
+	font-family: 'Hyundai Sans Text KR';
+	font-size: 18px;
+	font-weight: bold;
+	color: #7f7d7e;
 }
 /* end common */
 
@@ -289,6 +277,7 @@ body > .wrap {
 .section2-wrap {
 	position: relative;
 	text-align: center;
+	overflow: hidden;
 }
 .section2-wrap .title-wrap {
 }
@@ -502,6 +491,9 @@ body > .wrap {
 .section2-wrap .contents .block._3 ._right .image-2 {
 	padding: 6.85% 0 0 7.33%
 }
+.section2-wrap .slider {
+	padding-bottom: 138px;
+}
 .section2-wrap .slider .title {
 	display: inline-block;
 	text-align: left;
@@ -522,26 +514,32 @@ body > .wrap {
 }
 .section2-wrap .slider .studio-slide {
 	position: relative;
-	width: 94.7%;
-	display: inline-block;
+	width: 100%;
 }
 .section2-wrap .slider .studio-slide div {
 	/* display: inline-block; */
+}
+.section2-wrap .slider .studio-slide .slick-slide {
+	opacity: 0.2;
+	transition: opacity 0.5s ease;
+}
+.section2-wrap .slider .studio-slide .slick-center {
+	opacity: 1;
 }
 .section2-wrap .slider .studio-slide img {
 	width: 100%;
 }
 .section2-wrap .slider .studio-slide button {
 	background: #fff;
-	width: 42px;
-	height: 52px;
+	width: 80px;
+	height: 80px;
 }
 .section2-wrap .slider .studio-slide button img {
-	width: 11px;
+	width: 19px;
 }
 .section2-wrap .slider .studio-slide .prev {
 	position: absolute;
-	left: 0;
+/*	left: 0;*/
 	top: 50%;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
@@ -549,30 +547,23 @@ body > .wrap {
 }
 .section2-wrap .slider .studio-slide .next {
 	position: absolute;
-	right: 0;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
-}
-.section2-wrap .slider .studio-slide .next {
-	position: absolute;
-	right: 0;
+/*	right: 0;*/
 	top: 50%;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
 .section2-wrap .slider .desc h2 {
-	font-size: 17px;
+	font-family: 'Hyundai Sans Text KR';
+	font-size: 30px;
 	color: #1d191a;
 	font-weight: bold;
-	padding: 27px 0 9px;
+	margin: 60px 0 11px;
 }
 .section2-wrap .slider .desc h4 {
 	font-family: 'Hyundai Sans Text KR';
-	font-size: 14px;
+	font-size: 20px;
 	color: #221e1f;
 	font-weight: normal;
-	padding-bottom: 111px;
 }
 #btn-go-top {
 	position: absolute;

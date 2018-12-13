@@ -175,12 +175,8 @@ body.menu-open {
 .footer-wrap .logo {
 	padding: 26px 0 0 9px;
 }
-.footer-wrap .logo span {
-	font-size: 15px;
-	color: #7f7d7e;
-	font-weight: bold;
-	display: block;
-	line-height: 11px;
+.footer-wrap .logo img {
+	width: 109px;
 }
 .footer-wrap .official {
 	text-align: center;
@@ -480,6 +476,7 @@ body.menu-open {
 	transform: translateY(-50%);
 }
 .section2-wrap .slider .desc h2 {
+	font-family: 'Hyundai Sans Text KR';
 	font-size: 17px;
 	color: #1d191a;
 	font-weight: bold;
