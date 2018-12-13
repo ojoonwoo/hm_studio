@@ -145,7 +145,9 @@
 								e.parentNode.insertBefore(j, e);
 							})(document, "script");
 						</script>
-						<div class="attractt-container" data-idx="0" data-code="Gh1lNqbvXUKBnab" data-board="grid"></div>
+						<div class="insta-area">
+							<div class="attractt-container" data-idx="0" data-code="Gh1lNqbvXUKBnab" data-board="grid"></div>
+						</div>
 						<div class="notice">
 							<h3>유의사항</h3>
 							<h4>· 참여방법을 지키지 않은 참여작, 비공개 계정,</h4>
