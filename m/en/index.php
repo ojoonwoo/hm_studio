@@ -166,28 +166,28 @@
 					<div class="prize">
 						<div class="_1">
 							<img src="../images/prize_beijing.png" alt="">
-							<span class="first">HYUNDAI 모터스튜디오 베이징</span>
-							<span>1등 (5명)</span>
+							<span class="first">HYUNDAI MOTORSTUDIO BEIJING</span>
+							<span>1st (5person)</span>
 						</div>
 						<div class="_2">
 							<img src="../images/prize_moscow.png" alt="">
-							<span class="first">현대 모터스튜디오 모스크바</span>
-							<span>1등 (5명)</span>
+							<span class="first">HYUNDAI MOTORSTUDIO MOSCOW</span>
+							<span>1st (5person)</span>
 						</div>
 						<div class="_3">
 							<img src="../images/prize_giftcard.png" alt="">
-							<span class="first">현대 백화점 5만원 상품권</span>
-							<span>2등 (15명)</span>
+							<span class="first">HYUNDAI DEPARTMENT 50000WON GIFTCARD</span>
+							<span>2nd (15person)</span>
 						</div>
 					</div>
 					<div class="how">
-						<h3>참여방법</h3>
-						<h4 class="h4-first">1.Explore the possibilities하는</h4>
-						<h4 class="blank">순간을 사진/영상으로 담아주세요</h4>
-						<h4>2.인스타그램에</h4>
-						<h4>#현대모터스튜디오 #explore_the_possibilities</h4>
-						<h4>해시태그와 함께 업로드</h4>
-						<button type="button" id="copyHashtag" onclick="click_tracking('복사 해시태그')">해시태그 복사하기</button>
+						<h3>To Participate</h3>
+						<h4 class="h4-first">1. Capture the moment</h4>
+						<h4 class="blank">you explore the possibilities.</h4>
+						<h4>2. Post pics or vids on Instagram with</h4>
+						<h4>#HyundaiMotorStudio</h4>
+						<h4>#explore_the_possibilities</h4>
+						<button type="button" id="copyHashtag" onclick="click_tracking('복사 해시태그')">Copy Hashtags</button>
 					</div>
 					<div class="instagram">
 						<!-- 어트랙트 API 적용해야 할 부분 -->
@@ -222,10 +222,10 @@
 							</div>
 							<div class="desc">
 								<h3>EXPERIENCE</h3>
-								<h4>중요한 것은 첫발을 내딛는것</h4>
-								<h4>나의 가능성이 어느 영역에 위치해 있는지</h4>
-								<h4>주위를 둘러보고 스스로 확인하며,</h4>
-								<h4>경험하라</h4>
+								<h4>Look around. See it for yourself.</h4>
+								<h4>Find out your possibilities.</h4>
+								<h4>So, step out and</h4>
+								<h4>experience.</h4>
 							</div>
 							<div class="image-2">
 								<img src="../images/experience_image2.png" alt="">
@@ -238,10 +238,10 @@
 							</div>
 							<div class="desc">
 								<h3>EXPERIENCE</h3>
-								<h4>중요한 것은 첫발을 내딛는것</h4>
-								<h4>나의 가능성이 어느 영역에 위치해 있는지</h4>
-								<h4>주위를 둘러보고 스스로 확인하며,</h4>
-								<h4>경험하라</h4>
+								<h4>Experiments will tell you who you are.</h4>
+								<h4>By experiments, you will expand your possibilities.</h4>
+								<h4>When you do more, you can be more.</h4>
+								<h4>Do some more experiments.</h4>
 							</div>
 							<div class="image-2">
 								<img src="../images/experiment_image2.png" alt="">
@@ -254,10 +254,10 @@
 							</div>
 							<div class="desc">
 								<h3>EXPERIENCE</h3>
-								<h4>중요한 것은 첫발을 내딛는것</h4>
-								<h4>나의 가능성이 어느 영역에 위치해 있는지</h4>
-								<h4>주위를 둘러보고 스스로 확인하며,</h4>
-								<h4>경험하라</h4>
+								<h4>Get out of your comfort zone.</h4>
+								<h4>Explore the unexplored. Know the unknown.</h4>
+								<h4>Experience, experiment and explore at</h4>
+								<h4>Hyundai Motorstudio.</h4>
 							</div>
 							<div class="image-2">
 								<img src="../images/explore_image2.png" alt="">
@@ -269,7 +269,7 @@
 							<img src="../images/logo.svg" alt="">
 						</div>
 						<div class="sub-title">
-							<h3>자동차 문화를 경험하는 창의적인 실험 공간</h3>
+							<h3>A creative, experimental space for new mobility culture</h3>
 						</div>
 						<div class="studio-slide">
 							<div class="prev">
@@ -304,8 +304,9 @@
 							</div>
 						</div>
 						<div class="desc" id="desc_txt">
-							<h2>현대 모터스튜디오 고양</h2>
-							<h4>자동차를 보고 듣고 느끼는 새로운 여행으로 초대합니다</h4>
+							<h2>Hyundai Motorstudio GOYANG</h2>
+							<h4>We invite you on a new automotive journey</h4>
+							<h4>with experiences you can see, hear and touch.</h4>
 						</div>
 					</div>
 					<button type="button" id="btn-go-top">
