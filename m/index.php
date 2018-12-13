@@ -62,6 +62,7 @@
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script type="text/javascript" src="../js/clipboard.min.js"></script>
 	<script src="../lib/videojs/videojs.js"></script>
+	<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 </head>
 
 <body>
