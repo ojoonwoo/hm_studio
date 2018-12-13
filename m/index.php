@@ -471,7 +471,7 @@
 		function viewVideo() {
 			$(".video-thumb-layer").hide();
 			$(".video-layer").show();
-			// player.play();			
+			player.play();			
 		}
 		// $('.section1-wrap .inner').on('click', function() {
 		// 	if ($(".video-thumb-layer").css("display") == "none")
