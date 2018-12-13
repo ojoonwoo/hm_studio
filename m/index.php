@@ -237,7 +237,7 @@
 								<img src="./images/experiment_image1.png" alt="">
 							</div>
 							<div class="desc">
-								<h3>EXPERIENCE</h3>
+								<h3>EXPERIMENT</h3>
 								<h4>중요한 것은 첫발을 내딛는것</h4>
 								<h4>나의 가능성이 어느 영역에 위치해 있는지</h4>
 								<h4>주위를 둘러보고 스스로 확인하며,</h4>
@@ -253,7 +253,7 @@
 								<img src="./images/explore_image1.png" alt="">
 							</div>
 							<div class="desc">
-								<h3>EXPERIENCE</h3>
+								<h3>EXPLORE</h3>
 								<h4>중요한 것은 첫발을 내딛는것</h4>
 								<h4>나의 가능성이 어느 영역에 위치해 있는지</h4>
 								<h4>주위를 둘러보고 스스로 확인하며,</h4>

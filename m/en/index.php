@@ -166,17 +166,17 @@
 					<div class="prize">
 						<div class="_1">
 							<img src="../images/prize_beijing.png" alt="">
-							<span class="first">HYUNDAI MOTORSTUDIO BEIJING</span>
+							<span class="first">Hyundai Motorstudio BEIJING</span>
 							<span>1st (5person)</span>
 						</div>
 						<div class="_2">
 							<img src="../images/prize_moscow.png" alt="">
-							<span class="first">HYUNDAI MOTORSTUDIO MOSCOW</span>
+							<span class="first">Hyundai Motorstudio MOSCOW</span>
 							<span>1st (5person)</span>
 						</div>
 						<div class="_3">
 							<img src="../images/prize_giftcard.png" alt="">
-							<span class="first">HYUNDAI DEPARTMENT 50,000WON GIFTCARD</span>
+							<span class="first">Hyundai Department 50,000WON GIFTCARD</span>
 							<span>2nd (15person)</span>
 						</div>
 					</div>
@@ -237,7 +237,7 @@
 								<img src="../images/experiment_image1.png" alt="">
 							</div>
 							<div class="desc">
-								<h3>EXPERIENCE</h3>
+								<h3>EXPERIMENT</h3>
 								<h4>Experiments will tell you who you are.</h4>
 								<h4>By experiments, you will expand your possibilities.</h4>
 								<h4>When you do more, you can be more.</h4>
@@ -253,7 +253,7 @@
 								<img src="../images/explore_image1.png" alt="">
 							</div>
 							<div class="desc">
-								<h3>EXPERIENCE</h3>
+								<h3>EXPLORE</h3>
 								<h4>Get out of your comfort zone.</h4>
 								<h4>Explore the unexplored. Know the unknown.</h4>
 								<h4>Experience, experiment and explore at</h4>
@@ -414,7 +414,7 @@
 			selection.removeAllRanges();
 
 			document.body.removeChild(textarea);
-			alert("해시태그가 복사되었습니다");
+			alert("Hashtags Copied");
 		});
 		
 		$('.js-burger-trigger').on('click', function() {
