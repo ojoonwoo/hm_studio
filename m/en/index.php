@@ -77,9 +77,9 @@
 			</div>
 			<div class="action-wrap">
 				<div class="lang-box">
-					<a href="#"  onclick="click_tracking('한국어사이트')">KR</a>
+					<a href="../"  onclick="click_tracking('한국어사이트')">KR</a>
 					<span>/</span>
-					<a href="#" class="is-active" onclick="click_tracking('영어사이트')">EN</a>
+					<a href="javascript:void(0)" class="is-active" onclick="click_tracking('영어사이트')">EN</a>
 				</div>
 				<div class="js-burger-trigger"></div>
 				<div id="gnb" class="burger-ui">
