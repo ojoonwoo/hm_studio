@@ -35,9 +35,9 @@
 		<link type="image/icon" rel="shortcut icon" href="http://www.hyundaimotorstudio.co.kr/images/favi_HMS.ico" />
 		<link rel="stylesheet" href="./css/reset.css">
 		<link rel="stylesheet" href="./css/font.css">
-		<link rel="stylesheet" href="./css/style.css">
 		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-		<link href="./lib/videojs/videojs.css" rel="stylesheet">
+		<link rel="stylesheet" href="./lib/videojs/videojs.css">
+		<link rel="stylesheet" href="./css/style.css">
 		<script src="./lib/jquery-3.3.1.min.js"></script>
 		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 		<script type="text/javascript" src="./js/clipboard.min.js"></script>
@@ -105,7 +105,7 @@
 								<h3>당신의 가능성을 실험하라</h3>
 							</div>
 							<div class="button-wrap">
-								<button type="button">
+								<button type="button" onclick="viewVideo();">
 									<p>Full version</p>
 									<p>Watch</p>
 								</button>
@@ -113,7 +113,9 @@
 						</div>
 					</div>
 					<div class="video-layer">
-
+						<video id="video_html5_api" class="video-js" preload="auto" data-setup='{}' onclick="toggleVideo()">
+							<source src='./images/hyundaimotorstudio.mp4' type='video/mp4' />
+						</video>
 					</div>
 				</div>
 			</div>
@@ -449,6 +451,50 @@
 					break;
 				}
 			}
+			
+			var options = {};
+
+			var player = videojs('video_html5_api', options, function onPlayerReady() {
+				videojs.log('Your player is ready!');
+
+				// In this context, `this` is the player that was created by Video.js.
+				// this.play();
+				// this.isFullscreen(true);
+				this.loop(true);
+				// this.videoWidth($(window).width());
+				this.controls(true);
+				// this.fluid(true);
+				// How about an event listener?
+				this.on('ended', function() {
+					// videojs.log('Awww...over so soon?!');
+				});
+			});
+			function viewVideo() {
+				$(".video-thumb-layer").hide();
+				$(".video-layer").show();
+				player.play();			
+			}
+			
+			function toggleVideo() {
+				if (player.paused()) {
+					player.play();
+					videojs.log('Your player is play!');
+				} else {
+					player.pause();
+					videojs.log('Your player is pause!');
+				}
+			}
+//			$('.video-layer').on('click', function() {
+//				// player.trigger('click');
+//				if (player.paused()) {
+//					player.play();
+//					videojs.log('Your player is play!');
+//				} else {
+//					player.pause();
+//					videojs.log('Your player is pause!');
+//				}
+//
+//			});
 
 			function click_tracking(click_name)
 			{

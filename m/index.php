@@ -55,9 +55,9 @@
 	<link type="image/icon" rel="shortcut icon" href="http://www.hyundaimotorstudio.co.kr/images/favi_HMS.ico" />
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/font.css">
-	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-	<link href="../lib/videojs/videojs.css" rel="stylesheet">
+	<link rel="stylesheet" href="../lib/videojs/videojs.css">
+	<link rel="stylesheet" href="./css/style.css">
 	<script src="../lib/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script type="text/javascript" src="../js/clipboard.min.js"></script>
@@ -134,9 +134,9 @@
 					</div>
 				</div>
 				<div class="video-layer">
-				<video id="video_html5_api" class="video-js" preload="auto" data-setup='{}'>
+					<video id="video_html5_api" class="video-js" preload="auto" data-setup='{}' onclick="toggleVideo();">
 						<source src='./images/hyundaimotorstudio.mp4' type='video/mp4' />
-				</video>					
+					</video>
 					<!-- <video class="video-js vjs-default-skin" controls preload="auto" width="400" height="300" data-setup="{}">
 						<source src='./images/hyundaimotorstudio.mp4' type='video/mp4' />
 					</video> -->
@@ -451,8 +451,6 @@
 			});
 		}
 
-		var player = videojs('video_html5_api');
-
 		var options = {};
 
 		var player = videojs('video_html5_api', options, function onPlayerReady() {
@@ -475,17 +473,25 @@
 			$(".video-layer").show();
 			player.play();			
 		}
-		$('.video-layer').on('click', function() {
-			// player.trigger('click');
+		function toggleVideo() {
 			if (player.paused()) {
-					player.play();
-					videojs.log('Your player is play!');
-				} else {
-					player.pause();
-					videojs.log('Your player is pause!');
-				}
-
-		});
+				player.play();
+				videojs.log('Your player is play!');
+			} else {
+				player.pause();
+				videojs.log('Your player is pause!');
+			}
+		}
+//		$('.video-layer').on('click', function() {
+//			// player.trigger('click');
+//			if (player.paused()) {
+//				player.play();
+//				videojs.log('Your player is play!');
+//			} else {
+//				player.pause();
+//				videojs.log('Your player is pause!');
+//			}
+//		});
 
 		function sns_share(media) {
 			switch (media) {
