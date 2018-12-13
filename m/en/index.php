@@ -166,14 +166,12 @@
 					<div class="prize">
 						<div class="_1">
 							<img src="../images/prize_beijing.png" alt="">
-							<span class="first">Hyundai Motorstudio</span>
-							<span>BEIJING</span>
+							<span class="first">Hyundai Motorstudio<br>BEIJING</span>
 							<span>1st (5person)</span>
 						</div>
 						<div class="_2">
 							<img src="../images/prize_moscow.png" alt="">
-							<span class="first">Hyundai Motorstudio</span>
-							<span>MOSCOW</span>
+							<span class="first">Hyundai Motorstudio<br>MOSCOW</span>
 							<span>1st (5person)</span>
 						</div>
 						<div class="_3">
