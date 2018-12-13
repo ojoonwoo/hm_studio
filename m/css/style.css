@@ -361,6 +361,11 @@ body.menu-open {
 	font-weight: 500;
 	margin: 42px 0;
 }
+.section2-wrap .instagram .insta-area {
+	width: 310px;
+	margin: 0 auto;
+	padding-bottom: 26px;
+}
 .section2-wrap .instagram .notice h3 {
 	color: #1d191a;
 	font-size: 12px;
