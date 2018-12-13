@@ -72,6 +72,7 @@ body > .wrap {
 	height: 100%;
 	width: 70px;
 	z-index: 3;
+	cursor: pointer;
 }
 .header-wrap .action-wrap .burger-ui {
 	display: inline-block;
@@ -456,7 +457,7 @@ body > .wrap {
 .section2-wrap .contents .block .desc h3 {
 	font-size: 64px;
 	font-weight: bold;
-	margin-bottom: 20px;
+	margin-bottom: 9px;
 	text-align: left;
 }
 .section2-wrap .contents .block .desc h4 {

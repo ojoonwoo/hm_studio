@@ -491,7 +491,7 @@
 				$(".video-layer").show();
 				player.play();			
 			}
-			
+
 			function toggleVideo() {
 				if (player.paused()) {
 					player.play();

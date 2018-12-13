@@ -59,6 +59,7 @@ body.menu-open {
 	height: 100%;
 	width: 50px;
 	z-index: 3;
+	cursor: pointer;
 }
 .header-wrap .action-wrap .burger-ui {
 	display: inline-block;

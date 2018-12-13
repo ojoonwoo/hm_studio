@@ -133,13 +133,13 @@
 						</div>
 					</div>
 				</div>
-				<div class="video-layer">
-					<video id="video_html5_api" class="video-js" preload="auto" data-setup='{}' onclick="toggleVideo();">
-						<source src='../images/hyundaimotorstudio.mp4' type='video/mp4' />
+				<div id="main-video-player" class="video-layer">
+					<video id="video_html5_api" class="video-js" preload="auto">
+						<source src='./images/hyundaimotorstudio.mp4' type='video/mp4' />
 					</video>
 					<!-- <video class="video-js vjs-default-skin" controls preload="auto" width="400" height="300" data-setup="{}">
-						<source src='../images/hyundaimotorstudio.mp4' type='video/mp4' />
-					</video> -->
+<source src='./images/hyundaimotorstudio.mp4' type='video/mp4' />
+</video> -->
 				</div>
 			</div>
 		</div>
@@ -317,8 +317,7 @@
 		</div>
 		<div class="footer-wrap">
 			<div class="logo">
-				<span>HYUNDAI</span>
-				<span>MOTORSTUDIO</span>
+				<img src="../images/logo_grey.png" alt="HYUNDAI MOTORSTUDIO">
 			</div>
 			<div class="official">
 				<a href="https://www.facebook.com/hyundaimotorstudio/" target="_blank" class="fb" onclick="click_tracking('외부링크 오피셜페이스북')">
@@ -461,7 +460,8 @@
 
 		var player = videojs('video_html5_api', options, function onPlayerReady() {
 			videojs.log('Your player is ready!');
-
+			resizeControls();
+			resizeVideo("main-video-player");
 			// In this context, `this` is the player that was created by Video.js.
 			// this.play();
 			// this.isFullscreen(true);
@@ -477,22 +477,48 @@
 		function viewVideo() {
 			$(".video-thumb-layer").hide();
 			$(".video-layer").show();
-			// player.play();			
+			player.play();			
 		}
-		$('.section1-wrap .inner').on('click', function() {
-			// player.trigger('click');
-			if ($(".video-thumb-layer").css("display") == "none")
-			{
-				if (player.paused()) {
-					player.play();
-					videojs.log('Your player is play!');
-				} else {
-					player.pause();
-					videojs.log('Your player is pause!');
-				}
-			}
+		// $('.section1-wrap .inner').on('click', function() {
+		// 	if ($(".video-thumb-layer").css("display") == "none")
+		// 	{
+		// 		if (player.paused()) {
+		// 			player.play();
+		// 			videojs.log('Your player is play!');
+		// 		} else {
+		// 			player.pause();
+		// 			videojs.log('Your player is pause!');
+		// 		}
+		// 	}
+		// });
 
+		$(window).on('resize', function() {
+			resizeVideo("main-video-player");
+			resizeControls();
 		});
+		function resizeVideo(e) {
+			if (e = $("#" + e), $(e).length) {
+				var n = $(window).width(),
+					t, o = $(window).height(),
+					a, i = $(e),
+					s = 16 / 9;
+				n / s < o ? (t = Math.ceil(o * s), i.width(t).height(o).css({
+					left: (n - t) / 2,
+					top: 0
+				})) : (a = Math.ceil(n / s), i.width(n).height(a).css({
+					left: 0,
+					top: (o - a) / 2
+				}))
+			}
+		}
+		function resizeControls() {
+			var e = $(window).width(),
+				i = parseFloat(.89 * e),
+				o = parseFloat(e / 10);
+			$(".vjs-control-bar").css({
+				width: i + "px"
+			});
+		}
 
 		function sns_share(media) {
 			switch (media) {
