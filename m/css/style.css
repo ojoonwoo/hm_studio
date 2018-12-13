@@ -242,9 +242,9 @@ body.menu-open {
 	transform: translateX(-50%);
 	height: 100%;
 }
-.video_html5_api-dimensions {
-	width: 100%;
-	height: 100%;
+.section1-wrap .inner .video-js {
+	width: 100% !important;
+	height: 100% !important;
 /*	font-size: 12px;*/
 }
 .video-js .vjs-control-bar {
