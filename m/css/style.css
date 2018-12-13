@@ -170,6 +170,7 @@ body.menu-open {
 	width: 100vw;
 	height: 183px;
 	background: #221e1f;
+	z-index: 3;
 }
 .footer-wrap img {
 	width: 100%;
