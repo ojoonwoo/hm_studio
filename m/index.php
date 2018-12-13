@@ -292,16 +292,16 @@
 				<span>MOTORSTUDIO</span>
 			</div>
 			<div class="official">
-				<a href="https://www.facebook.com/hyundaimotorstudio" target="_blank" class="fb" onclick="click_tracking('외부링크 오피셜페이스북')">
+				<a href="https://www.facebook.com/hyundaimotorstudio/" target="_blank" class="fb" onclick="click_tracking('외부링크 오피셜페이스북')">
                     <img src="./images/share_fb.png" alt="">
                 </a>
 				<a href="https://www.instagram.com/hyundai_motorstudio/" target="_blank" class="insta" onclick="click_tracking('외부링크 오피셜인스타그램')">
                     <img src="./images/share_insta.png" alt="">
                 </a>
-				<a href="javascript:void(0)" class="youtube" onclick="click_tracking('외부링크 오피셜유튜브')">
+				<a href="https://www.youtube.com/user/HyundaiWorldwide" target="_blank" class="youtube" onclick="click_tracking('외부링크 오피셜유튜브')">
                     <img src="./images/share_youtube.png" alt="">
                 </a>
-				<a href="javascript:void(0)" class="ks" onclick="click_tracking('외부링크 오피셜카카오스토리')">
+				<a href="https://story.kakao.com/ch/hyundai" target="_blank" class="ks" onclick="click_tracking('외부링크 오피셜카카오스토리')">
                     <img src="./images/share_ks.png" alt="">
                 </a>
 			</div>
