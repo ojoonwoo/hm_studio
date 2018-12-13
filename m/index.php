@@ -84,10 +84,10 @@
 					<a href="javascript:void(0)" onclick="movePage(4)">HYUNDAI MOTORSTUDIO</a>
 				</div>
 				<div class="row share">
-					<a href="#" class="fb"></a>
-					<a href="#" class="kt"></a>
-					<a href="#" class="ks"></a>
-					<a href="#" class="url"></a>
+					<a href="javascript:void(0)" class="fb" onclick="click_tracking('페이스북 공유')"></a>
+					<a href="javascript:void(0)" class="kt"></a>
+					<a href="javascript:void(0)" class="ks"></a>
+					<a href="javascript:void(0)" class="url"></a>
 				</div>
 			</div>
 		</div>
@@ -403,6 +403,19 @@
 					$('html, body').animate({scrollTop: $('.section2-wrap .slider').offset().top - 57}, 1000);
 				break;
 			}
+		}
+
+		function click_tracking(click_name)
+		{
+			$.ajax({
+				type   : "POST",
+				async  : false,
+				url    : "../main_exec.php",
+				data:{
+					"exec" 			: "insert_click_info",
+					"click_name"	: click_name
+				}
+			});
 		}
 	</script>
 </body>
