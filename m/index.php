@@ -461,7 +461,7 @@
 			// this.isFullscreen(true);
 			this.loop(true);
 			// this.videoWidth($(window).width());
-			// this.controls(true);
+			this.controls(true);
 			// this.fluid(true);
 			// How about an event listener?
 			this.on('ended', function() {
