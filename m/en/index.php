@@ -176,7 +176,7 @@
 						</div>
 						<div class="_3">
 							<img src="../images/prize_giftcard.png" alt="">
-							<span class="first">HYUNDAI DEPARTMENT 50000WON GIFTCARD</span>
+							<span class="first">HYUNDAI DEPARTMENT 50,000WON GIFTCARD</span>
 							<span>2nd (15person)</span>
 						</div>
 					</div>
@@ -371,24 +371,29 @@
 					$("#desc_txt ._2").html("with experiences you can see, hear and touch.");
 					break;
 				case 1:
-					$("#desc_txt h2").html("현대 모터스튜디오 서울");
-					$("#desc_txt h4").html("자동차를 넘어 문화를 이야기합니다");
+					$("#desc_txt h2").html("Hyundai Motorstudio SEOUL");
+					$("#desc_txt ._1").html("We talk car culture beyond transportation.");
+					$("#desc_txt ._2").html("We create a new automotive lifestyle.");
 					break;
 				case 2:
-					$("#desc_txt h2").html("현대 모터스튜디오 하남");
-					$("#desc_txt h4").html("현대자동차의 무한 가능성과 혁신적 시도가 펼처집니다");
+                $("#desc_txt h2").html("Hyundai Motorstudio HANAM");
+					$("#desc_txt ._1").html("We invite you to explore and experience");
+					$("#desc_txt ._2").html("the future vision of mobility.");
 					break;
 				case 3:
-					$("#desc_txt h2").html("현대 모터스튜디오 디지털");
-					$("#desc_txt h4").html("현대자동차를 가상으로 경험할 수 있습니다");
+                $("#desc_txt h2").html("Hyundai Motorstudio DIGITAL");
+					$("#desc_txt ._1").html("We encourage you to witness the beginning of");
+					$("#desc_txt ._2").html("the new car experience in a virtual world.");
 					break;
 				case 4:
-					$("#desc_txt h2").html("현대 모터스튜디오 베이징");
-					$("#desc_txt h4").html("창의적인 생각과 예술을 통해 고객과 소통합니다");
+                $("#desc_txt h2").html("Hyundai Motorstudio BEIJING");
+					$("#desc_txt ._1").html("We communicate with customers");
+					$("#desc_txt ._2").html("through creative thinking and art.");
 					break;
 				case 5:
-					$("#desc_txt h2").html("현대 모터스튜디오 모스크바");
-					$("#desc_txt h4").html("새로운 시도와 영감이 하나가 됩니다");
+                $("#desc_txt h2").html("Hyundai Motorstudio MOSCOW");
+					$("#desc_txt ._1").html("We welcome you to a space where inspiration");
+					$("#desc_txt ._2").html("and innovation unfold.");
 					break;
 			}
 		});
