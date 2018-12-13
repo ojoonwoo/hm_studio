@@ -56,9 +56,9 @@
 					</h1>
 					<div class="action-wrap">
 						<div class="lang-box">
-							<a href="#" class="is-active">KR</a>
+							<a href="javascript:void(0)" class="is-active">KR</a>
 							<span>/</span>
-							<a href="#">EN</a>
+							<a href="./en/">EN</a>
 						</div>
 						<div class="js-burger-trigger"></div>
 						<div id="gnb" class="burger-ui">
