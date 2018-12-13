@@ -489,7 +489,6 @@ body.menu-open {
 	top: 50%;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
-	z-index: 9;
 }
 .section2-wrap .slider .studio-slide .next {
 	position: absolute;

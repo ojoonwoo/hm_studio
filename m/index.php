@@ -266,8 +266,7 @@
 					</div>
 					<div class="slider">
 						<div class="title">
-							<h1>HYUNDAI</h1>
-							<h1>MOTORSTUDIO</h1>
+							<img src="./images/logo.svg" alt="">
 						</div>
 						<div class="sub-title">
 							<h3>자동차 문화를 경험하는 창의적인 실험 공간</h3>
