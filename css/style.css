@@ -383,6 +383,7 @@ body > .wrap {
 .section2-wrap .instagram .insta-area {
 	width: 1102px;
 	margin: 0 auto;
+	padding-bottom: 42px;
 }
 .section2-wrap .instagram .notice h4 {
 	font-family: 'Hyundai Sans Text KR';
