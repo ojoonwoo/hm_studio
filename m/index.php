@@ -53,9 +53,9 @@
 			</div>
 			<div class="action-wrap">
 				<div class="lang-box">
-					<a href="#" class="is-active">KR</a>
+					<a href="#" class="is-active"  onclick="click_tracking('한국어사이트')">KR</a>
 					<span>/</span>
-					<a href="#">EN</a>
+					<a href="#" onclick="click_tracking('영어사이트')">EN</a>
 				</div>
 				<div class="js-burger-trigger"></div>
 				<div id="gnb" class="burger-ui">
@@ -72,22 +72,22 @@
 		<div class="menu-layer">
 			<div class="spread-layer">
 				<div class="row">
-					<a href="javascript:void(0)" onclick="movePage(1)">CAMPAIGN FILM</a>
+					<a href="javascript:void(0)" onclick="movePage(1);click_tracking('이동 CAMPAIGN FILM')">CAMPAIGN FILM</a>
 				</div>
 				<div class="row">
-					<a href="javascript:void(0)" onclick="movePage(2)">EVENT</a>
+					<a href="javascript:void(0)" onclick="movePage(2);click_tracking('이동 EVENT')">EVENT</a>
 				</div>
 				<div class="row">
-					<a href="javascript:void(0)" onclick="movePage(3)">EXPLORE THE POSSIBILITIES</a>
+					<a href="javascript:void(0)" onclick="movePage(3);click_tracking('이동 EXPLORE THE POSSIBILITIES')">EXPLORE THE POSSIBILITIES</a>
 				</div>
 				<div class="row">
-					<a href="javascript:void(0)" onclick="movePage(4)">HYUNDAI MOTORSTUDIO</a>
+					<a href="javascript:void(0)" onclick="movePage(4);click_tracking('이동 HYUNDAI MOTORSTUDIO')">HYUNDAI MOTORSTUDIO</a>
 				</div>
 				<div class="row share">
-					<a href="javascript:void(0)" class="fb" onclick="click_tracking('페이스북 공유')"></a>
-					<a href="javascript:void(0)" class="kt"></a>
-					<a href="javascript:void(0)" class="ks"></a>
-					<a href="javascript:void(0)" class="url"></a>
+					<a href="javascript:void(0)" class="fb" onclick="click_tracking('공유 페이스북')"></a>
+					<a href="javascript:void(0)" class="kt" onclick="click_tracking('공유 카카오톡')"></a>
+					<a href="javascript:void(0)" class="ks" onclick="click_tracking('공유 카카오스토리')"></a>
+					<a href="javascript:void(0)" class="url" onclick="click_tracking('공유 URL')"></a>
 				</div>
 			</div>
 		</div>
@@ -102,7 +102,7 @@
 							<h3>당신의 가능성을 실험하라</h3>
 						</div>
 						<div class="button-wrap">
-							<button type="button">
+							<button type="button" onclick="click_tracking('보기 풀영상')">
 								<p>Full version</p>
 								<p>Watch</p>
 							</button>
@@ -158,7 +158,7 @@
 						<h4>2.인스타그램에</h4>
 						<h4>#현대모터스튜디오 #explore_the_possibilities</h4>
 						<h4>해시태그와 함께 업로드</h4>
-						<button type="button" id="copyHashtag">해시태그 복사하기</button>
+						<button type="button" id="copyHashtag" onclick="click_tracking('복사 해시태그')">해시태그 복사하기</button>
 					</div>
 					<div class="instagram">
 						<!-- 어트랙트 API 적용해야 할 부분 -->
@@ -292,16 +292,16 @@
 				<span>MOTORSTUDIO</span>
 			</div>
 			<div class="official">
-				<a href="https://www.facebook.com/hyundaimotorstudio" target="_blank" class="fb">
+				<a href="https://www.facebook.com/hyundaimotorstudio" target="_blank" class="fb" onclick="click_tracking('외부링크 오피셜페이스북')">
                     <img src="./images/share_fb.png" alt="">
                 </a>
-				<a href="https://www.instagram.com/hyundai_motorstudio/" target="_blank" class="insta">
+				<a href="https://www.instagram.com/hyundai_motorstudio/" target="_blank" class="insta" onclick="click_tracking('외부링크 오피셜인스타그램')">
                     <img src="./images/share_insta.png" alt="">
                 </a>
-				<a href="javascript:void(0)" class="youtube">
+				<a href="javascript:void(0)" class="youtube" onclick="click_tracking('외부링크 오피셜유튜브')">
                     <img src="./images/share_youtube.png" alt="">
                 </a>
-				<a href="javascript:void(0)" class="ks">
+				<a href="javascript:void(0)" class="ks" onclick="click_tracking('외부링크 오피셜카카오스토리')">
                     <img src="./images/share_ks.png" alt="">
                 </a>
 			</div>
