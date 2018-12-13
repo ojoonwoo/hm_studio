@@ -1,3 +1,30 @@
+<?
+    include_once "../include/autoload.php";
+
+    $mnv_f 			= new mnv_function();
+    $my_db         = $mnv_f->Connect_MySQL();
+    $mobileYN      = $mnv_f->MobileCheck();
+    // $obYN          = $mnv_f->BrowserCheck();
+    // $IEYN          = $mnv_f->IECheck();
+    // $SafariYN          = $mnv_f->SafariCheck();
+    // print_r($_SERVER["HTTP_USER_AGENT"]);
+    // $_SESSION['ss_adkey']	= $adkey;
+
+	// $userIP		= $mnv_f->getIP();
+	$siteURL = parse_url($mnv_f->siteURL());
+    if ($mobileYN == "PC")
+    {
+		if(isset($siteURL['query'])) {
+			echo "<script>location.href='../?".$siteURL['query']."';</script>";
+		} else {
+			echo "<script>location.href='../';</script>";
+		}
+    }else{
+		$saveMedia     = $mnv_f->SaveMedia();
+		$rs_tracking   = $mnv_f->InsertTrackingInfo($mobileYN);
+		// print_r($rs_tracking);
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
