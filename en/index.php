@@ -367,7 +367,8 @@
 					cssEase: 'ease-in',
 					centerMode: true,
 					ceterPadding: '7px',
-				});
+                });
+                $("#btn-view-more").html("MORE");
 			});
 			function arrowPositioning() {
 				var leftPosition = (studioSlider.width()/2)-($('.slick-center').width()/2+15);
