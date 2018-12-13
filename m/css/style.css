@@ -14,7 +14,9 @@ body.menu-open {
 	height: 57px;
 	background: #fff;
 	position: fixed;
-	z-index: 3;
+	left: 0;
+	top: 0;
+	z-index: 5;
 	box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.15);
 }
 .header-wrap .header-logo {
@@ -109,7 +111,7 @@ body.menu-open {
 	right: 0;
 	bottom: 0;
 	height: 100vh;
-	z-index: 2;
+	z-index: 4;
 	background: rgba(0, 0, 0, 0.5);
 	transform: translateY(-100%);
 	opacity: 0;
@@ -220,6 +222,12 @@ body.menu-open {
 
 .section1-wrap {
 	height: 100vh;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
 }
 .section1-wrap .inner {
 	position: relative;
@@ -229,6 +237,7 @@ body.menu-open {
 	background: url(../images/main_image.png) center / cover no-repeat;
 	height: 100%;
 	text-align: center;
+	position: relative;
 }
 .section1-wrap .inner .video-thumb-layer .wrapper {
 	height: 100%;
@@ -314,6 +323,9 @@ body.menu-open {
 .section2-wrap {
 	position: relative;
 	text-align: center;
+	z-index: 2;
+	margin-top: 100vh;
+	background: #ffffff;
 }
 .section2-wrap .title-wrap {
 }

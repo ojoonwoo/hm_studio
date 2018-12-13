@@ -20,7 +20,7 @@ body > .wrap {
 	top: 0;
 	left: 0;
 	right: 0;
-	z-index: 3;
+	z-index: 5;
 	box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.15);
 }
 .header-wrap .inner {
@@ -124,7 +124,7 @@ body > .wrap {
 	right: 0;
 	bottom: 0;
 	height: 100vh;
-	z-index: 2;
+	z-index: 4;
 	background: rgba(0, 0, 0, 0.5);
 	transform: translateY(-100%);
 	opacity: 0;
@@ -227,6 +227,12 @@ body > .wrap {
 
 .section1-wrap {
 	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	z-index: 1;
 }
 .section1-wrap .inner {
 	position: relative;
@@ -297,6 +303,8 @@ body > .wrap {
 	text-align: center;
 	overflow: hidden;
 	background: #ffffff;
+	margin-top: 100vh;
+	z-index: 2;
 }
 .section2-wrap .title-wrap {
 }
