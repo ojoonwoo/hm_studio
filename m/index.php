@@ -473,17 +473,20 @@
 		function viewVideo() {
 			$(".video-thumb-layer").hide();
 			$(".video-layer").show();
-			player.play();			
+			// player.play();			
 		}
-		$('.video-layer').on('click', function() {
+		$('.section1-wrap .inner').on('click', function() {
 			// player.trigger('click');
-			if (player.paused()) {
+			if ($(".video-thumb-layer").css("display") == "none")
+			{
+				if (player.paused()) {
 					player.play();
 					videojs.log('Your player is play!');
 				} else {
 					player.pause();
 					videojs.log('Your player is pause!');
 				}
+			}
 
 		});
 
