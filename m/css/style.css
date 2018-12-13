@@ -489,6 +489,7 @@ body.menu-open {
 	top: 50%;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
+	z-index: 1;
 }
 .section2-wrap .slider .studio-slide .next {
 	position: absolute;
@@ -517,6 +518,9 @@ body.menu-open {
 	color: #221e1f;
 	font-weight: normal;
 	padding-bottom: 111px;
+}
+.section2-wrap .slider .desc ._1 {
+	padding-bottom: 0;
 }
 #btn-go-top {
 	position: absolute;

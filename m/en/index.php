@@ -305,8 +305,8 @@
 						</div>
 						<div class="desc" id="desc_txt">
 							<h2>Hyundai Motorstudio GOYANG</h2>
-							<h4>We invite you on a new automotive journey</h4>
-							<h4>with experiences you can see, hear and touch.</h4>
+							<h4 class="_1">We invite you on a new automotive journey</h4>
+							<h4 class="_2">with experiences you can see, hear and touch.</h4>
 						</div>
 					</div>
 					<button type="button" id="btn-go-top">
@@ -366,8 +366,9 @@
 		slider.on('afterChange', function(event, slick, currentSlide) {
 			switch (currentSlide) {
 				case 0:
-					$("#desc_txt h2").html("현대 모터스튜디오 고양");
-					$("#desc_txt h4").html("자동차를 보고 듣고 느끼는 새로운 여행으로 초대합니다");
+					$("#desc_txt h2").html("Hyundai Motorstudio GOYANG");
+					$("#desc_txt ._1").html("We invite you on a new automotive journey");
+					$("#desc_txt ._2").html("with experiences you can see, hear and touch.");
 					break;
 				case 1:
 					$("#desc_txt h2").html("현대 모터스튜디오 서울");
