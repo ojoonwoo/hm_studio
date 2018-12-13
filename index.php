@@ -37,11 +37,11 @@
 		<link rel="stylesheet" href="./css/font.css">
 		<link rel="stylesheet" href="./css/style.css">
 		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-		<link href="../lib/videojs/videojs.css" rel="stylesheet">
+		<link href="./lib/videojs/videojs.css" rel="stylesheet">
 		<script src="./lib/jquery-3.3.1.min.js"></script>
 		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 		<script type="text/javascript" src="./js/clipboard.min.js"></script>
-		<script src="../lib/videojs/videojs.js"></script>
+		<script src="./lib/videojs/videojs.js"></script>
 		<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 	</head>
 
@@ -308,7 +308,7 @@
 						</div>
 					</div>
 					<button type="button" id="btn-go-top">
-						<img src="./images/btn_top.jpg" alt="">
+						<img src="./images/btn_top.png" alt="">
 					</button>
 				</div>
 			</div>
@@ -375,6 +375,11 @@
 			});
 			$(".next-btn").on("click", function() {
 				studioSlider.slick("slickNext");
+			});
+			$('#btn-go-top').on('click', function() {
+				$('html, body').animate({
+					scrollTop: 0
+				}, 1000);
 			});
 			studioSlider.on('afterChange', function(event, slick, currentSlide) {
 				switch (currentSlide) {
