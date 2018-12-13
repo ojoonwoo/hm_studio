@@ -134,7 +134,7 @@
 					</div>
 				</div>
 				<div id="main-video-player" class="video-layer">
-					<video id="video_html5_api" class="video-js" preload="auto" data-setup='{}' onclick="toggleVideo();">
+					<video id="video_html5_api" class="video-js" preload="auto">
 						<source src='./images/hyundaimotorstudio.mp4' type='video/mp4' />
 					</video>
 					<!-- <video class="video-js vjs-default-skin" controls preload="auto" width="400" height="300" data-setup="{}">
@@ -316,8 +316,7 @@
 		</div>
 		<div class="footer-wrap">
 			<div class="logo">
-				<span>HYUNDAI</span>
-				<span>MOTORSTUDIO</span>
+				<img src="./images/logo_grey.png" alt="">
 			</div>
 			<div class="official">
 				<a href="https://www.facebook.com/hyundaimotorstudio/" target="_blank" class="fb" onclick="click_tracking('외부링크 오피셜페이스북')">
@@ -486,7 +485,6 @@
 				}
 			}
 		});
-		
 		$(window).on('resize', function() {
 			resizeVideo("main-video-player");
 			resizeControls();
@@ -506,7 +504,6 @@
 				}))
 			}
 		}
-		
 		function resizeControls() {
 			var e = $(window).width(),
 				i = parseFloat(.89 * e),
@@ -515,7 +512,6 @@
 				width: i + "px"
 			});
 		}
-
 		function sns_share(media) {
 			switch (media) {
 				case "fb" :
