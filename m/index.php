@@ -339,6 +339,9 @@
 		</div>
 	</div>
 	<script>
+		// $(document).load(function(){
+		// 	$("#video_html5_api").height($(window).height());
+		// });
 		var slider = $('.slider-area').slick({
 			slidesToShow: 1,
 			slidesToScroll: 1,
@@ -454,7 +457,7 @@
 
 			// In this context, `this` is the player that was created by Video.js.
 			// this.play();
-			this.isFullscreen(true);
+			// this.isFullscreen(true);
 			this.loop(true);
 			// this.videoWidth($(window).width());
 			this.controls(true);
