@@ -1,35 +1,490 @@
 html {height: 100%}
-body {font-family: 'Hyundai Sans Head KR', sans-serif; font-weight: normal; font-style: normal;}
+body {font-family: 'Hyundai Sans Head KR', sans-serif; font-weight: normal; font-style: normal; color: #221e1f;}
 input, button, pre {font-family: 'Hyundai Sans Head KR', sans-serif; font-weight: normal; font-style: normal;}
 
 /* common */
 ._oh {
 	overflow: hidden;
 }
-/* end common */
-
-.section._main {
-	height: 100vh;
+body.menu-open {
+	overflow: hidden;
 }
-.section._main .video-thumb-layer {
-	position: relative;
+.header-wrap {
+	width: 100vw;
+	height: 57px;
+	background: #fff;
+	position: fixed;
+	z-index: 3;
+	box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.15);
+}
+.header-wrap .header-logo {
+	position: absolute;
+	top: 18px;
+	left: 10px;
+	width: 97px;
+}
+.header-wrap .action-wrap {
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 0;
+	padding: 21px 10px 15px;
+}
+.header-wrap .action-wrap .lang-box {
+	display: inline-block;
+	font-family: 'Hyundai Sans Head KR';
+	font-weight: 500;
+	margin-right: 15px;
+	font-size: 0;
+	vertical-align: top;
+}
+.header-wrap .action-wrap .lang-box a,
+.header-wrap .action-wrap .lang-box span {
+	display: inline-block;
+	font-size: 19px;
+	color: #c4c4c4;
+}
+.header-wrap .action-wrap .lang-box span {
+	margin: 0 1px;
+}
+.header-wrap .action-wrap .lang-box a.is-active {
+	color: inherit;
+}
+.header-wrap .action-wrap .js-burger-trigger {
+	position: absolute;
+	top: 0;
+	right: 0;
 	height: 100%;
+	width: 50px;
+	z-index: 3;
+}
+.header-wrap .action-wrap .burger-ui {
+	display: inline-block;
+	vertical-align: top;
+	cursor: pointer;
+	overflow: hidden;
+}
+.header-wrap .action-wrap .burger-ui .line {
+	width: 31px;
+	height: 3px;
+	background: #221e1f;
+	transition: all 0.3s ease;
+	transform: translateX(0);
+}
+.header-wrap .action-wrap .burger-ui .line._2 {margin: 2px 0;}
+.menu-open .header-wrap .action-wrap .burger-ui .line {transition: all 0.3s ease;}
+.menu-open .header-wrap .action-wrap .burger-ui .line._1 {transform: translateX(100%); transition-delay: 0.1s;}
+.menu-open .header-wrap .action-wrap .burger-ui .line._2 {transform: translateX(100%); transition-delay: 0.2s;}
+.menu-open .header-wrap .action-wrap .burger-ui .line._3 {transform: translateX(100%); transition-delay: 0.3s;}
+.header-wrap .action-wrap .burger-close {
+	position: absolute;
+	top: 26px;
+	right: 13px;
+	width: 21px;
+}
+.header-wrap .action-wrap .burger-close .line {
+	position: absolute;
+	width: 21px;
+	height: 3px;
+	background: #221e1f;
+	opacity: 0;
+}
+.header-wrap .action-wrap .burger-close .line._1 {
+	top: 0;
+	left: 0;
+	transform: rotate(46deg) scale(0);
+}
+.header-wrap .action-wrap .burger-close .line._2 {
+	top: 0;
+	left: 0;
+	transform: rotate(-46deg) scale(0);
+}
+.menu-open .header-wrap .action-wrap .burger-close .line._1 {transform: rotate(46deg) scale(1); opacity: 1; transition: 0.4s ease 0.4s;}
+.menu-open .header-wrap .action-wrap .burger-close .line._2 {transform: rotate(-46deg) scale(1); opacity: 1; transition: 0.4s ease 0.4s;}
+
+.menu-layer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100vh;
+	z-index: 2;
+	background: rgba(0, 0, 0, 0.5);
+	transform: translateY(-100%);
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+.menu-open .menu-layer {
+	transform: translateY(0);
+	opacity: 1;
+}
+.menu-open .menu-layer .spread-layer {
+	transform: translateY(0);
+	opacity: 1;
+}
+.menu-layer .spread-layer {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #ffffff;
+	padding-top: 57px;
+	width: 68.4vw;
+	min-width: 261px;
+	transform: translateY(-100%);
+	opacity: 0;
+	transition: all 0.5s ease 0.3s;
+}
+.menu-layer .spread-layer .row {
+	border-bottom: 1px solid #d2d1d1;
+	height: 65px;
+	padding-right: 10px;
+	line-height: 65px;
+	text-align: right;
 	font-size: 0;
 }
-.section._main .video-thumb-layer .wrap {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.menu-layer .spread-layer .row a {
+	display: inline-block;
+	height: 100%;
+	font-family: 'Hyundai Sans Head KR';
+	font-weight: 500;
+	font-size: 16px;
+	vertical-align: middle;
+}
+.menu-layer .spread-layer .row.share a {
+	margin-right: 20px;
+	width: 20px;
+	height: 20px;
+}
+.menu-layer .spread-layer .row.share .fb {background: url(../images/menu_fb.png) 0 0 / cover no-repeat;}
+.menu-layer .spread-layer .row.share .kt {background: url(../images/menu_kt.png) 0 0 / cover no-repeat;}
+.menu-layer .spread-layer .row.share .ks {background: url(../images/menu_ks.png) 0 0 / cover no-repeat;}
+.menu-layer .spread-layer .row.share .url {background: url(../images/menu_url.png) 0 0 / cover no-repeat; width: 29px; height: 29px;}
+.menu-layer .spread-layer .row.share a:last-child {
+	margin-right: 0;
+}
+.footer-wrap {
+	position: relative;
+	width: 100vw;
+	height: 183px;
+	background: #221e1f;
+}
+.footer-wrap img {
+	width: 100%;
+}
+.footer-wrap .logo {
+	padding: 26px 0 0 9px;
+}
+.footer-wrap .logo span {
+	font-size: 15px;
+	color: #7f7d7e;
+	font-weight: bold;
+	display: block;
+	line-height: 11px;
+}
+.footer-wrap .official {
+	text-align: center;
+	padding: 32px 0 0 0;
+}
+.footer-wrap .official img {
+	vertical-align: middle;
+}
+.footer-wrap a {
+	display: inline-block;
+}
+.footer-wrap .fb {
+	width: 7px;
+	margin-right: 26px;
+}
+.footer-wrap .insta {
+	width: 16px;
+	margin-right: 20px;
+}
+.footer-wrap .youtube {
+	width: 18px;
+	margin-right: 25px;
+	margin-top: 2px;
+}
+.footer-wrap .ks {
+	width: 8px;
+}
+.footer-wrap .underline {
+	background: #7f7d7e;
+	width: 94.9%;
+	height: 1px;
+	margin: 0 auto;
+	margin-top: 24px;
+	margin-bottom: 20px;
+}
+.footer-wrap .copyright {
+	width: 73.2%;
+	margin: 0 auto;
+}
+/* end common */
+
+.section1-wrap {
+	height: 100vh;
+}
+.section1-wrap .inner {
+	position: relative;
+	height: 100%;
+}
+.section1-wrap .inner .video-thumb-layer {
+	background: url(../images/main_image.png) center / cover no-repeat;
+	height: 100%;
 	text-align: center;
 }
-.section._main .video-thumb-layer .main-copy {
-	margin-bottom: 29.3%;
+.section1-wrap .inner .video-thumb-layer .wrapper {
+	height: 100%;
 }
-.section._main .video-thumb-layer .main-copy .eng {
+.section1-wrap .inner .title-wrap {
+	padding: 47.4% 0 29.3%;
+	text-align: center;
+}
+.section1-wrap .inner .title-wrap h1 {
+	font-family: 'Hyundai Sans Head KR';
+	font-weight: bold;
 	font-size: 47px;
-/*	font: 'Hyundai Sans Head KR'*/
+	color: #fff;
+	line-height: 53px;
+
 }
-.section._main .video-thumb-layer .video-play {
-	
+.section1-wrap .inner .title-wrap h3 {
+	font-family: 'Hyundai Sans Head KR';
+	font-weight: normal;
+	font-size: 19px;
+	color: #fff;
+	padding-top: 21px;
+}
+.section1-wrap .inner .button-wrap button {
+	background: #fff;
+	width: 242px;
+	height: 61px;
+}
+.section1-wrap .inner .button-wrap button p {
+	font-family: 'Hyundai Sans Head KR';
+	font-weight: 500;
+	font-size: 19px;
+	color: #221e1f;
+	line-height: 19px;
+}
+.section2-wrap {
+	position: relative;
+	text-align: center;
+}
+.section2-wrap .title-wrap {
+}
+.section2-wrap .title-wrap .title {
+	padding: 39px 0 19px;
+}
+.section2-wrap .title-wrap .title h1 {
+	font-size: 29px;
+	font-weight: bold;
+	color: #1d191a;
+}
+.section2-wrap .title-wrap .sub-title {
+	padding-bottom: 20px;
+}
+.section2-wrap .title-wrap .sub-title span {
+	font-size: 14px;
+	font-weight: normal;
+	color: #221e1f;
+	display: block;
+	line-height: 17px;
+}
+.section2-wrap .title-wrap .date-winner {
+	padding-bottom: 29px;
+}
+.section2-wrap .title-wrap .date-winner h3 {
+	font-size: 17px;
+	font-weight: bold;
+	color: #1d191a;
+	display: block;
+	padding-bottom: 10px;
+}
+.section2-wrap .title-wrap .date-winner h4 {
+	font-size: 14px;
+	font-weight: normal;
+	color: #221e1f;
+	display: block;
+}
+.section2-wrap .title-wrap .date-winner .h4-first {
+	padding-bottom: 16px;
+}
+.section2-wrap .title-wrap .prize div {
+	width: 187px;
+	margin: 0 auto;
+}
+.section2-wrap .title-wrap .prize div img {
+	width: 100%;
+}
+.section2-wrap .title-wrap .prize div span {
+	display: block;
+	font-size: 14px;
+	font-weight: normal;
+	color: #221e1f;
+	line-height: 17px;
+	padding-bottom: 10px;
+}
+.section2-wrap .title-wrap .prize div .first {
+	padding: 6px 0 0 0;
+}
+.section2-wrap .title-wrap .how {
+	padding-top: 37px;
+}
+.section2-wrap .title-wrap .how h3 {
+	font-size: 17px;
+	font-weight: bold;
+	color: #1d191a;
+	padding-bottom: 10px;
+}
+.section2-wrap .title-wrap .how h4 {
+	font-size: 14px;
+	font-weight: normal;
+	color: #221e1f;
+	line-height: 20px;
+}
+.section2-wrap .title-wrap .how .blank {
+	padding-bottom: 10px;
+}
+.section2-wrap .title-wrap .how button {
+	background: #1d191a;
+	width: 242px;
+	height: 61px;
+	color: #fff;
+	font-size: 19px;
+	font-weight: 500;
+	margin: 42px 0;
+}
+.section2-wrap .title-wrap .instagram .notice h3 {
+	color: #1d191a;
+	font-size: 12px;
+	font-weight: 500;
+	padding-bottom: 10px;
+}
+.section2-wrap .title-wrap .instagram .notice h4 {
+	color: #221e1f;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 15px;
+}
+.section2-wrap .title-wrap .instagram .underline {
+	width: 195px;
+	height: 1px;
+	background: #bbbaba;
+	margin: 34px 0 24px;
+	display: inline-block;
+}
+.section2-wrap .title-wrap .contents img {
+	width: 100%;
+}
+.section2-wrap .title-wrap .contents .image-1 {
+	width: 94.7%;
+	display: inline-block;
+}
+.section2-wrap .title-wrap .contents .image-2 {
+	width: 94.7%;
+	display: inline-block;
+}
+.section2-wrap .title-wrap .contents .desc {
+	padding: 25px 0;
+}
+.section2-wrap .title-wrap .contents .desc h3 {
+	font-size: 29px;
+	color: #221e1f;
+	font-weight: bold;
+	padding-bottom: 13px;
+}
+.section2-wrap .title-wrap .contents .desc h4 {
+	font-size: 14px;
+	color: #221e1f;
+	font-weight: normal;
+	line-height: 18px;
+}
+.section2-wrap .title-wrap .contents .underline {
+	width: 195px;
+	height: 1px;
+	background: #bbbaba;
+	margin: 20px 0 20px;
+	display: inline-block;
+}
+.section2-wrap .title-wrap .slider .title {
+	display: inline-block;
+	text-align: left;
+	padding: 65px 0 10px;
+}
+.section2-wrap .title-wrap .slider .title h1 {
+	font-size: 27px;
+	color: #221e1f;
+	font-weight: bold;
+}
+.section2-wrap .title-wrap .slider .sub-title {
+	padding-bottom: 39px;
+}
+.section2-wrap .title-wrap .slider .sub-title h3 {
+	font-size: 14px;
+	color: #221e1f;
+	font-weight: normal;
+}
+.section2-wrap .title-wrap .slider .studio-slide {
+	position: relative;
+	width: 94.7%;
+	display: inline-block;
+}
+.section2-wrap .title-wrap .slider .studio-slide div {
+	/* display: inline-block; */
+}
+.section2-wrap .title-wrap .slider .studio-slide img {
+	width: 100%;
+}
+.section2-wrap .title-wrap .slider .studio-slide button {
+	background: #fff;
+	width: 42px;
+	height: 52px;
+}
+.section2-wrap .title-wrap .slider .studio-slide button img {
+	width: 11px;
+}
+.section2-wrap .title-wrap .slider .studio-slide .prev {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	z-index: 9;
+}
+.section2-wrap .title-wrap .slider .studio-slide .next {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.section2-wrap .title-wrap .slider .studio-slide .next {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.section2-wrap .title-wrap .slider .desc h2 {
+	font-size: 17px;
+	color: #1d191a;
+	font-weight: bold;
+	padding: 27px 0 9px;
+}
+.section2-wrap .title-wrap .slider .desc h4 {
+	font-size: 14px;
+	color: #221e1f;
+	font-weight: normal;
+	padding-bottom: 111px;
+}
+#btn-go-top {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+#btn-go-top img {
+	width: 49px;
+/*	height: 49px;*/
 }
