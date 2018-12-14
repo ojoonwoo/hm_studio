@@ -217,6 +217,11 @@ body > .wrap {
 	margin-right: 30px;
 }
 .footer-wrap .youtube {
+	margin-right: 30px;
+}
+.footer-wrap .youtube-global {
+	position: relative;
+	top: -10px;
 	margin-right: 38px;
 }
 .footer-wrap .copyright {
@@ -260,6 +265,9 @@ body > .wrap {
 .video_html5_api-dimensions {
 	height: 100%;
 	width: 100%;
+}
+.video-js .vjs-control-bar {
+	top: inherit !important;
 }
 .video-js .vjs-tech {
 	object-fit: cover;

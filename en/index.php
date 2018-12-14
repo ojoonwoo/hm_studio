@@ -43,12 +43,14 @@
 		<script type="text/javascript" src="../js/clipboard.min.js"></script>
 		<script src="../lib/videojs/videojs.js"></script>
 		<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131000832-1"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
 
-			gtag('config', 'UA-129170751-2');
+			gtag('config', 'UA-131000832-1');
 		</script>
 	</head>
 
@@ -368,8 +370,11 @@
 						<a href="https://www.instagram.com/hyundai_motorstudio/" target="_blank" class="insta" onclick="click_tracking('외부링크 오피셜인스타그램')">
 							<img src="../images/official_insta.png" alt="">
 						</a>
-						<a href="https://www.youtube.com/user/HyundaiWorldwide" target="_blank" class="youtube" onclick="click_tracking('외부링크 오피셜유튜브')">
+						<a href="https://www.youtube.com/user/AboutHyundai" target="_blank" class="youtube" onclick="click_tracking('외부링크 오피셜유튜브')">
 							<img src="../images/official_youtube.png" alt="">
+						</a>
+						<a href="https://www.youtube.com/user/HyundaiWorldwide" target="_blank" class="youtube-global" onclick="click_tracking('외부링크 글로벌유튜브')">
+							<img src="../images/official_youtube_global.png" alt="">
 						</a>
 						<a href="https://story.kakao.com/ch/hyundai" target="_blank" class="ks" onclick="click_tracking('외부링크 오피셜카카오스토리')">
 							<img src="../images/official_ks.png" alt="">
