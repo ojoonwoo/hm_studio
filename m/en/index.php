@@ -180,7 +180,7 @@
 						<span>A flight ticket & accommodation</span>
 						<span>@ one of three Hyundai Motorstudio cities</span>
 						<div class="img-wrap">
-							<img src="../images/prize_img_1.jpg" alt="">
+							<img src="../images/prize_img_1_en.jpg" alt="">
 						</div>
 					</div>
 					<div class="_2">
