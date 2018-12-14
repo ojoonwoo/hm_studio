@@ -153,159 +153,159 @@
 						<span>It’s time to explore your possibilities!</span>
 						<span>We invite you to explore the possibilities at</span>
 						<span>Hyundai Motorstudio Seoul/Moscow/Beijing.</span>
-					</div>
-					<div class="date-winner">
-						<h3>Date</h3>
-						<h4 class="h4-first">2018.12.19 (wen) – 2019.1.12 (sat)</h4>
-						<h3>Winner</h3>
-						<h4>2019.1.18 (fri)</h4>
-					</div>
-					<div class="prize">
-						<div class="_1">
-							<img src="../images/prize_beijing.png" alt="">
-							<span class="first">Hyundai Motorstudio<br>BEIJING</span>
-							<span>1st (5person)</span>
-						</div>
-						<div class="_2">
-							<img src="../images/prize_moscow.png" alt="">
-							<span class="first">Hyundai Motorstudio<br>MOSCOW</span>
-							<span>1st (5person)</span>
-						</div>
-						<div class="_3">
-							<img src="../images/prize_giftcard.png" alt="">
-							<span class="first">Hyundai Department 50,000WON GIFTCARD</span>
-							<span>2nd (15person)</span>
-						</div>
-					</div>
-					<div class="how">
-                        <h3>To Participate</h3>
-						<h4>1. Capture the moment where you explore the possibilities.</h4>
-						<h4>2. Post pics or vids on Instagram with one of three Hyundai Motorstudio city hashtags</h4>
-						<h4>#Seoul #Moscow #Beijing</h4>
-						<h4>3. Add the essential hashtags</h4>
-						<h4 class="blank">#explore_the_possibilities #HyundaiMotorstudio</h4>
-						<h4>Example) #explore_the_possibilities #HyundaiMotorstudio #Moscow</h4>
-						<button type="button" id="copyHashtag" onclick="click_tracking('복사 해시태그')">Copy Hashtags</button>
-					</div>
-					<div class="instagram">
-						<!-- 어트랙트 API 적용해야 할 부분 -->
-						<script type="text/javascript">
-							(function(d, s) {
-								var j, e = d.getElementsByTagName(s)[0], h = "https://cdn.attractt.com/embed/dist/js/tower/tower.min.js";
-								if (typeof AttracttTower === "function" || e.src === h) { return; }
-								j = d.createElement(s);
-								j.src = h;
-								j.async = true;
-								e.parentNode.insertBefore(j, e);
-							})(document, "script");
-						</script>
-						<div class="insta-area">
-							<div class="attractt-container" data-idx="0" data-code="Gh1lNqbvXUKBnab" data-board="grid"></div>
-						</div>
-						<div class="notice">
-							<h3>유의사항</h3>
-							<h4>· 참여방법을 지키지 않은 참여작, 비공개 계정,</h4>
-							<h4>부정한 방법으로 참여시(좋아요, 팔로워 구매) 당첨 선발에서 제외됩니다</h4>
-							<h4>· 최종 당첨자는 내부 기준에 의해 선발됩니다</h4>
-							<h4>· 5만원 이상의 경품 당첨 시 제세공과금 22% 납부 진행 후</h4>
-							<h4>수령이 진행됩니다</h4>
-							<h4>· 현대 모터스튜디오 당첨자는 추후 활동이 있음을 미리 안내드립니다</h4>
-						</div>
-						<div class="underline"></div>
-					</div>
-					<div class="contents">
-						<div class="_1">
-							<div class="image-1">
-								<img src="../images/experience_image1.png" alt="">
-							</div>
-							<div class="desc">
-								<h3>EXPERIENCE</h3>
-								<h4>Look, listen and feel.</h4>
-								<h4>Experience yourself to discover the possibilities.</h4>
-							</div>
-							<div class="image-2">
-								<img src="../images/experience_image2.png" alt="">
-							</div>
-							<div class="underline"></div>
-						</div>
-						<div class="_2">
-							<div class="image-1">
-								<img src="../images/experiment_image1.png" alt="">
-							</div>
-							<div class="desc">
-								<h3>EXPERIMENT</h3>
-								<h4>A great change is made by small tries.</h4>
-								<h4>Be adventurous and experiment.</h4>
-							</div>
-							<div class="image-2">
-								<img src="../images/experiment_image2.png" alt="">
-							</div>
-							<div class="underline"></div>
-						</div>
-						<div class="_3">
-							<div class="image-1">
-								<img src="../images/explore_image1.png" alt="">
-							</div>
-							<div class="desc">
-								<h3>EXPLORE</h3>
-								<h4>At Hyundai Motorstudio.</h4>
-								<h4>experience, experiment and explore your possibilities.</h4>
-							</div>
-							<div class="image-2">
-								<img src="../images/explore_image2.png" alt="">
-							</div>
-						</div>
-					</div>
-					<div class="slider">
-						<div class="title">
-							<img src="../images/logo.svg" alt="">
-						</div>
-						<div class="sub-title">
-							<h3>A creative, experiential space</h3>
-						</div>
-						<div class="studio-slide">
-							<div class="prev">
-								<button type="button" class="prev-btn">
-                                    <img src="../images/arrow_prev.png" alt="">
-                                </button>
-							</div>
-							<div class="slider-area">
-								<div>
-									<img src="../images/studio_slide1.jpg" alt="">
-								</div>
-								<div>
-									<img src="../images/studio_slide2.jpg" alt="">
-								</div>
-								<div>
-									<img src="../images/studio_slide3.jpg" alt="">
-								</div>
-								<div>
-									<img src="../images/studio_slide4.jpg" alt="">
-								</div>
-								<div>
-									<img src="../images/studio_slide5.jpg" alt="">
-								</div>
-								<div>
-									<img src="../images/studio_slide6.jpg" alt="">
-								</div>
-							</div>
-							<div class="next">
-								<button type="button" class="next-btn">
-                                    <img src="../images/arrow_next.png" alt="">
-                                </button>
-							</div>
-						</div>
-						<div class="desc" id="desc_txt">
-							<h2>Hyundai Motorstudio GOYANG</h2>
-							<h4 class="_1">We invite you on a new automotive journey</h4>
-							<h4 class="_2">with experiences you can see, hear and touch.</h4>
-						</div>
-					</div>
-					<button type="button" id="btn-go-top">
-						<img src="../images/btn_top.jpg" alt="">
-					</button>
-				</div>
-			</div>
+                    </div>
+                </div>
+                <div class="date-winner">
+                    <h3>Date</h3>
+                    <h4 class="h4-first">2018.12.19 (wen) – 2019.1.12 (sat)</h4>
+                    <h3>Winner</h3>
+                    <h4>2019.1.18 (fri)</h4>
+                </div>
+                <div class="prize">
+                    <div class="_1">
+                        <img src="../images/prize_beijing.png" alt="">
+                        <span class="first">Hyundai Motorstudio<br>BEIJING</span>
+                        <span>1st (5person)</span>
+                    </div>
+                    <div class="_2">
+                        <img src="../images/prize_moscow.png" alt="">
+                        <span class="first">Hyundai Motorstudio<br>MOSCOW</span>
+                        <span>1st (5person)</span>
+                    </div>
+                    <div class="_3">
+                        <img src="../images/prize_giftcard.png" alt="">
+                        <span class="first">Hyundai Department 50,000WON GIFTCARD</span>
+                        <span>2nd (15person)</span>
+                    </div>
+                </div>
+                <div class="how">
+                    <h3>To Participate</h3>
+                    <h4>1. Capture the moment where you explore the possibilities.</h4>
+                    <h4>2. Post pics or vids on Instagram with one of three Hyundai Motorstudio city hashtags</h4>
+                    <h4>#Seoul #Moscow #Beijing</h4>
+                    <h4>3. Add the essential hashtags</h4>
+                    <h4 class="blank">#explore_the_possibilities #HyundaiMotorstudio</h4>
+                    <h4>Example) #explore_the_possibilities #HyundaiMotorstudio #Moscow</h4>
+                    <button type="button" id="copyHashtag" onclick="click_tracking('복사 해시태그')">Copy Hashtags</button>
+                </div>
+                <div class="instagram">
+                    <!-- 어트랙트 API 적용해야 할 부분 -->
+                    <script type="text/javascript">
+                        (function(d, s) {
+                            var j, e = d.getElementsByTagName(s)[0], h = "https://cdn.attractt.com/embed/dist/js/tower/tower.min.js";
+                            if (typeof AttracttTower === "function" || e.src === h) { return; }
+                            j = d.createElement(s);
+                            j.src = h;
+                            j.async = true;
+                            e.parentNode.insertBefore(j, e);
+                        })(document, "script");
+                    </script>
+                    <div class="insta-area">
+                        <div class="attractt-container" data-idx="0" data-code="Gh1lNqbvXUKBnab" data-board="grid"></div>
+                    </div>
+                    <div class="notice">
+                        <h3>유의사항</h3>
+                        <h4>· 참여방법을 지키지 않은 참여작, 비공개 계정,</h4>
+                        <h4>부정한 방법으로 참여시(좋아요, 팔로워 구매) 당첨 선발에서 제외됩니다</h4>
+                        <h4>· 최종 당첨자는 내부 기준에 의해 선발됩니다</h4>
+                        <h4>· 5만원 이상의 경품 당첨 시 제세공과금 22% 납부 진행 후</h4>
+                        <h4>수령이 진행됩니다</h4>
+                        <h4>· 현대 모터스튜디오 당첨자는 추후 활동이 있음을 미리 안내드립니다</h4>
+                    </div>
+                    <div class="underline"></div>
+                </div>
+                <div class="contents">
+                    <div class="_1">
+                        <div class="image-1">
+                            <img src="../images/experience_image1.png" alt="">
+                        </div>
+                        <div class="desc">
+                            <h3>EXPERIENCE</h3>
+                            <h4>Look, listen and feel.</h4>
+                            <h4>Experience yourself to discover the possibilities.</h4>
+                        </div>
+                        <div class="image-2">
+                            <img src="../images/experience_image2.png" alt="">
+                        </div>
+                        <div class="underline"></div>
+                    </div>
+                    <div class="_2">
+                        <div class="image-1">
+                            <img src="../images/experiment_image1.png" alt="">
+                        </div>
+                        <div class="desc">
+                            <h3>EXPERIMENT</h3>
+                            <h4>A great change is made by small tries.</h4>
+                            <h4>Be adventurous and experiment.</h4>
+                        </div>
+                        <div class="image-2">
+                            <img src="../images/experiment_image2.png" alt="">
+                        </div>
+                        <div class="underline"></div>
+                    </div>
+                    <div class="_3">
+                        <div class="image-1">
+                            <img src="../images/explore_image1.png" alt="">
+                        </div>
+                        <div class="desc">
+                            <h3>EXPLORE</h3>
+                            <h4>At Hyundai Motorstudio.</h4>
+                            <h4>experience, experiment and explore your possibilities.</h4>
+                        </div>
+                        <div class="image-2">
+                            <img src="../images/explore_image2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="title">
+                        <img src="../images/logo.svg" alt="">
+                    </div>
+                    <div class="sub-title">
+                        <h3>A creative, experiential space</h3>
+                    </div>
+                    <div class="studio-slide">
+                        <div class="prev">
+                            <button type="button" class="prev-btn">
+                                <img src="../images/arrow_prev.png" alt="">
+                            </button>
+                        </div>
+                        <div class="slider-area">
+                            <div>
+                                <img src="../images/studio_slide1.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="../images/studio_slide2.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="../images/studio_slide3.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="../images/studio_slide4.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="../images/studio_slide5.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="../images/studio_slide6.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="next">
+                            <button type="button" class="next-btn">
+                                <img src="../images/arrow_next.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="desc" id="desc_txt">
+                        <h2>Hyundai Motorstudio GOYANG</h2>
+                        <h4 class="_1">We invite you on a new automotive journey</h4>
+                        <h4 class="_2">with experiences you can see, hear and touch.</h4>
+                    </div>
+                </div>
+                <button type="button" id="btn-go-top">
+                    <img src="../images/btn_top.jpg" alt="">
+                </button>
+            </div>
 		</div>
 		<div class="footer-wrap">
 			<div class="logo">
