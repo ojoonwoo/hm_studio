@@ -169,11 +169,13 @@ body.menu-open {
 .footer-wrap {
 	position: relative;
 	width: 100vw;
-	height: 183px;
+/*	height: 183px;*/
+	padding: 0 0 32px;
 	background: #221e1f;
 	z-index: 3;
 }
 .footer-wrap img {
+	display: block;
 	width: 100%;
 }
 .footer-wrap .logo {
@@ -202,8 +204,12 @@ body.menu-open {
 }
 .footer-wrap .youtube {
 	width: 18px;
-	margin-right: 25px;
+	margin-right: 20px;
 	margin-top: 2px;
+}
+.footer-wrap .youtube-global {
+	width: 25px;
+	margin-right: 25px;
 }
 .footer-wrap .ks {
 	width: 8px;
