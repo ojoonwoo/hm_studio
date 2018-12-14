@@ -649,3 +649,8 @@ body.menu-open {
 	width: 49px;
 /*	height: 49px;*/
 }
+@media screen and (max-width: 340px) {
+	.section2-wrap .how h4 {
+		font-size: 14px;
+	}
+}
