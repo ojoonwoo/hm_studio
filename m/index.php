@@ -31,6 +31,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta property="og:title" content="현대 모터스튜디오 - Explore the possibilities." />
+    <meta property="og:url" content="http://www.hyundaimotorstudio.co.kr" />
+    <meta property="og:image" content="http://www.hyundaimotorstudio.co.kr/images/share_img.jpg" />
+    <meta property="og:description" content="가능성 없는 사람이 어딨어? 중요한 건, 그것을 발견하는가, 못 하는가. Explore the possibilities. 현대 모터스튜디오" />
 	<title>현대모터스튜디오</title>
 	<style class="vjs-styles-defaults">
       .video-js {
@@ -562,7 +566,7 @@
 							title: "현대 모터스튜디오 - Explore the possibilities.",
 							description: "가능성 없는 사람이 어딨어? 중요한 건, 그것을 발견하는가, 못 하는가.\nExplore the possibilities.\n\n현대 모터스튜디오",
 							// description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
-							imageUrl: "http://www.hyundaimotorstudio.co.kr/images/share_kt_img.jpg",
+							imageUrl: "http://www.hyundaimotorstudio.co.kr/images/share_kt_img.png",
 							link: {
 								mobileWebUrl: 'http://www.hyundaimotorstudio.co.kr/m/',
 								webUrl: 'http://www.hyundaimotorstudio.co.kr/'
