@@ -287,7 +287,7 @@
 									<div class="desc">
 										<div class="wrap">
 											<h3>EXPLORE</h3>
-                                            <h4>At Hyundai Motorstudio.</h4>
+                                            <h4>At Hyundai Motorstudio,</h4>
                                             <h4>experience, experiment and explore your possibilities.</h4>
 										</div>
 									</div>
