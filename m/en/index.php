@@ -305,7 +305,7 @@
                                 </a>
                             </div>
                             <div>
-                                <a href="https://www.hyundai.com/kr/ko/brand/motorstudio/seoul/guide/visit" target="_blank">
+                                <a href="https://www.hyundai.com/kr/ko/brand/motorstudio/seoul/overview.html" target="_blank">
                                     <img src="../images/studio_slide2.jpg" alt="">
                                 </a>
                             </div>
