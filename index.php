@@ -302,16 +302,24 @@
 							</div>
 							<div class="slider-area">
 								<div>
-									<img src="./images/studio_slide1.jpg" alt="">
+									<a href="http://motorstudio.hyundai.com/goyang/at/info.do" target="_blank">
+										<img src="./images/studio_slide1.jpg" alt="">
+									</a>
 								</div>
 								<div>
-									<img src="./images/studio_slide2.jpg" alt="">
+									<a href="https://www.hyundai.com/kr/ko/brand/motorstudio/seoul/guide/visit" target="_blank">
+										<img src="./images/studio_slide2.jpg" alt="">
+									</a>
 								</div>
 								<div>
-									<img src="./images/studio_slide3.jpg" alt="">
+									<a href="https://www.hyundai.com/kr/ko/brand/motorstudio/hanam" target="_blank">
+										<img src="./images/studio_slide3.jpg" alt="">
+									</a>
 								</div>
 								<div>
-									<img src="./images/studio_slide4.jpg" alt="">
+									<a href="https://www.hyundai.com/kr/ko/brand/motorstudio/digital" target="_blank">
+										<img src="./images/studio_slide4.jpg" alt="">
+									</a>
 								</div>
 								<div>
 									<img src="./images/studio_slide5.jpg" alt="">
