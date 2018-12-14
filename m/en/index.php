@@ -320,12 +320,12 @@
                             </div>
                             <div>
                                 <a href="https://www.hyundai.com/kr/ko/brand/motorstudio/beijing" target="_blank">
-                                    <img src="./images/studio_slide5.jpg" alt="">
+                                    <img src="../images/studio_slide5.jpg" alt="">
                                 </a>
                             </div>
                             <div>
                                 <a href="https://www.hyundai.ru/motorstudio_moscow" target="_blank">
-                                    <img src="./images/studio_slide6.jpg" alt="">
+                                    <img src="../images/studio_slide6.jpg" alt="">
                                 </a>
                             </div>
                         </div>
