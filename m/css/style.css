@@ -398,7 +398,6 @@ body.menu-open {
 	padding: 6px 0 0 0;
 }
 .section2-wrap .how {
-	margin-bottom: 25px;
 	padding: 0 2.8%;
 }
 .section2-wrap .how h3 {
@@ -425,10 +424,10 @@ body.menu-open {
 	color: #fff;
 	font-size: 19px;
 	font-weight: 500;
-	margin: 32px 0 40px;
+	margin: 20px 0;
 }
 .section2-wrap .prize h3.tt {
-	margin-bottom: 16px;
+	margin-bottom: 7px;
 	font-size: 17px;
 }
 .section2-wrap .prize span {

@@ -116,7 +116,7 @@
 							<div class="button-wrap">
 								<button type="button" onclick="viewVideo();">
 									<p>Watch</p>
-									<p>Full version</p>
+									<p>Full Version</p>
 								</button>
 							</div>
 						</div>
@@ -148,6 +148,7 @@
 						<h4 class="m-b">#가능성탐험 #현대모터스튜디오</h4>
 						<h4>해시태그 예시) #가능성탐험 #현대모터스튜디오 #모스크바</h4>
 					</div>
+					<button type="button" id="copyHashtag" onclick="click_tracking('복사 해시태그')">해시태그 복사하기</button>
 					<div class="prize">
 						<div class="_1">
 							<h3 class="tt">Winner</h3>
@@ -179,7 +180,6 @@
 						<span>*당첨자는 현대 모터스튜디오 공식 인스타그램 계정</span>
 						<span>(@hyundaimotorstudio)에서 개별 DM을 드릴 예정입니다</span>
 					</div>
-					<button type="button" id="copyHashtag" onclick="click_tracking('복사 해시태그')">해시태그 복사하기</button>
 					<div class="instagram">
 						<!-- 어트랙트 API 적용해야 할 부분 -->
 						<script type="text/javascript">
@@ -530,6 +530,20 @@
 					}
 				});
 			}
+			var moreFlag = 0;
+			$('.notice-more').on('click', function() {
+				if (moreFlag == 0) {
+					$(".fadeOut").remove();
+					$(".instagram .text-wrap").css("height","100%");
+					$(this).html("-");
+					moreFlag = 1;
+				}else{
+					$(".instagram .text-wrap").append("<div class='fadeOut'></div>");
+					$(".instagram .text-wrap").css("height","90px");
+					$(this).html("+");
+					moreFlag = 0;
+				}
+			});
 		</script>
 	</body>
 

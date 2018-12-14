@@ -137,7 +137,7 @@
 						<div class="button-wrap">
 							<button type="button" onclick="click_tracking('보기 풀영상');viewVideo();">
 								<p>Watch</p>
-								<p>Full version</p>
+								<p>Full Version</p>
 							</button>
 						</div>
 					</div>
@@ -173,7 +173,7 @@
                     <h4 class="m-b">#explore_the_possibilities #HyundaiMotorstudio</h4>
                     <h4>Example) #explore_the_possibilities #HyundaiMotorstudio #Moscow</h4>
 				</div>
-				<button type="button" id="copyHashtag" onclick="click_tracking('복사 해시태그')">해시태그 복사하기</button>
+				<button type="button" id="copyHashtag" onclick="click_tracking('복사 해시태그')">Copy hashtags</button>
 				<div class="prize">
 					<div class="_1">
 						<h3 class="tt">Winner</h3>
