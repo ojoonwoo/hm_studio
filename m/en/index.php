@@ -26,7 +26,7 @@
     }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="en">
 
 <head>
 	<meta charset="UTF-8">

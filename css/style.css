@@ -354,6 +354,12 @@ body > .wrap {
 .section2-wrap .prize {
 	font-size: 0;
 }
+.en .section2-wrap .prize > div {
+	vertical-align: top;
+}
+.en .section2-wrap .prize ._1 .img-wrap {
+	margin-top: 38px;
+}
 .section2-wrap .prize > div {
 	display: inline-block;
 }
@@ -423,6 +429,9 @@ body > .wrap {
 	width: 603px;
 	margin: 0 auto;
 	position: relative;
+}
+.en .section2-wrap .instagram .notice {
+	width: 730px;
 }
 .section2-wrap .instagram .notice .text-wrap {
 	height: 90px;

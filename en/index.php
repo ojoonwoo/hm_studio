@@ -26,7 +26,7 @@
     }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="en">
 
 	<head>
 		<meta charset="UTF-8">
@@ -138,41 +138,47 @@
                             <span>Hyundai Motorstudio Seoul/Moscow/Beijing.</span>
 						</div>
 					</div>
-					<div class="date-winner">
-						<h3>Date</h3>
-						<h4 class="h4-first">2018.12.19 (wen) – 2019.1.12 (sat)</h4>
-						<h3>Winner</h3>
-						<h4>2019.1.18 (fri)</h4>
+					<div class="how">
+						<h3>To Participate</h3>
+						<h4>1. Capture the moment where you explore the possibilities.</h4>
+						<h4>2. Post pics or vids on Instagram with one of three Hyundai Motorstudio city hashtags</h4>
+						<h4 class="m-b">#Seoul #Moscow #Beijing</h4>
+						<h4 class="m-b">3. Add the essential hashtags #explore_the_possibilities #HyundaiMotorstudio</h4>
+						<h4>Example) #explore_the_possibilities #HyundaiMotorstudio #Moscow</h4>
 					</div>
 					<div class="prize">
 						<div class="_1">
-							<img src="../images/prize_beijing.png" alt="">
-							<span class="first">Hyundai Motorstudio</span>
-							<span>BEIJING</span>
-							<span>1st (5person)</span>
+							<h3 class="tt">Winner</h3>
+							<span>5 Persons</span>
+							<span>A flight ticket & accommodation</span>
+							<span>@ one of three Hyundai Motorstudio cities</span>
+							<div class="img-wrap">
+								<img src="../images/prize_img_1_en.jpg" alt="">
+							</div>
 						</div>
 						<div class="_2">
-							<img src="../images/prize_moscow.png" alt="">
-							<span class="first">Hyundai Motorstudio</span>
-							<span>MOSCOW</span>
-							<span>1st (5person)</span>
+							<h3 class="tt">Runner-up</h3>
+							<span>100 Persons</span>
+							<span>An invitation for the main exhibit</span>
+							<span>@ Hyundai Motorstudio GOYANG</span>
+							<span>(2 tickets per person)</span>
+							<div class="img-wrap">
+								<img src="../images/prize_img_2.jpg" alt="">
+							</div>
 						</div>
-						<div class="_3">
-							<img src="../images/prize_giftcard.png" alt="">
-							<span class="first">Hyundai Department 50,000WON GIFTCARD</span>
-							<span>2nd (15person)</span>
-						</div>
+						<div class="underline"></div>
 					</div>
-					<div class="how">
-                        <h3>To Participate</h3>
-						<h4>1. Capture the moment where you explore the possibilities.</h4>
-						<h4>2. Post pics or vids on Instagram with one of three Hyundai Motorstudio city hashtags</h4>
-						<h4>#Seoul #Moscow #Beijing</h4>
-						<h4>3. Add the essential hashtags</h4>
-						<h4 class="h4-last">#explore_the_possibilities #HyundaiMotorstudio</h4>
-						<h4>Example) #explore_the_possibilities #HyundaiMotorstudio #Moscow</h4>
-						<button type="button" id="copyHashtag" onclick="click_tracking('복사 해시태그')">Copy Hashtags</button>
+					<div class="date-winner">
+						<h3 class="tt">Entry Period</h3>
+						<h4>2018.12.18(TUE) ~ 2019.01.20(SUN)</h4>
 					</div>
+					<div class="winner-ann">
+						<h3 class="tt">Winners Notification</h3>
+						<span>By 2019.01.28(MON)</span>
+						<span>*Winners will be notified via direct message from</span>
+						<span>the official Hyundai Motorstudio Instagram account (@hyundaimotorstudio)</span>
+					</div>
+					<button type="button" id="copyHashtag" onclick="click_tracking('복사 해시태그')">Copy hashtags</button>
 					<div class="instagram">
 						<!-- 어트랙트 API 적용해야 할 부분 -->
 						<script type="text/javascript">
@@ -189,14 +195,32 @@
 							<div class="attractt-container" data-idx="0" data-code="Gh1lNqbvXUKBnab" data-board="grid"></div>
 						</div>
 						<div class="notice">
-							<h3>유의사항</h3>
-							<h4>· 참여방법을 지키지 않은 참여작, 비공개 계정,</h4>
-							<h4>부정한 방법으로 참여시(좋아요, 팔로워 구매) 당첨 선발에서 제외됩니다</h4>
-							<h4>· 최종 당첨자는 내부 기준에 의해 선발됩니다</h4>
-							<h4>· 5만원 이상의 경품 당첨 시 제세공과금 22% 납부 진행 후</h4>
-							<h4>수령이 진행됩니다</h4>
-							<h4>· 현대 모터스튜디오 당첨자는 추후 활동이 있음을 미리 안내드립니다</h4>
+							<h3>Note</h3>
+							<div class="text-wrap">
+								<h4>· By participating, each entrant agrees:</h4>
+								<h4>(a) to abide by these rules & decisions of Hyundai Motors (“Sponsor”); </h4>
+								<h4>(b) to release, discharge & hold harmless Sponsor from any & all injuries, liability,</h4>
+								<h4>losses & damages of any kind to persons, including death, or property resulting from entrant’s participation in the contest or the acceptance or use of any prize; 
+								</h4>
+								<h4>and (c) to be financially responsible for any and all expenses, costs arising out of or resulting from the use of any prize.</h4>
+								<h4>· All contest details (including the announcement date) and all prize details(including flight & accommodation schedule) are at Sponsor’s sole discretion.</h4>
+								<h4>· Entry must be entrant’s original work and not be offensive, hateful, inappropriate or disparage.</h4>
+								<h4>·Entry must not defame or violate or infringe upon the rights of any person or entity.</h4>
+								<h4>·Persons who abuse any aspect of the contest or Sponsor’s social media account. or who are in violation of these rules, as solely determined by Sponsor, will be disqualified & all associated entries will be void.
+								</h4>
+								<h4>· Entrants may submit multiple entries, but Sponsor reserves the right to limit one prize per person.
+								</h4>
+								<h4>· Winners must not substitute, assign or transfer prize to others.</h4>
+								<h4>· Winners are responsible for all federal, state & local taxes for prizes over KOR \ 50,000.</h4>
+								<h4>· Potential winner(s) will be notified via direct message & he/she will have 5 days from notification to respond to Sponsor.</h4>
+								<h4>· The failure to respond to such notification or any noncompliance with these rules may result in disqualification at Sponsor’s sole discretion.</h4>
+								<h4>· No entry submission by anyone under the age of 14 will be accepted and may be disqualified in Sponsor’s sole discretion.</h4>
+								<h4>· By submitting an entry, each entrant grants to Sponsor an irrevocable, unlimited,royalty-free license to edit, create, reproduce, distribute derivatives of & otherwise use the entry & all elements of such entry, in any & all media worldwide without compensation or notification, or permission from entrant or any third party for purpose of advertising.</h4>
+								<h4>· Direct any line of inquiries regarding the contest to XXXX@innocean.com.</h4>
+							</div>
+							<div class="fadeOut"></div>
 						</div>
+						<button type="button" class="notice-more">+</button>
 						<div class="underline"></div>
 					</div>
 					<div class="contents">
