@@ -414,15 +414,33 @@ body.menu-open {
 }
 .section2-wrap .how h4 {
 	font-family: 'Hyundai Sans Text KR';
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: normal;
 	color: #221e1f;
-	line-height: 16px;
+/*	line-height: 16px;*/
 }
-.section2-wrap .how h4.m-b {
-	margin-bottom: 10px;
+.section2-wrap .how h4.sub-1 {
+	margin-bottom: 15px;
 }
-.section2-wrap .how h4.hashtags {}
+.section2-wrap .how h4.sub-2 {
+	margin-bottom: 13px;
+}
+.section2-wrap .how h4:last-child {
+	margin-top: 2px;
+	font-weight: bold;
+}
+.section2-wrap .how h4 span {
+	display: block;
+	margin-top: 3px;
+	font-family: 'Hyundai Sans Text KR';
+	font-size: 12px;
+}
+.section2-wrap .how .underline {
+	width: 39px;
+	height: 1px;
+	background: rgba(29, 25, 26, 0.3);
+	margin: 12px auto;
+}
 
 .section2-wrap #copyHashtag {
 	font-family: 'Hyundai Sans Text KR';

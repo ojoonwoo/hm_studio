@@ -165,13 +165,13 @@
                     </div>
                 </div>
 				<div class="how">
-                    <h3>To Participate</h3>
-                    <h4>1. Capture the moment where you explore the possibilities.</h4>
-                    <h4>2. Add hashtags of one of three cities Hyundai Motorstudio is located.</h4>
-					<h4 class="hashtags">#Seoul #Moscow #Beijing</h4>
-                    <h4>3. Post pics or vids on Instagram publicly with the essential hashtags</h4>
-					<h4 class="m-b hashtags">#explore #HyundaiMotorstudio</h4>
-                    <h4>Example) #explore #HyundaiMotorstudio #Moscow</h4>
+					<h3>To Participate</h3>
+					<h4 class="sub-1">1.Capture the moment where you explore the possibilities</h4>
+					<h4 class="sub-2">2.Add hashtags of one of three cities Hyundai Motorstudio is located<span>#Seoul #Moscow #Beijing</span></h4>
+					<h4 class="sub-3">3.Post pics or vids on Instagram publicly with the essential hashtags<span>#explore #HyundaiMotorstudio</span></h4>
+					<div class="underline"></div>
+					<h4>Example</h4>
+					<h4>#explore #HyundaiMotorstudio #Moscow</h4>
 				</div>
 				<button type="button" id="copyHashtag" onclick="click_tracking('복사 해시태그')">Copy hashtags</button>
 				<div class="prize">
