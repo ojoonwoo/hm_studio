@@ -402,7 +402,8 @@ body > .wrap {
 	background: rgba(29, 25, 26, 0.3);
 }
 .section2-wrap .winner-ann {
-	margin-bottom: 35px;
+/*	margin-bottom: 35px;*/
+	margin-bottom: 73px;
 }
 .section2-wrap .winner-ann h3.tt {
 	font-size: 30px;
