@@ -166,9 +166,9 @@
                 </div>
 				<div class="how">
                     <h3>To Participate</h3>
-                    <h4 class="m-b">1. Capture the moment where you explore the possibilities.</h4>
+                    <h4>1. Capture the moment where you explore the possibilities.</h4>
                     <h4>2. Add hashtags of one of three cities Hyundai Motorstudio is located.</h4>
-                    <h4>#Seoul #Moscow #Beijing</h4>
+					<h4 class="hashtags">#Seoul #Moscow #Beijing</h4>
                     <h4>3. Post pics or vids on Instagram publicly with the essential hashtags</h4>
                     <h4 class="m-b">#explore #HyundaiMotorstudio</h4>
                     <h4>Example) #explore #HyundaiMotorstudio #Moscow</h4>
