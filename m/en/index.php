@@ -161,25 +161,25 @@
 					<div class="sub-title">
 						<span>It’s time to explore your possibilities!</span>
 						<span>We invite you to explore the possibilities at</span>
-						<span>Hyundai Motorstudio Seoul/Moscow/Beijing.</span>
+						<span>Hyundai Motorstudio Seoul/Moscow/Beijing</span>
                     </div>
                 </div>
 				<div class="how">
                     <h3>To Participate</h3>
                     <h4 class="m-b">1. Capture the moment where you explore the possibilities.</h4>
-                    <h4>2. Post pics or vids on Instagram with one of three Hyundai Motorstudio city hashtags</h4>
+                    <h4>2. Add hashtags of one of three cities Hyundai Motorstudio is located.</h4>
                     <h4>#Seoul #Moscow #Beijing</h4>
-                    <h4>3. Add the essential hashtags</h4>
-                    <h4 class="m-b">#explore_the_possibilities #HyundaiMotorstudio</h4>
-                    <h4>Example) #explore_the_possibilities #HyundaiMotorstudio #Moscow</h4>
+                    <h4>3. Post pics or vids on Instagram publicly with the essential hashtags</h4>
+                    <h4 class="m-b">#explore #HyundaiMotorstudio</h4>
+                    <h4>Example) #explore #HyundaiMotorstudio #Moscow</h4>
 				</div>
 				<button type="button" id="copyHashtag" onclick="click_tracking('복사 해시태그')">Copy hashtags</button>
 				<div class="prize">
 					<div class="_1">
 						<h3 class="tt">Winner</h3>
 						<span>5 Persons</span>
-						<span>A flight ticket & accommodation</span>
-						<span>@ one of three Hyundai Motorstudio cities</span>
+                        <span>Flight tickets to one of three Hyundai Motorstudio cities</span>
+                        <span>(2 tickets per person)</span>
 						<div class="img-wrap">
 							<img src="../images/prize_img_1_en.jpg" alt="">
 						</div>
@@ -200,7 +200,7 @@
 					<h4>2018.12.18 (TUE) ~ 2019.1.20 (SUN)</h4>
 				</div>
 				<div class="winner-ann">
-					<h3 class="tt">Winners Notification</h3>
+					<h3 class="tt">Winners Announcement</h3>
 					<span>By 2019.01.28(MON)</span>
 					<span>*Winners will be notified via direct message from</span>
 					<span>the official Hyundai Motorstudio Instagram account (@hyundaimotorstudio)</span>
@@ -235,7 +235,6 @@
 							<h4>· The failure to respond to such notification or any noncompliance with these rules may result in disqualification at Sponsor’s sole discretion.</h4>
 							<h4>· No entry submission by anyone under the age of 14 will be accepted and may be disqualified in Sponsor’s sole discretion.</h4>
 							<h4>· By submitting an entry, each entrant grants to Sponsor an irrevocable, unlimited, royalty-free license to edit, create, reproduce, distribute derivatives of & otherwise use the entry & all elements of such entry, in any & all media worldwide without compensation or notification, or permission from entrant or any third party for purpose of advertising.</h4>
-							<h4>· Direct any line of inquiries regarding the contest to XXXX@innocean.com</h4>
 						</div>
 						<div class="fadeOut"></div>
 					</div>
@@ -250,7 +249,7 @@
                         <div class="desc">
                             <h3>EXPERIENCE</h3>
                             <h4>Look, listen and feel.</h4>
-                            <h4>Experience yourself to discover the possibilities.</h4>
+                            <h4>Experience yourself to discover the endless  possibilities within you.</h4>
                         </div>
                         <div class="image-2">
                             <img src="../images/experience_image2.png" alt="">
@@ -264,7 +263,7 @@
                         <div class="desc">
                             <h3>EXPERIMENT</h3>
                             <h4>A great change is made by small tries.</h4>
-                            <h4>Be adventurous and experiment.</h4>
+                            <h4>Don’t fear. Simply experiment.</h4>
                         </div>
                         <div class="image-2">
                             <img src="../images/experiment_image2.png" alt="">
