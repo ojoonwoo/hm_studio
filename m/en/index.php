@@ -64,13 +64,13 @@
 	<script src="../../lib/videojs/videojs.js"></script>
 	<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129170751-2"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131000832-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 
-		gtag('config', 'UA-129170751-2');
+		gtag('config', 'UA-131000832-1');
 	</script>
 </head>
 
