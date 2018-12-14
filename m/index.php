@@ -595,20 +595,20 @@
 					});
 				break;
 				case "url" :
-					var textarea = document.createElement('textarea');
-					textarea.textContent = 'http://www.hyundaimotorstudio.co.kr';
-					document.body.appendChild(textarea);
+					var textarea2 = document.createElement('textarea');
+					textarea2.textContent = 'http://www.hyundaimotorstudio.co.kr';
+					document.body.appendChild(textarea2);
 
 					var selection = document.getSelection();
 					var range = document.createRange();
 					//  range.selectNodeContents(textarea);
-					range.selectNode(textarea);
+					range.selectNode(textarea2);
 					selection.removeAllRanges();
 					selection.addRange(range);
 
 					selection.removeAllRanges();
 
-					document.body.removeChild(textarea);
+					document.body.removeChild(textarea2);
 					alert("URL이 복사되었습니다");
 				break;
 			}
