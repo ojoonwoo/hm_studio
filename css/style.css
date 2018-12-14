@@ -425,9 +425,19 @@ body > .wrap {
 .section2-wrap .how h4.m-b {
 	margin-bottom: 20px;
 }
+#copyHashtag {
+	font-family: 'Hyundai Sans Text KR';
+	background: #1d191a;
+	width: 361px;
+	height: 78px;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 500;
+	margin: 40px 0;
+}
 .section2-wrap .instagram .notice {
 	width: 603px;
-	margin: 0 auto;
+	margin: 73px auto 0;
 	position: relative;
 }
 .en .section2-wrap .instagram .notice {
@@ -468,7 +478,6 @@ body > .wrap {
 .section2-wrap .instagram .insta-area {
 	width: 1102px;
 	margin: 0 auto;
-	padding-bottom: 42px;
 }
 .section2-wrap .instagram .notice h4 {
 	font-family: 'Hyundai Sans Text KR';

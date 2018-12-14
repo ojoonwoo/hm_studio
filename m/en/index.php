@@ -173,6 +173,7 @@
                     <h4 class="m-b">#explore_the_possibilities #HyundaiMotorstudio</h4>
                     <h4>Example) #explore_the_possibilities #HyundaiMotorstudio #Moscow</h4>
 				</div>
+				<button type="button" id="copyHashtag" onclick="click_tracking('복사 해시태그')">해시태그 복사하기</button>
 				<div class="prize">
 					<div class="_1">
 						<h3 class="tt">Winner</h3>
@@ -204,7 +205,6 @@
 					<span>*Winners will be notified via direct message from</span>
 					<span>the official Hyundai Motorstudio Instagram account (@hyundaimotorstudio)</span>
 				</div>
-				<button type="button" id="copyHashtag" onclick="click_tracking('복사 해시태그')">해시태그 복사하기</button>
                 <div class="instagram">
                     <!-- 어트랙트 API 적용해야 할 부분 -->
                     <script type="text/javascript">
