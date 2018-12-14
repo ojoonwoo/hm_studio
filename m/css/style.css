@@ -323,18 +323,18 @@ body.menu-open {
 	background: #ffffff;
 }
 .section2-wrap .title-wrap {
+	margin-bottom: 26px;
 }
 .section2-wrap .title-wrap .title {
 	padding: 39px 0 19px;
 }
 .section2-wrap .title-wrap .title h1 {
 	font-size: 29px;
+	line-height: 27px;
 	font-weight: bold;
 	color: #1d191a;
 }
-.section2-wrap .title-wrap .sub-title {
-	padding-bottom: 20px;
-}
+
 .section2-wrap .title-wrap .sub-title span {
 	font-family: 'Hyundai Sans Text KR';
 	font-size: 14px;
@@ -344,14 +344,14 @@ body.menu-open {
 	line-height: 17px;
 }
 .section2-wrap .date-winner {
-	padding-bottom: 29px;
+	margin-bottom: 16px;
 }
 .section2-wrap .date-winner h3 {
 	font-size: 17px;
 	font-weight: bold;
 	color: #1d191a;
 	display: block;
-	padding-bottom: 10px;
+	margin-bottom: 7px;
 }
 .section2-wrap .date-winner h4 {
 	font-family: 'Hyundai Sans Text KR';
@@ -363,16 +363,31 @@ body.menu-open {
 .section2-wrap .date-winner .h4-first {
 	padding-bottom: 16px;
 }
-.section2-wrap .prize div {
-	width: 187px;
-	margin: 0 auto;
+.section2-wrap .prize > div {
+	margin-bottom: 28px;
 }
-.section2-wrap .prize div img {
+.section2-wrap .prize > ._2 {
+	margin-bottom: 0;
+}
+.section2-wrap .prize .img-wrap {
+	width: 247px;
+	margin: 12px auto 0;
+}
+.section2-wrap .prize ._2 .img-wrap {
+	width: 225px;
+}
+.section2-wrap .prize .img-wrap img {
 	width: 100%;
+}
+.section2-wrap .prize .underline {
+	width: 195px;
+	height: 1px;
+	background: rgba(187, 187, 187, 0.3);
+	margin: 20px 0;
+	display: inline-block;
 }
 .section2-wrap .prize div span {
 	display: block;
-	padding-bottom: 10px;
 	font-family: 'Hyundai Sans Text KR';
 	font-size: 14px;
 	font-weight: normal;
@@ -383,25 +398,25 @@ body.menu-open {
 	padding: 6px 0 0 0;
 }
 .section2-wrap .how {
-	padding-top: 37px;
+	margin-bottom: 25px;
 }
 .section2-wrap .how h3 {
 	font-size: 17px;
 	font-weight: bold;
 	color: #1d191a;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 }
 .section2-wrap .how h4 {
 	font-family: 'Hyundai Sans Text KR';
 	font-size: 14px;
 	font-weight: normal;
 	color: #221e1f;
-	line-height: 20px;
+	line-height: 16px;
 }
-.section2-wrap .how .blank {
-	padding-bottom: 5px;
+.section2-wrap .how h4.m-b {
+	margin-bottom: 10px;
 }
-.section2-wrap .how button {
+.section2-wrap #copyHashtag {
 	font-family: 'Hyundai Sans Text KR';
 	background: #1d191a;
 	width: 242px;
@@ -409,23 +424,74 @@ body.menu-open {
 	color: #fff;
 	font-size: 19px;
 	font-weight: 500;
-	margin: 42px 0;
+	margin: 32px 0 40px;
+}
+.section2-wrap .prize h3.tt {
+	margin-bottom: 16px;
+	font-size: 17px;
+}
+.section2-wrap .prize span {
+	font-family: 'Hyundai Sans Text KR';
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.section2-wrap .winner-ann h3.tt {
+	font-size: 17px;
+	font-weight: bold;
+	color: #1d191a;
+	display: block;
+	margin-bottom: 7px;
+}
+.section2-wrap .winner-ann span {
+	font-family: 'Hyundai Sans Text KR';
+	font-size: 14px;
+	line-height: 17px;
+	display: block;
 }
 .section2-wrap .instagram .insta-area {
 	width: 310px;
 	margin: 0 auto;
 	padding-bottom: 26px;
 }
+.section2-wrap .instagram .notice {
+	position: relative;
+}
+.section2-wrap .instagram .notice .text-wrap {
+	height: 50px;
+	padding: 0 5%;
+	overflow: hidden;
+}
+.section2-wrap .instagram .notice .fadeOut {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 35px;
+	background: linear-gradient(
+		rgba(255, 255, 255, 0) 0%,
+		rgba(255, 255, 255, 1) 100%
+	);
+}
+.section2-wrap .instagram .notice-more {
+	width: 55px;
+	height: 23px;
+	font-size: 20px;
+	color: #ffffff;
+	background: #1d191a;
+	display: block;
+	margin: 3px auto 0;
+}
 .section2-wrap .instagram .notice h3 {
 	color: #1d191a;
 	font-size: 12px;
 	font-weight: 500;
-	padding-bottom: 10px;
+	margin-bottom: 19px;
 }
 .section2-wrap .instagram .notice h4 {
 	font-family: 'Hyundai Sans Text KR';
 	color: #221e1f;
-	font-size: 12px;
+	font-size: 11px;
 	font-weight: normal;
 	line-height: 15px;
 }
@@ -433,7 +499,7 @@ body.menu-open {
 	width: 195px;
 	height: 1px;
 	background: #bbbaba;
-	margin: 34px 0 24px;
+	margin: 38px 0 35px;
 	display: inline-block;
 }
 .section2-wrap .contents img {
@@ -448,7 +514,7 @@ body.menu-open {
 	display: inline-block;
 }
 .section2-wrap .contents .desc {
-	padding: 25px 0;
+	padding: 25px 0 67px;
 }
 .section2-wrap .contents .desc h3 {
 	font-size: 29px;

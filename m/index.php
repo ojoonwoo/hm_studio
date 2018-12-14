@@ -163,162 +163,177 @@
 						<span>현대 모터스튜디오 서울/모스크바/베이징으로</span>
 						<span>여러분을 초대합니다.</span>
 					</div>
-					<div class="date-winner">
-						<h3>Date</h3>
-						<h4 class="h4-first">2018.12.19 (수) – 2019.1.12 (토)</h4>
-						<h3>Winner</h3>
-						<h4>2019.1.18 (금)</h4>
+				</div>
+				<div class="how">
+					<h3>참여방법</h3>
+					<h4 class="m-b">1. 일상 속 나만의 가능성을 발견한 영상 또는 사진 찍기</h4>
+					<h4>2. 가고 싶은 현대 모터스튜디오 도시 1곳 해시태그 하기</h4>
+					<h4>#서울 #모스크바 #베이징</h4>
+					<h4>3. 필수 해시태그와 함께 인스타그램 포스팅 하기</h4>
+					<h4 class="m-b">#가능성탐험 #현대모터스튜디오</h4>
+					<h4>해시태그 예시) #가능성탐험 #현대모터스튜디오 #모스크바</h4>
+					<!-- <h3>참여방법</h3>
+					<h4 class="h4-first">1.Explore the possibilities하는</h4>
+					<h4 class="blank">순간을 사진/영상으로 담아주세요</h4>
+					<h4>2.인스타그램에</h4>
+					<h4>#현대모터스튜디오 #explore_the_possibilities</h4>
+					<h4>해시태그와 함께 업로드</h4> -->
+				</div>
+				<div class="prize">
+					<div class="_1">
+						<h3 class="tt">Winner</h3>
+						<span>5명</span>
+						<span>현대 모터스튜디오로 향하는</span>
+						<span>항공 및 숙박권 (1인 2매)</span>
+						<div class="img-wrap">
+							<img src="./images/prize_img_1.jpg" alt="">
+						</div>
 					</div>
-					<div class="prize">
-						<div class="_1">
-							<img src="./images/prize_beijing.png" alt="">
-							<span class="first">현대 모터스튜디오 베이징</span>
-							<span>1등 (5명)</span>
-						</div>
-						<div class="_2">
-							<img src="./images/prize_moscow.png" alt="">
-							<span class="first">현대 모터스튜디오 모스크바</span>
-							<span>1등 (5명)</span>
-						</div>
-						<div class="_3">
-							<img src="./images/prize_giftcard.png" alt="">
-							<span class="first">현대 백화점 5만원 상품권</span>
-							<span>2등 (15명)</span>
+					<div class="_2">
+						<h3 class="tt">참여상</h3>
+						<span>100명</span>
+						<span>현대 모터스튜디오 고양</span>
+						<span>상설전시 관람권 (1인 2매)</span>
+						<div class="img-wrap">
+							<img src="./images/prize_img_2.jpg" alt="">
 						</div>
 					</div>
-					<div class="how">
-						<h3>참여방법</h3>
-						<h4>1. 일상 속 나만의 가능성을 발견한 영상 또는 사진 찍기</h4>
-						<h4>2. 가고 싶은 현대 모터스튜디오 도시 1곳 해시태그 하기</h4>
-						<h4>#서울 #모스크바 #베이징</h4>
-						<h4>3. 필수 해시태그와 함께 인스타그램 포스팅 하기</h4>
-						<h4 class="blank">#가능성탐험 #현대모터스튜디오</h4>
-						<h4>예시) #가능성탐험 #현대모터스튜디오 #모스크바</h4>
-						<!-- <h3>참여방법</h3>
-						<h4 class="h4-first">1.Explore the possibilities하는</h4>
-						<h4 class="blank">순간을 사진/영상으로 담아주세요</h4>
-						<h4>2.인스타그램에</h4>
-						<h4>#현대모터스튜디오 #explore_the_possibilities</h4>
-						<h4>해시태그와 함께 업로드</h4> -->
-						<button type="button" id="copyHashtag" onclick="click_tracking('복사 해시태그')">해시태그 복사하기</button>
+					<div class="underline"></div>
+				</div>
+				<div class="date-winner">
+					<h3 class="tt">응모기간</h3>
+					<h4>2018.12.18 (화) ~ 2019.1.20 (일)</h4>
+				</div>
+				<div class="winner-ann">
+					<h3 class="tt">당첨자 발표</h3>
+					<span>2019.1.28 (월) 이후</span>
+					<span>*당첨자는 현대 모터스튜디오 공식 인스타그램 계정</span>
+					<span>(@hyundaimotorstudio)에서 개별 DM을 드릴 예정입니다</span>
+				</div>
+				<button type="button" id="copyHashtag" onclick="click_tracking('복사 해시태그')">해시태그 복사하기</button>
+				<div class="instagram">
+					<!-- 어트랙트 API 적용해야 할 부분 -->
+					<script type="text/javascript">
+						(function(d, s) {
+							var j, e = d.getElementsByTagName(s)[0], h = "https://cdn.attractt.com/embed/dist/js/tower/tower.min.js";
+							if (typeof AttracttTower === "function" || e.src === h) { return; }
+							j = d.createElement(s);
+							j.src = h;
+							j.async = true;
+							e.parentNode.insertBefore(j, e);
+						})(document, "script");
+					</script>
+					<div class="insta-area">
+						<div class="attractt-container" data-idx="0" data-code="Gh1lNqbvXUKBnab" data-board="grid"></div>
 					</div>
-					<div class="instagram">
-						<!-- 어트랙트 API 적용해야 할 부분 -->
-						<script type="text/javascript">
-							(function(d, s) {
-								var j, e = d.getElementsByTagName(s)[0], h = "https://cdn.attractt.com/embed/dist/js/tower/tower.min.js";
-								if (typeof AttracttTower === "function" || e.src === h) { return; }
-								j = d.createElement(s);
-								j.src = h;
-								j.async = true;
-								e.parentNode.insertBefore(j, e);
-							})(document, "script");
-						</script>
-						<div class="insta-area">
-							<div class="attractt-container" data-idx="0" data-code="Gh1lNqbvXUKBnab" data-board="grid"></div>
+					<div class="notice">
+						<h3>유의사항</h3>
+						<div class="text-wrap">
+							<h4>· 현대자동차는 공지한 경품 외 여행 중 발생하는 비용은 지불하지 않으며 여행 중 발생한 사고에 대해서 책임을 지지 않습니다</h4>
+							<h4>· 이벤트 내용, 기간, 경품 내용(항공권 및 숙박권 일정), 당첨자 발표일 등은 당사 사정에 의해 예고 없이 변동 또는 지연될 수 있습니다</h4>
+							<h4>· 참여방법을 지키지 않은 참여작, 타인 작품 도용, 비공개 계정, 개인정보 도용 및 부정한 방법으로 참여한 경우 당첨작 선발에서 제외됩니다</h4>
+							<h4>· 이벤트는 중복 참여가 가능하나 중복 당첨 (휴대폰 번호 기준)은 허용하지 않으며, 경품의 타인 양도 및 양수를 금지합니다</h4>
+							<h4>· 5만원 초과 경품에 대한 제세공과금(22%)은 당첨자 본인 부담입니다</h4>
+							<h4>· 잘못된 개인정보의 입력 또는 당첨자 개인 사유로 당첨자 발표 후 5일간 당첨자와 연락이 되지 않는 경우 당첨 취소 됩니다</h4>
+							<h4>· 만 14세 미만은 이벤트 참여가 불가하며 당첨자 선정 시 제외될 수 있습니다</h4>
+							<h4>· 포스팅된 영상 및 사진은 추후 현대자동차의 마케팅 용도로 활용될 수 있습니다</h4>
+							<h4>· 이벤트 응모 관련 문의는 XXXXX@innocean.com에서 가능합니다</h4>
 						</div>
-						<div class="notice">
-							<h3>유의사항</h3>
-							<h4>· 참여방법을 지키지 않은 참여작, 비공개 계정,</h4>
-							<h4>부정한 방법으로 참여시(좋아요, 팔로워 구매) 당첨 선발에서 제외됩니다</h4>
-							<h4>· 최종 당첨자는 내부 기준에 의해 선발됩니다</h4>
-							<h4>· 5만원 이상의 경품 당첨 시 제세공과금 22% 납부 진행 후</h4>
-							<h4>수령이 진행됩니다</h4>
-							<h4>· 현대 모터스튜디오 당첨자는 추후 활동이 있음을 미리 안내드립니다</h4>
+						<div class="fadeOut"></div>
+					</div>
+					<button type="button" class="notice-more">+</button>
+					<div class="underline"></div>
+				</div>
+				<div class="contents">
+					<div class="_1">
+						<div class="image-1">
+							<img src="./images/experience_image1.png" alt="">
+						</div>
+						<div class="desc">
+							<h3>EXPERIENCE</h3>
+							<h4>보고, 듣고, 느끼며</h4>
+							<h4>생각보다 더욱 대단한 나를 경험하라</h4>
+						</div>
+						<div class="image-2">
+							<img src="./images/experience_image2.png" alt="">
 						</div>
 						<div class="underline"></div>
 					</div>
-					<div class="contents">
-						<div class="_1">
-							<div class="image-1">
-								<img src="./images/experience_image1.png" alt="">
-							</div>
-							<div class="desc">
-								<h3>EXPERIENCE</h3>
-								<h4>보고, 듣고, 느끼며</h4>
-								<h4>생각보다 더욱 대단한 나를 경험하라</h4>
-							</div>
-							<div class="image-2">
-								<img src="./images/experience_image2.png" alt="">
-							</div>
-							<div class="underline"></div>
+					<div class="_2">
+						<div class="image-1">
+							<img src="./images/experiment_image1.png" alt="">
 						</div>
-						<div class="_2">
-							<div class="image-1">
-								<img src="./images/experiment_image1.png" alt="">
-							</div>
-							<div class="desc">
-								<h3>EXPERIMENT</h3>
-								<h4>작은 시도가 큰 변화의 시작이 될 수 있기에</h4>
-								<h4>과감하게 실험하라</h4>
-							</div>
-							<div class="image-2">
-								<img src="./images/experiment_image2.png" alt="">
-							</div>
-							<div class="underline"></div>
+						<div class="desc">
+							<h3>EXPERIMENT</h3>
+							<h4>작은 시도가 큰 변화의 시작이 될 수 있기에</h4>
+							<h4>과감하게 실험하라</h4>
 						</div>
-						<div class="_3">
-							<div class="image-1">
-								<img src="./images/explore_image1.png" alt="">
-							</div>
-							<div class="desc">
-								<h3>EXPLORE</h3>
-								<h4>현대 모터스튜디오 속에서</h4>
-								<h4>경험과 실험을 통해 가능성을 탐험하라</h4>
-							</div>
-							<div class="image-2">
-								<img src="./images/explore_image2.png" alt="">
-							</div>
+						<div class="image-2">
+							<img src="./images/experiment_image2.png" alt="">
+						</div>
+						<div class="underline"></div>
+					</div>
+					<div class="_3">
+						<div class="image-1">
+							<img src="./images/explore_image1.png" alt="">
+						</div>
+						<div class="desc">
+							<h3>EXPLORE</h3>
+							<h4>현대 모터스튜디오 속에서</h4>
+							<h4>경험과 실험을 통해 가능성을 탐험하라</h4>
+						</div>
+						<div class="image-2">
+							<img src="./images/explore_image2.png" alt="">
 						</div>
 					</div>
-					<div class="slider">
-						<div class="title">
-							<img src="./images/logo.svg" alt="">
-						</div>
-						<div class="sub-title">
-							<h3>창의적인 실험 공간</h3>
-						</div>
-						<div class="studio-slide">
-							<div class="prev">
-								<button type="button" class="prev-btn">
-                                    <img src="./images/arrow_prev.png" alt="">
-                                </button>
-							</div>
-							<div class="slider-area">
-								<div>
-									<img src="./images/studio_slide1.jpg" alt="">
-								</div>
-								<div>
-									<img src="./images/studio_slide2.jpg" alt="">
-								</div>
-								<div>
-									<img src="./images/studio_slide3.jpg" alt="">
-								</div>
-								<div>
-									<img src="./images/studio_slide4.jpg" alt="">
-								</div>
-								<div>
-									<img src="./images/studio_slide5.jpg" alt="">
-								</div>
-								<div>
-									<img src="./images/studio_slide6.jpg" alt="">
-								</div>
-							</div>
-							<div class="next">
-								<button type="button" class="next-btn">
-                                    <img src="./images/arrow_next.png" alt="">
-                                </button>
-							</div>
-						</div>
-						<div class="desc" id="desc_txt">
-							<h2>현대 모터스튜디오 고양</h2>
-							<h4>자동차를 보고 듣고 느끼는 새로운 여행으로 초대합니다</h4>
-						</div>
-					</div>
-					<button type="button" id="btn-go-top">
-						<img src="./images/btn_top.jpg" alt="">
-					</button>
 				</div>
+				<div class="slider">
+					<div class="title">
+						<img src="./images/logo.svg" alt="">
+					</div>
+					<div class="sub-title">
+						<h3>창의적인 실험 공간</h3>
+					</div>
+					<div class="studio-slide">
+						<div class="prev">
+							<button type="button" class="prev-btn">
+								<img src="./images/arrow_prev.png" alt="">
+							</button>
+						</div>
+						<div class="slider-area">
+							<div>
+								<img src="./images/studio_slide1.jpg" alt="">
+							</div>
+							<div>
+								<img src="./images/studio_slide2.jpg" alt="">
+							</div>
+							<div>
+								<img src="./images/studio_slide3.jpg" alt="">
+							</div>
+							<div>
+								<img src="./images/studio_slide4.jpg" alt="">
+							</div>
+							<div>
+								<img src="./images/studio_slide5.jpg" alt="">
+							</div>
+							<div>
+								<img src="./images/studio_slide6.jpg" alt="">
+							</div>
+						</div>
+						<div class="next">
+							<button type="button" class="next-btn">
+								<img src="./images/arrow_next.png" alt="">
+							</button>
+						</div>
+					</div>
+					<div class="desc" id="desc_txt">
+						<h2>현대 모터스튜디오 고양</h2>
+						<h4>자동차를 보고 듣고 느끼는 새로운 여행으로 초대합니다</h4>
+					</div>
+				</div>
+				<button type="button" id="btn-go-top">
+					<img src="./images/btn_top.jpg" alt="">
+				</button>
 			</div>
 		</div>
 		<div class="footer-wrap">
