@@ -136,7 +136,8 @@
 						</div>
 						<div class="sub-title">
 							<span>나만의 가능성 탐험 이벤트!</span>
-							<span>현대 모터스튜디오 서울/모스크바/베이징으로 여러분을 초대합니다.</span>
+							<span>현대 모터스튜디오 서울/모스크바/베이징으로</span>
+							<span>여러분을 초대합니다</span>
 						</div>
 					</div>
 					<div class="how">
