@@ -204,7 +204,7 @@
 					<span>*Winners will be notified via direct message from</span>
 					<span>the official Hyundai Motorstudio Instagram account (@hyundaimotorstudio)</span>
 				</div>
-				<button type="button" id="copyHashtag" onclick="click_tracking('복사 해시태그')">해시태그 복사하기</button>
+				<button type="button" id="copyHashtag" onclick="click_tracking('복사 해시태그')">Copy hashtags</button>
                 <div class="instagram">
                     <!-- 어트랙트 API 적용해야 할 부분 -->
                     <script type="text/javascript">
