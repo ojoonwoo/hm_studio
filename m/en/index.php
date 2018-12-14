@@ -391,7 +391,7 @@
 
 		$("#copyHashtag").on("click", function() {
 			var textarea = document.createElement('textarea');
-			textarea.textContent = '#HyundaiMotorStudio #explore_the_possibilities';
+			textarea.textContent = '#explore_the_possibilities #HyundaiMotorstudio';
 			document.body.appendChild(textarea);
 
 			var selection = document.getSelection();
