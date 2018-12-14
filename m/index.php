@@ -546,17 +546,21 @@
 		function sns_share(media) {
 			switch (media) {
 				case "fb" :
-					var newWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent('http://www.hyundaimotorstudio.co.kr'+flag+'&govideo='+flag),'sharer','toolbar=0,status=0,width=600,height=325');
+					var newWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent('http://www.hyundaimotorstudio.co.kr'),'sharer','toolbar=0,status=0,width=600,height=325');
 				break;
 				case "ks" :
+					Kakao.Story.share({
+						url: 'http://www.hyundaimotorstudio.co.kr',
+						text: '가능성 없는 사람이 어딨어? 중요한 건, 그것을 발견하는가, 못 하는가.\nExplore the possibilities.\n\n현대 모터스튜디오'
+					});
 				break;
 				case "kt" :
 					Kakao.Link.sendDefault({
 						objectType: 'feed',
 						content: {
 							// title: '불만족스러웠던 기존의 시카 제품들, 해결되지 않던 당신의 피부 고민!\n\n바이오더마의 특허 다프 성분과 안탈지신 기술을 담아 오랜 연구 끝에 탄생한 바이오더마 포마드로 A/S 받으세요!',
-							title: kt_title,
-							description: kt_desc,
+							title: "현대 모터스튜디오 - Explore the possibilities.",
+							description: "가능성 없는 사람이 어딨어? 중요한 건, 그것을 발견하는가, 못 하는가.\nExplore the possibilities.\n\n현대 모터스튜디오",
 							// description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
 							imageUrl: "http://www.hyundaimotorstudio.co.kr/images/share_kt_img.jpg",
 							link: {
@@ -587,6 +591,21 @@
 					});
 				break;
 				case "url" :
+					var textarea = document.createElement('textarea');
+					textarea.textContent = 'http://www.hyundaimotorstudio.co.kr';
+					document.body.appendChild(textarea);
+
+					var selection = document.getSelection();
+					var range = document.createRange();
+					//  range.selectNodeContents(textarea);
+					range.selectNode(textarea);
+					selection.removeAllRanges();
+					selection.addRange(range);
+
+					selection.removeAllRanges();
+
+					document.body.removeChild(textarea);
+					alert("URL이 복사되었습니다");
 				break;
 			}
 		}
