@@ -63,6 +63,15 @@
 	<script type="text/javascript" src="../js/clipboard.min.js"></script>
 	<script src="../lib/videojs/videojs.js"></script>
 	<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129170751-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-129170751-2');
+	</script>
 </head>
 
 <body>

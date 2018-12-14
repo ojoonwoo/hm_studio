@@ -63,6 +63,13 @@
 	<script type="text/javascript" src="../../js/clipboard.min.js"></script>
 	<script src="../../lib/videojs/videojs.js"></script>
 	<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-129170751-2');
+	</script>
 </head>
 
 <body>
@@ -135,7 +142,7 @@
 				</div>
 				<div id="main-video-player" class="video-layer">
 					<video id="video_html5_api" class="video-js" preload="auto">
-						<source src='./images/hyundaimotorstudio.mp4' type='video/mp4' />
+						<source src='../images/hyundaimotorstudio.mp4' type='video/mp4' />
 					</video>
 					<!-- <video class="video-js vjs-default-skin" controls preload="auto" width="400" height="300" data-setup="{}">
 <source src='./images/hyundaimotorstudio.mp4' type='video/mp4' />
