@@ -389,9 +389,10 @@ body > .wrap {
 	font-size: 20px;
 	font-weight: normal;
 	color: #221e1f;
+	margin-bottom: 5px;
 }
-.section2-wrap .how .h4-first {
-	margin-bottom: 9px;
+.section2-wrap .how .h4-last {
+	margin-bottom: 20px;
 }
 .section2-wrap .how button {
 	font-family: 'Hyundai Sans Text KR';

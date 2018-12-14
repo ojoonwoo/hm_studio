@@ -132,7 +132,7 @@
 							<h1>Explore</h1>
 							<h1>the</h1>
 							<h1>possibilities</h1>
-							<h3>당신의 가능성을 실험하라</h3>
+							<h3>당신의 가능성을 탐험하라</h3>
 						</div>
 						<div class="button-wrap">
 							<button type="button" onclick="click_tracking('보기 풀영상');viewVideo();">
@@ -159,12 +159,9 @@
 						<h1>EVENT</h1>
 					</div>
 					<div class="sub-title">
-						<span>경험하라 실험하라 탐험하라</span>
-						<span>그리고 당신의 가능성을 발견하라</span>
-						<span>일상에서 당신의 가능성을 발견할 수 있는</span>
-						<span>순간을 담아 인스타그램에 올려주세요!</span>
-						<span>추첨을 통해 현대 모터스튜디오에서</span>
-						<span>Explore the possibilities의 기회를 드립니다</span>
+						<span>나만의 가능성 탐험 이벤트!</span>
+						<span>현대 모터스튜디오 서울/모스크바/베이징으로</span>
+						<span>여러분을 초대합니다.</span>
 					</div>
 					<div class="date-winner">
 						<h3>Date</h3>
@@ -191,11 +188,18 @@
 					</div>
 					<div class="how">
 						<h3>참여방법</h3>
+						<h4>1. 일상 속 나만의 가능성을 발견한 영상 또는 사진 찍기</h4>
+						<h4>2. 가고 싶은 현대 모터스튜디오 도시 1곳 해시태그 하기</h4>
+						<h4>#서울 #모스크바 #베이징</h4>
+						<h4>3. 필수 해시태그와 함께 인스타그램 포스팅 하기</h4>
+						<h4 class="blank">#가능성탐험 #현대모터스튜디오</h4>
+						<h4>예시) #가능성탐험 #현대모터스튜디오 #모스크바</h4>
+						<!-- <h3>참여방법</h3>
 						<h4 class="h4-first">1.Explore the possibilities하는</h4>
 						<h4 class="blank">순간을 사진/영상으로 담아주세요</h4>
 						<h4>2.인스타그램에</h4>
 						<h4>#현대모터스튜디오 #explore_the_possibilities</h4>
-						<h4>해시태그와 함께 업로드</h4>
+						<h4>해시태그와 함께 업로드</h4> -->
 						<button type="button" id="copyHashtag" onclick="click_tracking('복사 해시태그')">해시태그 복사하기</button>
 					</div>
 					<div class="instagram">
@@ -231,10 +235,8 @@
 							</div>
 							<div class="desc">
 								<h3>EXPERIENCE</h3>
-								<h4>중요한 것은 첫발을 내딛는것</h4>
-								<h4>나의 가능성이 어느 영역에 위치해 있는지</h4>
-								<h4>주위를 둘러보고 스스로 확인하며,</h4>
-								<h4>경험하라</h4>
+								<h4>보고, 듣고, 느끼며</h4>
+								<h4>생각보다 더욱 대단한 나를 경험하라</h4>
 							</div>
 							<div class="image-2">
 								<img src="./images/experience_image2.png" alt="">
@@ -247,10 +249,8 @@
 							</div>
 							<div class="desc">
 								<h3>EXPERIMENT</h3>
-								<h4>중요한 것은 첫발을 내딛는것</h4>
-								<h4>나의 가능성이 어느 영역에 위치해 있는지</h4>
-								<h4>주위를 둘러보고 스스로 확인하며,</h4>
-								<h4>경험하라</h4>
+								<h4>작은 시도가 큰 변화의 시작이 될 수 있기에</h4>
+								<h4>과감하게 실험하라</h4>
 							</div>
 							<div class="image-2">
 								<img src="./images/experiment_image2.png" alt="">
@@ -263,10 +263,8 @@
 							</div>
 							<div class="desc">
 								<h3>EXPLORE</h3>
-								<h4>중요한 것은 첫발을 내딛는것</h4>
-								<h4>나의 가능성이 어느 영역에 위치해 있는지</h4>
-								<h4>주위를 둘러보고 스스로 확인하며,</h4>
-								<h4>경험하라</h4>
+								<h4>현대 모터스튜디오 속에서</h4>
+								<h4>경험과 실험을 통해 가능성을 탐험하라</h4>
 							</div>
 							<div class="image-2">
 								<img src="./images/explore_image2.png" alt="">
@@ -278,7 +276,7 @@
 							<img src="./images/logo.svg" alt="">
 						</div>
 						<div class="sub-title">
-							<h3>자동차 문화를 경험하는 창의적인 실험 공간</h3>
+							<h3>창의적인 실험 공간</h3>
 						</div>
 						<div class="studio-slide">
 							<div class="prev">
@@ -401,7 +399,7 @@
 
 		$("#copyHashtag").on("click", function() {
 			var textarea = document.createElement('textarea');
-			textarea.textContent = '#현대모터스튜디오 #explore_the_possibilities';
+			textarea.textContent = '#가능성탐험 #현대모터스튜디오';
 			document.body.appendChild(textarea);
 
 			var selection = document.getSelection();

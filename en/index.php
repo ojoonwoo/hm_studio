@@ -133,12 +133,9 @@
 							<h1>EVENT</h1>
 						</div>
 						<div class="sub-title">
-                            <span>Experience. Experiment. Explore.</span>
-                            <span>Possibilities are nothing until discovered.</span>
-                            <span>Show the world the moment you explore your possibilities</span>
-                            <span>and share your moments on Instagram!</span>
-                            <span>For those who inspire the most to explore the possibilities,</span>
-                            <span>a journey to Hyundai Motorstudio awaits!</span>
+                            <span>It’s time to explore your possibilities!</span>
+                            <span>We invite you to explore the possibilities at</span>
+                            <span>Hyundai Motorstudio Seoul/Moscow/Beijing.</span>
 						</div>
 					</div>
 					<div class="date-winner">
@@ -167,12 +164,13 @@
 						</div>
 					</div>
 					<div class="how">
-                    <h3>To Participate</h3>
-						<h4 class="h4-first">1. Capture the moment</h4>
-						<h4 class="blank">you explore the possibilities.</h4>
-						<h4>2. Post pics or vids on Instagram with</h4>
-						<h4>#HyundaiMotorStudio</h4>
-						<h4>#explore_the_possibilities</h4>
+                        <h3>To Participate</h3>
+						<h4>1. Capture the moment where you explore the possibilities.</h4>
+						<h4>2. Post pics or vids on Instagram with one of three Hyundai Motorstudio city hashtags</h4>
+						<h4>#Seoul #Moscow #Beijing</h4>
+						<h4>3. Add the essential hashtags</h4>
+						<h4 class="h4-last">#explore_the_possibilities #HyundaiMotorstudio</h4>
+						<h4>Example) #explore_the_possibilities #HyundaiMotorstudio #Moscow</h4>
 						<button type="button" id="copyHashtag" onclick="click_tracking('복사 해시태그')">Copy Hashtags</button>
 					</div>
 					<div class="instagram">
@@ -208,10 +206,8 @@
 									<div class="desc">
 										<div class="wrap">
 											<h3>EXPERIENCE</h3>
-                                            <h4>Look around. See it for yourself.</h4>
-                                            <h4>Find out your possibilities.</h4>
-                                            <h4>So, step out and</h4>
-                                            <h4>experience.</h4>
+                                            <h4>Look, listen and feel.</h4>
+            								<h4>Experience yourself to discover the possibilities.</h4>
 										</div>
 									</div>
 								</div>
@@ -245,10 +241,8 @@
 									<div class="desc">
 										<div class="wrap">
 											<h3>EXPERIMENT</h3>
-                                            <h4>Experiments will tell you who you are.</h4>
-                                            <h4>By experiments, you will expand your possibilities.</h4>
-                                            <h4>When you do more, you can be more.</h4>
-                                            <h4>Do some more experiments.</h4>
+                                            <h4>A great change is made by small tries.</h4>
+                                            <h4>Be adventurous and experiment.</h4>
 										</div>
 									</div>
 									<div class="image-2">
@@ -266,10 +260,8 @@
 									<div class="desc">
 										<div class="wrap">
 											<h3>EXPLORE</h3>
-                                            <h4>Get out of your comfort zone.</h4>
-                                            <h4>Explore the unexplored. Know the unknown.</h4>
-                                            <h4>Experience, experiment and explore at</h4>
-                                            <h4>Hyundai Motorstudio.</h4>
+                                            <h4>At Hyundai Motorstudio.</h4>
+                                            <h4>experience, experiment and explore your possibilities.</h4>
 										</div>
 									</div>
 								</div>
@@ -438,7 +430,7 @@
 
 			$("#copyHashtag").on("click", function() {
 				var textarea = document.createElement('textarea');
-				textarea.textContent = '#HyundaiMotorStudio #explore_the_possibilities';
+				textarea.textContent = '#explore_the_possibilities #HyundaiMotorstudio';
 				document.body.appendChild(textarea);
 
 				var selection = document.getSelection();
