@@ -172,12 +172,6 @@
 					<h4>3. 필수 해시태그와 함께 인스타그램 포스팅 하기</h4>
 					<h4 class="m-b">#가능성탐험 #현대모터스튜디오</h4>
 					<h4>해시태그 예시) #가능성탐험 #현대모터스튜디오 #모스크바</h4>
-					<!-- <h3>참여방법</h3>
-					<h4 class="h4-first">1.Explore the possibilities하는</h4>
-					<h4 class="blank">순간을 사진/영상으로 담아주세요</h4>
-					<h4>2.인스타그램에</h4>
-					<h4>#현대모터스튜디오 #explore_the_possibilities</h4>
-					<h4>해시태그와 함께 업로드</h4> -->
 				</div>
 				<div class="prize">
 					<div class="_1">
@@ -285,6 +279,7 @@
 						<div class="image-2">
 							<img src="./images/explore_image2.png" alt="">
 						</div>
+						<div class="underline"></div>
 					</div>
 				</div>
 				<div class="slider">

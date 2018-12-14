@@ -213,19 +213,19 @@
 								</div>
 								<div class="col _right">
 									<div class="image-1">
-										<img src="../images/experience_image2.jpg" alt="">
+										<img src="../images/experience_image2.png" alt="">
 									</div>
 								</div>
 							</div>
 							<div class="row _2">
 								<div class="col _left">
 									<div class="image-2">
-										<img src="../images/experience_image1.jpg" alt="">
+										<img src="../images/experience_image1.png" alt="">
 									</div>
 								</div>
 								<div class="col _right">
 									<div class="image-3">
-										<img src="../images/experience_image3.jpg" alt="">
+										<img src="../images/experience_image3.png" alt="">
 									</div>
 								</div>
 							</div>
@@ -234,7 +234,7 @@
 							<div class="row _1">
 								<div class="col _left">
 									<div class="image-1">
-										<img src="../images/experiment_image1.jpg" alt="">
+										<img src="../images/experiment_image1.png" alt="">
 									</div>
 								</div>
 								<div class="col _right">
@@ -246,7 +246,7 @@
 										</div>
 									</div>
 									<div class="image-2">
-										<img src="../images/experiment_image2.jpg" alt="">
+										<img src="../images/experiment_image2.png" alt="">
 									</div>
 								</div>
 							</div>
@@ -255,7 +255,7 @@
 							<div class="row _1">
 								<div class="col _left">
 									<div class="image-1">
-										<img src="../images/explore_image1.jpg" alt="">
+										<img src="../images/explore_image1.png" alt="">
 									</div>
 									<div class="desc">
 										<div class="wrap">
@@ -267,7 +267,7 @@
 								</div>
 								<div class="col _right">
 									<div class="image-2">
-										<img src="../images/explore_image2.jpg" alt="">
+										<img src="../images/explore_image2.png" alt="">
 									</div>
 								</div>
 							</div>
