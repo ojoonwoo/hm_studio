@@ -151,7 +151,7 @@
 					<button type="button" id="copyHashtag" onclick="click_tracking('복사 해시태그')">해시태그 복사하기</button>
 					<div class="prize">
 						<div class="_1">
-							<h3 class="tt">Winner</h3>
+							<h3 class="tt">당첨자</h3>
 							<span>5명</span>
 							<span>가고 싶은 현대 모터스튜디오로 향하는</span>
 							<span>항공권 (1인 2매)</span>
