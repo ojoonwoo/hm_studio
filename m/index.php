@@ -580,7 +580,7 @@
 		$('.notice-more').on('click', function() {
 			if (moreFlag == 0) {
 				$(".fadeOut").remove();
-				$(".instagram .text-wrap").css("height","none");
+				$(".instagram .text-wrap").css("height","100%");
 				$(this).html("-");
 				moreFlag = 1;
 			}else{
