@@ -586,7 +586,7 @@
 			}else{
 				$(".instagram .text-wrap").append("<div class='fadeOut'></div>");
 				$(".instagram .text-wrap").css("height","50px");
-				$(this).html("-");
+				$(this).html("+");
 				moreFlag = 0;
 			}
 		});
