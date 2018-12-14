@@ -576,6 +576,21 @@
 				break;
 			}
 		}
+		var moreFlag = 0;
+		$('.notice-more').on('click', function() {
+			if (moreFlag == 0) {
+				$(".fadeOut").remove();
+				$(".instagram .text-wrap").css("height","300px");
+				$(this).html("-");
+				moreFlag = 1;
+			}else{
+				$(".instagram .text-wrap").append("<div class='fadeOut'></div>");
+				$(".instagram .text-wrap").css("height","50px");
+				$(this).html("-");
+				moreFlag = 0;
+			}
+		});
+
 </script>
 </body>
 
