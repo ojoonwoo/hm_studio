@@ -137,7 +137,7 @@
 						<div class="button-wrap">
 							<button type="button" onclick="click_tracking('보기 풀영상');viewVideo();">
 								<p>Watch</p>
-								<p>Full version</p>
+								<p>Full Version</p>
 							</button>
 						</div>
 					</div>

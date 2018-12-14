@@ -116,7 +116,7 @@
 							<div class="button-wrap">
 								<button type="button" onclick="viewVideo();">
 									<p>Watch</p>
-									<p>Full version</p>
+									<p>Full Version</p>
 								</button>
 							</div>
 						</div>
