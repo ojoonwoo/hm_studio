@@ -365,9 +365,9 @@ body > .wrap {
 .en .section2-wrap .prize > div {
 	vertical-align: top;
 }
-.en .section2-wrap .prize ._1 .img-wrap {
+/* .en .section2-wrap .prize ._1 .img-wrap {
 	margin-top: 38px;
-}
+} */
 .section2-wrap .prize > div {
 	display: inline-block;
 }
