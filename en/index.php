@@ -120,7 +120,7 @@
 						</div>
 					</div>
 					<div class="video-layer">
-						<video id="video_html5_api" class="video-js" preload="auto" data-setup='{}' onclick="toggleVideo()">
+						<video id="video_html5_api" class="video-js" preload="auto" data-setup='{}'>
 							<source src='../images/hyundaimotorstudio.mp4' type='video/mp4' />
 						</video>
 					</div>

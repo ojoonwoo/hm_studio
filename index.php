@@ -122,7 +122,7 @@
 						</div>
 					</div>
 					<div class="video-layer">
-						<video id="video_html5_api" class="video-js" preload="auto" data-setup='{}' onclick="toggleVideo()">
+						<video id="video_html5_api" class="video-js" preload="auto" data-setup='{}'>
 							<source src='./images/hyundaimotorstudio.mp4' type='video/mp4' />
 						</video>
 					</div>
@@ -497,27 +497,6 @@
 				player.play();			
 			}
 			
-			function toggleVideo() {
-				if (player.paused()) {
-					player.play();
-					videojs.log('Your player is play!');
-				} else {
-					player.pause();
-					videojs.log('Your player is pause!');
-				}
-			}
-//			$('.video-layer').on('click', function() {
-//				// player.trigger('click');
-//				if (player.paused()) {
-//					player.play();
-//					videojs.log('Your player is play!');
-//				} else {
-//					player.pause();
-//					videojs.log('Your player is pause!');
-//				}
-//
-//			});
-
 			function click_tracking(click_name)
 			{
 				$.ajax({
