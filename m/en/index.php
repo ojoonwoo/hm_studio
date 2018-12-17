@@ -172,10 +172,10 @@
 					<h3>To Participate</h3>
 					<h4 class="sub-1">1.Capture the moment where you explore the possibilities</h4>
 					<h4 class="sub-2">2.Add hashtags of one of three cities Hyundai Motorstudio is located<span class="hashtags">#seoul #moscow #beijing</span></h4>
-					<h4 class="sub-3">3.Post pics or vids on Instagram <b>publicly</b> with the essential hashtags<span class="hashtags">#explore #hyundaimotorstudio</span></h4>
+					<h4 class="sub-3">3.Post pics or vids on Instagram <b>publicly</b> with the essential hashtags<span class="hashtags">#hyundaimotorstudio #explorethepossibilities</span></h4>
 					<div class="underline"></div>
 					<h4>Example</h4>
-					<h4 class="hashtags">#explore #hyundaimotorstudio #moscow</h4>
+					<h4 class="hashtags">#explorethepossibilities #hyundaimotorstudio #seoul</h4>
 				</div>
 				<button type="button" id="copyHashtag" onclick="click_tracking('영문/복사 해시태그');gtag('event','해시태그복사',{'event_category':'해시태그복사','event_label':'해시태그복사'});">Copy essential hashtags</button>
 				<div class="prize">
@@ -436,7 +436,7 @@
 
 		var clipboard = new ClipboardJS('#copyHashtag', {
 			text: function() {
-				return '#가능성탐험 #현대모터스튜디오';
+				return '#explorethepossibilities #hyundaimotorstudio';
 			}
 		});
 		var clipboard2 = new ClipboardJS('#copyUrl', {
@@ -509,7 +509,7 @@
 			$('body').removeClass('menu-open');
 			switch(section) {
 				case 1 :
-					$('html, body').animate({scrollTop: $('.section1-wrap').offset().top}, 1000);
+					$('html, body').animate({scrollTop: 0}, 1000);
 				break;
 				case 2 :
 					$('html, body').animate({scrollTop: $('.section2-wrap').offset().top - 57}, 1000);
