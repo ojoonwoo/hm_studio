@@ -425,6 +425,10 @@ body.menu-open {
 .section2-wrap .how h4.sub-2 {
 	margin-bottom: 13px;
 }
+.section2-wrap .how h4.sub-3 b {
+	font-weight: inherit;
+	text-decoration: underline;
+}
 .section2-wrap .how h4:last-child {
 	margin-top: 2px;
 	font-weight: bold;
@@ -441,7 +445,9 @@ body.menu-open {
 	background: rgba(29, 25, 26, 0.3);
 	margin: 12px auto;
 }
-
+.section2-wrap .how .hashtags {
+	color: #67cfee;
+}
 .section2-wrap #copyHashtag {
 	font-family: 'Hyundai Sans Text KR';
 	background: #1d191a;

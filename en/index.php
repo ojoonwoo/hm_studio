@@ -147,17 +147,16 @@
 					<div class="how">
                         <h3>To Participate</h3>
 						<h4 class="sub-1">1.Capture the moment where you explore the possibilities</h4>
-						<h4 class="sub-2">2.Add hashtags of one of three cities Hyundai Motorstudio is located<span>#Seoul #Moscow #Beijing</span></h4>
-						<h4 class="sub-3">3.Post pics or vids on Instagram publicly with the essential hashtags<span>#explore #HyundaiMotorstudio</span></h4>
+						<h4 class="sub-2">2.Add hashtags of one of three cities Hyundai Motorstudio is located<span class="hashtags">#seoul #moscow #beijing</span></h4>
+						<h4 class="sub-3">3.Post pics or vids on Instagram <b>publicly</b> with the essential hashtags<span class="hashtags">#explore #hyundaimotorstudio</span></h4>
 						<div class="underline"></div>
 						<h4>Example</h4>
-						<h4>#explore #HyundaiMotorstudio #Moscow</h4>
+						<h4 class="hashtags">#explore #hyundaimotorstudio #moscow</h4>
 					</div>
-					<button type="button" id="copyHashtag" onclick="click_tracking('영문/복사 해시태그');gtag('event','해시태그복사',{'event_category':'해시태그복사','event_label':'해시태그복사'});">Copy hashtags</button>
+					<button type="button" id="copyHashtag" onclick="click_tracking('영문/복사 해시태그');gtag('event','해시태그복사',{'event_category':'해시태그복사','event_label':'해시태그복사'});">Copy essential hashtags</button>
 					<div class="prize">
 						<div class="_1">
-							<h3 class="tt">Winner</h3>
-							<span>5 Persons</span>
+							<h3 class="tt">Winner (5 Persons)</h3>
 							<span>Flight tickets to one of three</span>
 							<span>Hyundai Motorstudio cities</span>
 							<span>(2 tickets per person)</span>
@@ -166,8 +165,7 @@
 							</div>
 						</div>
 						<div class="_2">
-							<h3 class="tt">Runner-up</h3>
-							<span>100 Persons</span>
+							<h3 class="tt">Runner-up (100 Persons)</h3>
 							<span>An invitation for the main exhibit</span>
 							<span>@ Hyundai Motorstudio GOYANG</span>
 							<span>(2 tickets per person)</span>
@@ -183,8 +181,8 @@
 					</div>
 					<div class="winner-ann">
 						<h3 class="tt">Winners Announcement</h3>
-						<span>By 2019.01.28(MON)</span>
-						<span>*Winners will be notified via direct message from</span>
+						<span style="margin-bottom: 11px;">After 2019.1.28(MON)</span>
+						<span>* Winners will be notified via direct message from</span>
 						<span>the official Hyundai Motorstudio Instagram account (@hyundaimotorstudio)</span>
 					</div>
 					<div class="instagram">
@@ -205,25 +203,19 @@
 						<div class="notice">
 							<h3>Official Rules</h3>
 							<div class="text-wrap">
-								<h4>Potential winner(s) will be notified via direct message & he/she will have 5 days from notification to respond to Sponsor.</h4>
-								<h4>(a) to abide by these rules & decisions of Hyundai Motors (“Sponsor”); </h4>
-								<h4>(b) to release, discharge & hold harmless Sponsor from any & all injuries, liability,</h4>
-								<h4>losses & damages of any kind to persons, including death, or property resulting from entrant’s participation in the contest or the acceptance or use of any prize; 
-								</h4>
-								<h4>and (c) to be financially responsible for any and all expenses, costs arising out of or resulting from the use of any prize.</h4>
-								<h4>· All contest details (including the announcement date) and all prize details(including flight & accommodation schedule) are at Sponsor’s sole discretion.</h4>
+								<h4>· Potential winner(s) will be notified via direct message & he/she will have 5 days from notification to respond to Sponsor.
+									(a) to abide by these rules & decisions of Hyundai Motors (“Sponsor”);
+									(b) to release, discharge & hold harmless Sponsor from any & all injuries, liability,
+									losses & damages of any kind to persons, including death, or property resulting from entrant’s participation in the contest or the acceptance or use of any prize;
+									and (c) to be financially responsible for any and all expenses, costs arising out of or resulting from the use of any prize.</h4>
+								<h4>· All contest details all prize details(including flight ticket) are at Sponsor’s sole discretion.</h4>
 								<h4>· Entry must be entrant’s original work and not be offensive, hateful, inappropriate or disparage.</h4>
-								<h4>·Entry must not defame or violate or infringe upon the rights of any person or entity.</h4>
-								<h4>·Persons who abuse any aspect of the contest or Sponsor’s social media account. or who are in violation of these rules, as solely determined by Sponsor, will be disqualified & all associated entries will be void.
-								</h4>
-								<h4>· Entrants may submit multiple entries, but Sponsor reserves the right to limit one prize per person.
-								</h4>
+								<h4>· Entry must not defame or violate or infringe upon the rights of any person or entity.</h4>
+								<h4>· Persons who abuse any aspect of the contest or Sponsor’s social media account. or who are in violation of these rules, as solely determined by Sponsor, will be disqualified & all associated entries will be void.</h4>
+								<h4>· Entrants may submit multiple entries, but Sponsor reserves the right to limit one prize per person.</h4>
 								<h4>· Winners must not substitute, assign or transfer prize to others.</h4>
 								<h4>· Winners are responsible for all federal, state & local taxes for prizes over KOR \ 50,000.</h4>
 								<h4>· Potential winner(s) will be notified via direct message & he/she will have 5 days from notification to respond to Sponsor.</h4>
-								<h4>· The failure to respond to such notification or any noncompliance with these rules may result in disqualification at Sponsor’s sole discretion.</h4>
-								<h4>· No entry submission by anyone under the age of 14 will be accepted and may be disqualified in Sponsor’s sole discretion.</h4>
-								<h4>· By submitting an entry, each entrant grants to Sponsor an irrevocable, unlimited,royalty-free license to edit, create, reproduce, distribute derivatives of & otherwise use the entry & all elements of such entry, in any & all media worldwide without compensation or notification, or permission from entrant or any third party for purpose of advertising.</h4>
 							</div>
 							<div class="fadeOut"></div>
 						</div>
