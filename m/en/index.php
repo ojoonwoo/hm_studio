@@ -470,7 +470,7 @@
 			selection.removeAllRanges();
 
 			document.body.removeChild(textarea);
-			alert("해시태그가 복사되었습니다");
+			alert("URL Copied");
 		});
 		
 		$('.js-burger-trigger').on('click', function() {
