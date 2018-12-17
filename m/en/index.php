@@ -608,7 +608,7 @@
 				break;
 				case "ks" :
 					Kakao.Story.share({
-						url: 'http://www.hyundaimotorstudio.co.kr',
+						url: 'http://www.hyundaimotorstudio.co.kr/?utm_medium=self&utm_source=share&utm_campaign=&utm_content=kakaostory',
 						text: '가능성 없는 사람이 어딨어? 중요한 건, 그것을 발견하는가, 못 하는가.\nExplore the possibilities.\n\n현대 모터스튜디오'
 					});
 				break;
@@ -620,16 +620,16 @@
 							description: "가능성 없는 사람이 어딨어? 중요한 건, 그것을 발견하는가, 못 하는가.\nExplore the possibilities.\n\n현대 모터스튜디오",
 							imageUrl: "http://www.hyundaimotorstudio.co.kr/images/share_kt_img.png",
 							link: {
-								mobileWebUrl: 'http://www.hyundaimotorstudio.co.kr/m/',
-								webUrl: 'http://www.hyundaimotorstudio.co.kr/'
+								mobileWebUrl: 'http://www.hyundaimotorstudio.co.kr/m/?utm_medium=self&utm_source=share&utm_campaign=&utm_content=kakaotalk',
+								webUrl: 'http://www.hyundaimotorstudio.co.kr/?utm_medium=self&utm_source=share&utm_campaign=&utm_content=kakaotalk'
 							}
 						},
 						buttons: [
 							{
 								title: '현대모터스튜디오',
 								link: {
-									mobileWebUrl: 'http://www.hyundaimotorstudio.co.kr/m/',
-									webUrl: 'http://www.hyundaimotorstudio.co.kr/'
+									mobileWebUrl: 'http://www.hyundaimotorstudio.co.kr/m/?utm_medium=self&utm_source=share&utm_campaign=&utm_content=kakaotalk',
+									webUrl: 'http://www.hyundaimotorstudio.co.kr/?utm_medium=self&utm_source=share&utm_campaign=&utm_content=kakaotalk'
 								}
 							}
 						],
@@ -648,7 +648,7 @@
 				break;
 				case "url" :
 					var textarea2 = document.createElement('textarea');
-					textarea2.textContent = 'http://www.hyundaimotorstudio.co.kr';
+					textarea2.textContent = 'http://www.hyundaimotorstudio.co.kr/?utm_medium=self&utm_source=share&utm_campaign=&utm_content=url';
 					document.body.appendChild(textarea2);
 
 					var selection = document.getSelection();
