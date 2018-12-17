@@ -453,7 +453,7 @@
 
 			$("#copyHashtag").on("click", function() {
 				var textarea = document.createElement('textarea');
-				textarea.textContent = '#가능성탐험 #현대모터스튜디오';
+				textarea.textContent = '#현대모터스튜디오 #가능성탐험';
 				document.body.appendChild(textarea);
 
 				var selection = document.getSelection();

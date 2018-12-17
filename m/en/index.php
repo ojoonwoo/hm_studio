@@ -436,7 +436,7 @@
 
 		var clipboard = new ClipboardJS('#copyHashtag', {
 			text: function() {
-				return '#explorethepossibilities #hyundaimotorstudio';
+				return '#hyundaimotorstudio #explorethepossibilities';
 			}
 		});
 		var clipboard2 = new ClipboardJS('#copyUrl', {

@@ -469,7 +469,7 @@
 
 			$("#copyHashtag").on("click", function() {
 				var textarea = document.createElement('textarea');
-				textarea.textContent = '#explorethepossibilities #hyundaimotorstudio';
+				textarea.textContent = '#hyundaimotorstudio #explorethepossibilities';
 				document.body.appendChild(textarea);
 
 				var selection = document.getSelection();

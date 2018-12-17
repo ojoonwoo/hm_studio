@@ -424,7 +424,7 @@
 		});
 		var clipboard = new ClipboardJS('#copyHashtag', {
 			text: function() {
-				return '#가능성탐험 #현대모터스튜디오';
+				return '#현대모터스튜디오 #가능성탐험';
 			}
 		});
 		var clipboard2 = new ClipboardJS('#copyUrl', {
