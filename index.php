@@ -159,7 +159,7 @@
 							<span>가고 싶은 현대 모터스튜디오로 향하는</span>
 							<span>항공권 (1인 2매)</span>
 							<div class="img-wrap">
-								<img src="./images/prize_img_1.jpg" alt="">
+								<img src="./images/prize_img_1.png" alt="">
 							</div>
 						</div>
 						<div class="_2">

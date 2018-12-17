@@ -184,7 +184,7 @@
                         <span>Flight tickets to one of three Hyundai Motorstudio cities</span>
                         <span>(2 tickets per person)</span>
 						<div class="img-wrap">
-							<img src="../images/prize_img_1_en.jpg" alt="">
+							<img src="../images/prize_img_1_en.png" alt="">
 						</div>
 					</div>
 					<div class="_2">

@@ -374,6 +374,9 @@ body > .wrap {
 .section2-wrap .prize > div {
 	display: inline-block;
 }
+.section2-wrap .prize ._1 .img-wrap img {
+	width: 445px;
+}
 .section2-wrap .prize h3.tt {
 	font-size: 30px;
 	font-weight: 500;
