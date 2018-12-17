@@ -172,10 +172,10 @@
 					<h3>참여방법</h3>
 					<h4 class="sub-1">1.일상 속 나만의 가능성을 발견한 영상 또는 사진 찍기</h4>
 					<h4 class="sub-2">2.가고 싶은 현대 모터스튜디오 도시 1곳 해시태그 하기<span class="hashtags">#서울 #모스크바 #베이징</span></h4>
-					<h4 class="sub-3">3.필수 해시태그와 함께 <b>“전체공개”</b> 포스팅 하기<span class="hashtags">#현대모터스튜디오 #가능성탐험</span></h4>
+					<h4 class="sub-3">3.필수 해시태그와 함께 <b>“전체공개”</b> 포스팅 하기<span class="hashtags">#가능성탐험 #현대모터스튜디오</span></h4>
 					<div class="underline"></div>
 					<h4>해시태그 예시</h4>
-					<h4 class="hashtags">#가능성탐험 #현대모터스튜디오 #서울</h4>
+					<h4 class="hashtags">#가능성탐험 #현대모터스튜디오 #모스크바</h4>
 				</div>
 				<button type="button" id="copyHashtag" onclick="click_tracking('국문/복사 해시태그');gtag('event','해시태그복사',{'event_category':'해시태그복사','event_label':'해시태그복사'});">필수 해시태그 복사하기</button>
 				<div class="prize">
@@ -424,7 +424,7 @@
 		});
 		var clipboard = new ClipboardJS('#copyHashtag', {
 			text: function() {
-				return '#현대모터스튜디오 #가능성탐험';
+				return '#가능성탐험 #현대모터스튜디오';
 			}
 		});
 		var clipboard2 = new ClipboardJS('#copyUrl', {
