@@ -575,7 +575,7 @@
 				$.ajax({
 					type   : "POST",
 					async  : false,
-					url    : "./main_exec.php",
+					url    : "../main_exec.php",
 					data:{
 						"exec" 			: "insert_click_info",
 						"click_name"	: click_name
