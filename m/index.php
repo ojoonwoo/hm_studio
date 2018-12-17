@@ -124,7 +124,7 @@
 					<a href="javascript:void(0)" class="fb" onclick="click_tracking('공유 페이스북');sns_share('fb')"></a>
 					<a href="javascript:void(0)" class="kt" onclick="click_tracking('공유 카카오톡');sns_share('kt')"></a>
 					<a href="javascript:void(0)" class="ks" onclick="click_tracking('공유 카카오스토리');sns_share('ks')"></a>
-					<a href="javascript:void(0)" class="url" onclick="click_tracking('공유 URL');sns_share('url')"></a>
+					<a href="javascript:void(0)" class="url" id="copyUrl" onclick="click_tracking('공유 URL');"></a>
 				</div>
 			</div>
 		</div>
@@ -428,6 +428,25 @@
 		$("#copyHashtag").on("click", function() {
 			var textarea = document.createElement('textarea');
 			textarea.textContent = '#가능성탐험 #현대모터스튜디오';
+			document.body.appendChild(textarea);
+
+			var selection = document.getSelection();
+			var range = document.createRange();
+			//  range.selectNodeContents(textarea);
+			range.selectNode(textarea);
+			selection.removeAllRanges();
+			selection.addRange(range);
+
+			console.log('copy success', document.execCommand('copy'));
+			selection.removeAllRanges();
+
+			document.body.removeChild(textarea);
+			alert("해시태그가 복사되었습니다");
+		});
+		
+		$("#copyUrl").on("click", function() {
+			var textarea = document.createElement('textarea');
+			textarea.textContent = 'http://www.hyundaimotorstudio.co.kr';
 			document.body.appendChild(textarea);
 
 			var selection = document.getSelection();
