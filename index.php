@@ -69,9 +69,9 @@
 					</h1>
 					<div class="action-wrap">
 						<div class="lang-box">
-							<a href="javascript:void(0)" class="is-active" onclick="gtag('event','언어변경',{'event_category':'언어변경','event_label':'kr'});">KR</a>
+							<a href="javascript:void(0)" class="is-active" onclick="click_tracking('국문/한국어사이트');gtag('event','언어변경',{'event_category':'언어변경','event_label':'kr'});">KR</a>
 							<span>/</span>
-							<a href="./en/" onclick="gtag('event','언어변경',{'event_category':'언어변경','event_label':'en'});">EN</a>
+							<a href="./en/" onclick="click_tracking('국문/영어사이트');gtag('event','언어변경',{'event_category':'언어변경','event_label':'en'});">EN</a>
 						</div>
 						<div class="js-burger-trigger"></div>
 						<div id="gnb" class="burger-ui">
@@ -213,7 +213,7 @@
 							</div>
 							<div class="fadeOut"></div>
 						</div>
-						<button type="button" class="notice-more" onclick="gtag('event','유의사항토글',{'event_category':'유의사항토글','event_label':'유의사항토글'});">+</button>
+						<button type="button" class="notice-more" onclick="click_tracking('국문/유의사항 더보기');gtag('event','유의사항토글',{'event_category':'유의사항토글','event_label':'유의사항토글'});">+</button>
 						<div class="underline"></div>
 					</div>
 					<div class="contents">
@@ -357,19 +357,19 @@
 				</div>
 				<div class="right-wrap">
 					<div class="official">
-						<a href="https://www.facebook.com/hyundaimotorstudio/" target="_blank" class="fb" onclick="click_tracking('외부링크 오피셜페이스북');gtag('event','아웃링크',{'event_category':'오피셜페이스북','event_label':'오피셜페이스북'});">
+						<a href="https://www.facebook.com/hyundaimotorstudio/" target="_blank" class="fb" onclick="click_tracking('국문/외부링크 오피셜페이스북');gtag('event','아웃링크',{'event_category':'오피셜페이스북','event_label':'오피셜페이스북'});">
 							<img src="./images/official_fb.png" alt="">
 						</a>
-						<a href="https://www.instagram.com/hyundai_motorstudio/" target="_blank" class="insta" onclick="click_tracking('외부링크 오피셜인스타그램');gtag('event','아웃링크',{'event_category':'오피셜인스타그램','event_label':'오피셜인스타그램'});">
+						<a href="https://www.instagram.com/hyundai_motorstudio/" target="_blank" class="insta" onclick="click_tracking('국문/외부링크 오피셜인스타그램');gtag('event','아웃링크',{'event_category':'오피셜인스타그램','event_label':'오피셜인스타그램'});">
 							<img src="./images/official_insta.png" alt="">
 						</a>
-						<a href="https://www.youtube.com/user/AboutHyundai" target="_blank" class="youtube" onclick="click_tracking('외부링크 오피셜유튜브');gtag('event','아웃링크',{'event_category':'오피셜유튜브','event_label':'오피셜유튜브'});">
+						<a href="https://www.youtube.com/user/AboutHyundai" target="_blank" class="youtube" onclick="click_tracking('국문/외부링크 오피셜인스타그램');gtag('event','아웃링크',{'event_category':'오피셜유튜브','event_label':'오피셜유튜브'});">
 							<img src="./images/official_youtube.png" alt="">
 						</a>
-						<a href="https://www.youtube.com/user/HyundaiWorldwide" target="_blank" class="youtube-global" onclick="click_tracking('외부링크 글로벌유튜브');gtag('event','아웃링크',{'event_category':'오피셜글로벌유튜브','event_label':'오피셜글로벌유튜브'});">
+						<a href="https://www.youtube.com/user/HyundaiWorldwide" target="_blank" class="youtube-global" onclick="click_tracking('국문/외부링크 글로벌유튜브');gtag('event','아웃링크',{'event_category':'오피셜글로벌유튜브','event_label':'오피셜글로벌유튜브'});">
 							<img src="./images/official_youtube_global.png" alt="">
 						</a>
-						<a href="https://story.kakao.com/ch/hyundai" target="_blank" class="ks" onclick="click_tracking('외부링크 오피셜카카오스토리');gtag('event','아웃링크',{'event_category':'오피셜카카오스토리','event_label':'오피셜카카오스토리'});">
+						<a href="https://story.kakao.com/ch/hyundai" target="_blank" class="ks" onclick="click_tracking('국문/외부링크 오피셜카카오스토리');gtag('event','아웃링크',{'event_category':'오피셜카카오스토리','event_label':'오피셜카카오스토리'});">
 							<img src="./images/official_ks.png" alt="">
 						</a>
 					</div>
