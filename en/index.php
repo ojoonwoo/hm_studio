@@ -161,7 +161,7 @@
 							<span>Hyundai Motorstudio cities</span>
 							<span>(2 tickets per person)</span>
 							<div class="img-wrap">
-								<img src="../images/prize_img_1_en.jpg" alt="">
+								<img src="../images/prize_img_1_en.png" alt="">
 							</div>
 						</div>
 						<div class="_2">
@@ -469,7 +469,7 @@
 
 			$("#copyHashtag").on("click", function() {
 				var textarea = document.createElement('textarea');
-				textarea.textContent = '#explorethepossibilities #hyundaimotorstudio';
+				textarea.textContent = '#hyundaimotorstudio #explorethepossibilities';
 				document.body.appendChild(textarea);
 
 				var selection = document.getSelection();

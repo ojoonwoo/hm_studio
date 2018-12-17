@@ -159,7 +159,7 @@
 							<span>가고 싶은 현대 모터스튜디오로 향하는</span>
 							<span>항공권 (1인 2매)</span>
 							<div class="img-wrap">
-								<img src="./images/prize_img_1.jpg" alt="">
+								<img src="./images/prize_img_1.png" alt="">
 							</div>
 						</div>
 						<div class="_2">
@@ -453,7 +453,7 @@
 
 			$("#copyHashtag").on("click", function() {
 				var textarea = document.createElement('textarea');
-				textarea.textContent = '#가능성탐험 #현대모터스튜디오';
+				textarea.textContent = '#현대모터스튜디오 #가능성탐험';
 				document.body.appendChild(textarea);
 
 				var selection = document.getSelection();

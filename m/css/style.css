@@ -369,6 +369,9 @@ body.menu-open {
 .section2-wrap .date-winner .h4-first {
 	padding-bottom: 16px;
 }
+.section2-wrap .prize ._1 .img-wrap img {
+	width: 225px;
+}
 .section2-wrap .prize > div {
 	margin-bottom: 28px;
 }
