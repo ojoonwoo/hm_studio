@@ -395,6 +395,7 @@
 			</div>
 		</div>
 		<script>
+			Kakao.init('cf559a1b4265e66761ca6acfa705948f');
 			var studioSlider = $('.slider-area');
 			studioSlider.on('init', function() {
 				arrowPositioning();
