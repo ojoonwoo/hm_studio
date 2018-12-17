@@ -31,6 +31,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta property="og:title" content="현대 모터스튜디오 - Explore the possibilities." />
+		<meta property="og:url" content="http://www.hyundaimotorstudio.co.kr" />
+		<meta property="og:image" content="http://www.hyundaimotorstudio.co.kr/images/share_img.jpg" />
+		<meta property="og:description" content="가능성 없는 사람이 어딨어? 중요한 건, 그것을 발견하는가, 못 하는가. Explore the possibilities. 현대 모터스튜디오" />
 		<title>HYUNDAI MOTOR STUDIO</title>
 		<link type="image/icon" rel="shortcut icon" href="http://www.hyundaimotorstudio.co.kr/images/favi_HMS.ico" />
 		<link rel="stylesheet" href="../css/reset.css">
@@ -97,10 +101,10 @@
 						<a href="javascript:void(0)" onclick="movePage(4);click_tracking('이동 HYUNDAI MOTORSTUDIO')">HYUNDAI MOTORSTUDIO</a>
 					</div>
 					<div class="row share">
-						<a href="#" class="fb"></a>
-						<a href="#" class="kt"></a>
-						<a href="#" class="ks"></a>
-						<a href="#" class="url"></a>
+						<a href="javascript:void(0)" class="fb" onclick="click_tracking('공유 페이스북');sns_share('fb')"></a>
+						<a href="javascript:void(0)" class="kt" onclick="click_tracking('공유 카카오톡');sns_share('kt')"></a>
+						<a href="javascript:void(0)" class="ks" onclick="click_tracking('공유 카카오스토리');sns_share('ks')"></a>
+						<a href="javascript:void(0)" class="url" id="copyUrl" onclick="click_tracking('공유 URL');"></a>
 					</div>
 				</div>
 			</div>
@@ -489,6 +493,25 @@
 				alert("Hashtags Copied");
 			});
 
+			$("#copyUrl").on("click", function() {
+				var textarea = document.createElement('textarea');
+				textarea.textContent = 'http://www.hyundaimotorstudio.co.kr';
+				document.body.appendChild(textarea);
+
+				var selection = document.getSelection();
+				var range = document.createRange();
+				//  range.selectNodeContents(textarea);
+				range.selectNode(textarea);
+				selection.removeAllRanges();
+				selection.addRange(range);
+
+				console.log('copy success', document.execCommand('copy'));
+				selection.removeAllRanges();
+
+				document.body.removeChild(textarea);
+				alert("해시태그가 복사되었습니다");
+			});
+		
 			$('.js-burger-trigger').on('click', function() {
 				$('body').toggleClass('menu-open');
 			});
@@ -580,6 +603,72 @@
 					moreFlag = 0;
 				}
 			});
+
+			function sns_share(media) {
+				switch (media) {
+					case "fb" :
+						var newWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent('http://www.hyundaimotorstudio.co.kr'),'sharer','toolbar=0,status=0,width=600,height=325');
+					break;
+					case "ks" :
+						Kakao.Story.share({
+							url: 'http://www.hyundaimotorstudio.co.kr',
+							text: '가능성 없는 사람이 어딨어? 중요한 건, 그것을 발견하는가, 못 하는가.\nExplore the possibilities.\n\n현대 모터스튜디오'
+						});
+					break;
+					case "kt" :
+						Kakao.Link.sendDefault({
+							objectType: 'feed',
+							content: {
+								title: "현대 모터스튜디오 - Explore the possibilities.",
+								description: "가능성 없는 사람이 어딨어? 중요한 건, 그것을 발견하는가, 못 하는가.\nExplore the possibilities.\n\n현대 모터스튜디오",
+								imageUrl: "http://www.hyundaimotorstudio.co.kr/images/share_kt_img.png",
+								link: {
+									mobileWebUrl: 'http://www.hyundaimotorstudio.co.kr/m/',
+									webUrl: 'http://www.hyundaimotorstudio.co.kr/'
+								}
+							},
+							buttons: [
+								{
+									title: '현대모터스튜디오',
+									link: {
+										mobileWebUrl: 'http://www.hyundaimotorstudio.co.kr/m/',
+										webUrl: 'http://www.hyundaimotorstudio.co.kr/'
+									}
+								}
+							],
+							success: function(res) {
+								console.log("success");
+								console.log(res);
+							},
+							fail: function(res) {
+								console.log("fail");
+								console.log(res);
+							},
+							callback: function() {
+								// shareEnd();
+							}
+						});
+					break;
+					case "url" :
+						var textarea2 = document.createElement('textarea');
+						textarea2.textContent = 'http://www.hyundaimotorstudio.co.kr';
+						document.body.appendChild(textarea2);
+
+						var selection = document.getSelection();
+						var range = document.createRange();
+						//  range.selectNodeContents(textarea);
+						range.selectNode(textarea2);
+						selection.removeAllRanges();
+						selection.addRange(range);
+
+						selection.removeAllRanges();
+
+						document.body.removeChild(textarea2);
+						alert("URL이 복사되었습니다");
+					break;
+				}
+			}
+
 		</script>
 	</body>
 

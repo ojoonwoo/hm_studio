@@ -31,6 +31,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta property="og:title" content="현대 모터스튜디오 - Explore the possibilities." />
+    <meta property="og:url" content="http://www.hyundaimotorstudio.co.kr" />
+    <meta property="og:image" content="http://www.hyundaimotorstudio.co.kr/images/share_img.jpg" />
+    <meta property="og:description" content="가능성 없는 사람이 어딨어? 중요한 건, 그것을 발견하는가, 못 하는가. Explore the possibilities. 현대 모터스튜디오" />
 	<title>HYUNDAI MOTOR STUDIO</title>
 	<style class="vjs-styles-defaults">
       .video-js {
@@ -120,7 +124,7 @@
 					<a href="javascript:void(0)" class="fb" onclick="click_tracking('공유 페이스북');sns_share('fb')"></a>
 					<a href="javascript:void(0)" class="kt" onclick="click_tracking('공유 카카오톡');sns_share('kt')"></a>
 					<a href="javascript:void(0)" class="ks" onclick="click_tracking('공유 카카오스토리');sns_share('ks')"></a>
-					<a href="javascript:void(0)" class="url" onclick="click_tracking('공유 URL');sns_share('url')"></a>
+					<a href="javascript:void(0)" class="url" id="copyUrl" onclick="click_tracking('공유 URL');"></a>
 				</div>
 			</div>
 		</div>
@@ -450,6 +454,25 @@
 			alert("Hashtags Copied");
 		});
 		
+		$("#copyUrl").on("click", function() {
+			var textarea = document.createElement('textarea');
+			textarea.textContent = 'http://www.hyundaimotorstudio.co.kr';
+			document.body.appendChild(textarea);
+
+			var selection = document.getSelection();
+			var range = document.createRange();
+			//  range.selectNodeContents(textarea);
+			range.selectNode(textarea);
+			selection.removeAllRanges();
+			selection.addRange(range);
+
+			console.log('copy success', document.execCommand('copy'));
+			selection.removeAllRanges();
+
+			document.body.removeChild(textarea);
+			alert("해시태그가 복사되었습니다");
+		});
+		
 		$('.js-burger-trigger').on('click', function() {
 			$('body').toggleClass('menu-open');
 		});
@@ -557,19 +580,21 @@
 		function sns_share(media) {
 			switch (media) {
 				case "fb" :
-					var newWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent('http://www.hyundaimotorstudio.co.kr'+flag+'&govideo='+flag),'sharer','toolbar=0,status=0,width=600,height=325');
+					var newWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent('http://www.hyundaimotorstudio.co.kr'),'sharer','toolbar=0,status=0,width=600,height=325');
 				break;
 				case "ks" :
+					Kakao.Story.share({
+						url: 'http://www.hyundaimotorstudio.co.kr',
+						text: '가능성 없는 사람이 어딨어? 중요한 건, 그것을 발견하는가, 못 하는가.\nExplore the possibilities.\n\n현대 모터스튜디오'
+					});
 				break;
 				case "kt" :
 					Kakao.Link.sendDefault({
 						objectType: 'feed',
 						content: {
-							// title: '불만족스러웠던 기존의 시카 제품들, 해결되지 않던 당신의 피부 고민!\n\n바이오더마의 특허 다프 성분과 안탈지신 기술을 담아 오랜 연구 끝에 탄생한 바이오더마 포마드로 A/S 받으세요!',
-							title: kt_title,
-							description: kt_desc,
-							// description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
-							imageUrl: "http://www.hyundaimotorstudio.co.kr/images/share_kt_img.jpg",
+							title: "현대 모터스튜디오 - Explore the possibilities.",
+							description: "가능성 없는 사람이 어딨어? 중요한 건, 그것을 발견하는가, 못 하는가.\nExplore the possibilities.\n\n현대 모터스튜디오",
+							imageUrl: "http://www.hyundaimotorstudio.co.kr/images/share_kt_img.png",
 							link: {
 								mobileWebUrl: 'http://www.hyundaimotorstudio.co.kr/m/',
 								webUrl: 'http://www.hyundaimotorstudio.co.kr/'
@@ -598,9 +623,24 @@
 					});
 				break;
 				case "url" :
+					var textarea2 = document.createElement('textarea');
+					textarea2.textContent = 'http://www.hyundaimotorstudio.co.kr';
+					document.body.appendChild(textarea2);
+
+					var selection = document.getSelection();
+					var range = document.createRange();
+					//  range.selectNodeContents(textarea);
+					range.selectNode(textarea2);
+					selection.removeAllRanges();
+					selection.addRange(range);
+
+					selection.removeAllRanges();
+
+					document.body.removeChild(textarea2);
+					alert("URL이 복사되었습니다");
 				break;
 			}
-        }
+		}
 		var moreFlag = 0;
 		$('.notice-more').on('click', function() {
 			if (moreFlag == 0) {
