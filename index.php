@@ -69,9 +69,9 @@
 					</h1>
 					<div class="action-wrap">
 						<div class="lang-box">
-							<a href="javascript:void(0)" class="is-active">KR</a>
+							<a href="javascript:void(0)" class="is-active" onclick="gtag('event','언어변경',{'event_category':'언어변경','event_label':'kr'});">KR</a>
 							<span>/</span>
-							<a href="./en/">EN</a>
+							<a href="./en/" onclick="gtag('event','언어변경',{'event_category':'언어변경','event_label':'en'});">EN</a>
 						</div>
 						<div class="js-burger-trigger"></div>
 						<div id="gnb" class="burger-ui">
@@ -89,22 +89,22 @@
 			<div class="menu-layer">
 				<div class="spread-layer">
 					<div class="row">
-						<a href="javascript:void(0)" onclick="movePage(1);click_tracking('국문/이동 CAMPAIGN FILM')">CAMPAIGN FILM</a>
+						<a href="javascript:void(0)" onclick="movePage(1);click_tracking('국문/이동 CAMPAIGN FILM');gtag('event','메뉴이동',{'event_category':'메뉴이동','event_label':'campaign film'});">CAMPAIGN FILM</a>
 					</div>
 					<div class="row">
-						<a href="javascript:void(0)" onclick="movePage(2);click_tracking('국문/이동 EVENT')">EVENT</a>
+						<a href="javascript:void(0)" onclick="movePage(2);click_tracking('국문/이동 EVENT');gtag('event','메뉴이동',{'event_category':'메뉴이동','event_label':'event'});">EVENT</a>
 					</div>
 					<div class="row">
-						<a href="javascript:void(0)" onclick="movePage(3);click_tracking('국문/이동 EXPLORE THE POSSIBILITIES')">EXPLORE THE POSSIBILITIES</a>
+						<a href="javascript:void(0)" onclick="movePage(3);click_tracking('국문/이동 EXPLORE THE POSSIBILITIES');gtag('event','메뉴이동',{'event_category':'메뉴이동','event_label':'explore the possibilities'});">EXPLORE THE POSSIBILITIES</a>
 					</div>
 					<div class="row">
-						<a href="javascript:void(0)" onclick="movePage(4);click_tracking('국문/이동 HYUNDAI MOTORSTUDIO')">HYUNDAI MOTORSTUDIO</a>
+						<a href="javascript:void(0)" onclick="movePage(4);click_tracking('국문/이동 HYUNDAI MOTORSTUDIO');gtag('event','메뉴이동',{'event_category':'메뉴이동','event_label':'hyundai motorstudio'});">HYUNDAI MOTORSTUDIO</a>
 					</div>
 					<div class="row share">
-						<a href="javascript:void(0)" class="fb" onclick="click_tracking('국문/공유 페이스북');sns_share('fb')"></a>
-						<a href="javascript:void(0)" class="kt" onclick="click_tracking('국문/공유 카카오톡');sns_share('kt')"></a>
-						<a href="javascript:void(0)" class="ks" onclick="click_tracking('국문/공유 카카오스토리');sns_share('ks')"></a>
-						<a href="javascript:void(0)" class="url" id="copyUrl" onclick="click_tracking('국문/공유 URL');"></a>
+						<a href="javascript:void(0)" class="fb" onclick="click_tracking('국문/공유 페이스북');sns_share('fb');sns_share('fb');gtag('event','공유',{'event_category':'메인공유','event_label':'페이스북'});"></a>
+						<a href="javascript:void(0)" class="kt" onclick="click_tracking('국문/공유 카카오톡');sns_share('kt');gtag('event','공유',{'event_category':'메인공유','event_label':'카카오톡'});"></a>
+						<a href="javascript:void(0)" class="ks" onclick="click_tracking('국문/공유 카카오스토리');sns_share('ks');gtag('event','공유',{'event_category':'메인공유','event_label':'카카오스토리'});"></a>
+						<a href="javascript:void(0)" class="url" id="copyUrl" onclick="click_tracking('국문/공유 URL');gtag('event','공유',{'event_category':'메인공유','event_label':'URL 복사'});"></a>
 					</div>
 				</div>
 			</div>
@@ -118,7 +118,7 @@
 								<h3>당신의 가능성을 탐험하라</h3>
 							</div>
 							<div class="button-wrap">
-								<button type="button" onclick="viewVideo();click_tracking('국문/풀 영상 보기');">
+								<button type="button" onclick="viewVideo();click_tracking('국문/풀 영상 보기');gtag('event','영상재생',{'event_category':'메인영상재생','event_label':'메인영상재생'});">
 									<p>Watch</p>
 									<p>Full Version</p>
 								</button>
@@ -152,7 +152,7 @@
 						<h4>해시태그 예시</h4>
 						<h4>#가능성탐험 #현대모터스튜디오 #모스크바</h4>
 					</div>
-					<button type="button" id="copyHashtag" onclick="click_tracking('국문/복사 해시태그')">해시태그 복사하기</button>
+					<button type="button" id="copyHashtag" onclick="click_tracking('국문/복사 해시태그');gtag('event','해시태그복사',{'event_category':'해시태그복사','event_label':'해시태그복사'});">해시태그 복사하기</button>
 					<div class="prize">
 						<div class="_1">
 							<h3 class="tt">당첨자</h3>
@@ -213,7 +213,7 @@
 							</div>
 							<div class="fadeOut"></div>
 						</div>
-						<button type="button" class="notice-more">+</button>
+						<button type="button" class="notice-more" onclick="gtag('event','유의사항토글',{'event_category':'유의사항토글','event_label':'유의사항토글'});">+</button>
 						<div class="underline"></div>
 					</div>
 					<div class="contents">
@@ -305,32 +305,32 @@
 							</div>
 							<div class="slider-area">
 								<div>
-									<a href="http://motorstudio.hyundai.com/goyang/at/info.do" target="_blank" onclick="click_tracking('국문/슬라이더 고양스튜디오')">
+									<a href="http://motorstudio.hyundai.com/goyang/at/info.do" target="_blank" onclick="click_tracking('국문/슬라이더 고양스튜디오');gtag('event','아웃링크',{'event_category':'거점이동_고양','event_label':'거점이동_고양'})">
 										<img src="./images/studio_slide1.jpg" alt="">
 									</a>
 								</div>
 								<div>
-									<a href="https://www.hyundai.com/kr/ko/brand/motorstudio/seoul/overview.html" target="_blank" onclick="click_tracking('국문/슬라이더 서울스튜디오')">
+									<a href="https://www.hyundai.com/kr/ko/brand/motorstudio/seoul/overview.html" target="_blank" onclick="click_tracking('국문/슬라이더 서울스튜디오');gtag('event','아웃링크',{'event_category':'거점이동_서울','event_label':'거점이동_서울'});">
 										<img src="./images/studio_slide2.jpg" alt="">
 									</a>
 								</div>
 								<div>
-									<a href="https://www.hyundai.com/kr/ko/brand/motorstudio/hanam" target="_blank" onclick="click_tracking('국문/슬라이더 하남스튜디오')">
+									<a href="https://www.hyundai.com/kr/ko/brand/motorstudio/hanam" target="_blank" onclick="click_tracking('국문/슬라이더 하남스튜디오');gtag('event','아웃링크',{'event_category':'거점이동_하남','event_label':'거점이동_하남'});">
 										<img src="./images/studio_slide3.jpg" alt="">
 									</a>
 								</div>
 								<div>
-									<a href="https://www.hyundai.com/kr/ko/brand/motorstudio/digital" target="_blank" onclick="click_tracking('국문/슬라이더 디지털스튜디오')">
+									<a href="https://www.hyundai.com/kr/ko/brand/motorstudio/digital" target="_blank" onclick="click_tracking('국문/슬라이더 디지털스튜디오');gtag('event','아웃링크',{'event_category':'거점이동_디지털','event_label':'거점이동_디지털'});">
 										<img src="./images/studio_slide4.jpg" alt="">
 									</a>
 								</div>
 								<div>
-									<a href="https://www.hyundai.com/kr/ko/brand/motorstudio/beijing" target="_blank" onclick="click_tracking('국문/슬라이더 베이징스튜디오')">
+									<a href="https://www.hyundai.com/kr/ko/brand/motorstudio/beijing" target="_blank" onclick="click_tracking('국문/슬라이더 베이징스튜디오');gtag('event','아웃링크',{'event_category':'거점이동_베이징','event_label':'거점이동_베이징'});">
 										<img src="./images/studio_slide5.jpg" alt="">
 									</a>
 								</div>
 								<div>
-									<a href="https://www.hyundai.ru/motorstudio_moscow" target="_blank" onclick="click_tracking('국문/슬라이더 모스크바스튜디오')">
+									<a href="https://www.hyundai.ru/motorstudio_moscow" target="_blank" onclick="click_tracking('국문/슬라이더 모스크바스튜디오');gtag('event','아웃링크',{'event_category':'거점이동_모스크바','event_label':'거점이동_모스크바'});">
 										<img src="./images/studio_slide6.jpg" alt="">
 									</a>
 								</div>
@@ -357,19 +357,19 @@
 				</div>
 				<div class="right-wrap">
 					<div class="official">
-						<a href="https://www.facebook.com/hyundaimotorstudio/" target="_blank" class="fb" onclick="click_tracking('외부링크 오피셜페이스북')">
+						<a href="https://www.facebook.com/hyundaimotorstudio/" target="_blank" class="fb" onclick="click_tracking('외부링크 오피셜페이스북');gtag('event','아웃링크',{'event_category':'오피셜페이스북','event_label':'오피셜페이스북'});">
 							<img src="./images/official_fb.png" alt="">
 						</a>
-						<a href="https://www.instagram.com/hyundai_motorstudio/" target="_blank" class="insta" onclick="click_tracking('외부링크 오피셜인스타그램')">
+						<a href="https://www.instagram.com/hyundai_motorstudio/" target="_blank" class="insta" onclick="click_tracking('외부링크 오피셜인스타그램');gtag('event','아웃링크',{'event_category':'오피셜인스타그램','event_label':'오피셜인스타그램'});">
 							<img src="./images/official_insta.png" alt="">
 						</a>
-						<a href="https://www.youtube.com/user/AboutHyundai" target="_blank" class="youtube" onclick="click_tracking('외부링크 오피셜유튜브')">
+						<a href="https://www.youtube.com/user/AboutHyundai" target="_blank" class="youtube" onclick="click_tracking('외부링크 오피셜유튜브');gtag('event','아웃링크',{'event_category':'오피셜유튜브','event_label':'오피셜유튜브'});">
 							<img src="./images/official_youtube.png" alt="">
 						</a>
-						<a href="https://www.youtube.com/user/HyundaiWorldwide" target="_blank" class="youtube-global" onclick="click_tracking('외부링크 글로벌유튜브')">
+						<a href="https://www.youtube.com/user/HyundaiWorldwide" target="_blank" class="youtube-global" onclick="click_tracking('외부링크 글로벌유튜브');gtag('event','아웃링크',{'event_category':'오피셜글로벌유튜브','event_label':'오피셜글로벌유튜브'});">
 							<img src="./images/official_youtube_global.png" alt="">
 						</a>
-						<a href="https://story.kakao.com/ch/hyundai" target="_blank" class="ks" onclick="click_tracking('외부링크 오피셜카카오스토리')">
+						<a href="https://story.kakao.com/ch/hyundai" target="_blank" class="ks" onclick="click_tracking('외부링크 오피셜카카오스토리');gtag('event','아웃링크',{'event_category':'오피셜카카오스토리','event_label':'오피셜카카오스토리'});">
 							<img src="./images/official_ks.png" alt="">
 						</a>
 					</div>
