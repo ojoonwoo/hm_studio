@@ -424,44 +424,67 @@
 					break;
 			}
 		});
+		var clipboard = new ClipboardJS('#copyHashtag', {
+			text: function() {
+				return '#가능성탐험 #현대모터스튜디오';
+			}
+		});
+		var clipboard2 = new ClipboardJS('#copyUrl', {
+			text: function() {
+				return 'http://www.hyundaimotorstudio.co.kr';
+			}
+		});
 
-		$("#copyHashtag").on("click", function() {
-			var textarea = document.createElement('textarea');
-			textarea.textContent = '#가능성탐험 #현대모터스튜디오';
-			document.body.appendChild(textarea);
+		clipboard.on('success', function(e) {
+			console.info('Action:', e.action);
+			console.info('Text:', e.text);
+			console.info('Trigger:', e.trigger);
 
-			var selection = document.getSelection();
-			var range = document.createRange();
-			//  range.selectNodeContents(textarea);
-			range.selectNode(textarea);
-			selection.removeAllRanges();
-			selection.addRange(range);
-
-			console.log('copy success', document.execCommand('copy'));
-			selection.removeAllRanges();
-
-			document.body.removeChild(textarea);
+			e.clearSelection();
 			alert("해시태그가 복사되었습니다");
 		});
-		
-		$("#copyUrl").on("click", function() {
-			var textarea = document.createElement('textarea');
-			textarea.textContent = 'http://www.hyundaimotorstudio.co.kr';
-			document.body.appendChild(textarea);
 
-			var selection = document.getSelection();
-			var range = document.createRange();
-			//  range.selectNodeContents(textarea);
-			range.selectNode(textarea);
-			selection.removeAllRanges();
-			selection.addRange(range);
-
-			console.log('copy success', document.execCommand('copy'));
-			selection.removeAllRanges();
-
-			document.body.removeChild(textarea);
+		clipboard2.on('success', function(e) {
+			// e.clearSelection();
 			alert("URL이 복사되었습니다");
 		});
+		// $("#copyHashtag").on("click", function() {
+		// 	var textarea = document.createElement('textarea');
+		// 	textarea.textContent = '#가능성탐험 #현대모터스튜디오';
+		// 	document.body.appendChild(textarea);
+
+		// 	var selection = document.getSelection();
+		// 	var range = document.createRange();
+		// 	//  range.selectNodeContents(textarea);
+		// 	range.selectNode(textarea);
+		// 	selection.removeAllRanges();
+		// 	selection.addRange(range);
+
+		// 	console.log('copy success', document.execCommand('copy'));
+		// 	selection.removeAllRanges();
+
+		// 	document.body.removeChild(textarea);
+		// 	alert("해시태그가 복사되었습니다");
+		// });
+		
+		// $("#copyUrl").on("click", function() {
+		// 	var textarea = document.createElement('textarea');
+		// 	textarea.textContent = 'http://www.hyundaimotorstudio.co.kr';
+		// 	document.body.appendChild(textarea);
+
+		// 	var selection = document.getSelection();
+		// 	var range = document.createRange();
+		// 	//  range.selectNodeContents(textarea);
+		// 	range.selectNode(textarea);
+		// 	selection.removeAllRanges();
+		// 	selection.addRange(range);
+
+		// 	console.log('copy success', document.execCommand('copy'));
+		// 	selection.removeAllRanges();
+
+		// 	document.body.removeChild(textarea);
+		// 	alert("URL이 복사되었습니다");
+		// });
 		
 		$('.js-burger-trigger').on('click', function() {
 			$('body').toggleClass('menu-open');
