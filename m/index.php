@@ -83,7 +83,7 @@
 		<div class="header-wrap">
 			<div class="inner">
 				<h1 class="header-logo">
-					<a href="/">
+					<a href="/m/">
 						<img src="./images/logo.svg" alt="HYUNDAI MOTORSTUDIO">
 					</a>
 				</h1>

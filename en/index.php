@@ -63,7 +63,7 @@
 			<div class="header-wrap">
 				<div class="inner">
 					<h1 class="header-logo">
-						<a href="/">
+						<a href="/en/">
 							<img src="../images/logo.svg" alt="HYUNDAI MOTORSTUDIO">
 						</a>
 					</h1>
@@ -89,22 +89,22 @@
 			<div class="menu-layer">
 				<div class="spread-layer">
 					<div class="row">
-						<a href="javascript:void(0)" onclick="movePage(1);click_tracking('이동 CAMPAIGN FILM')">CAMPAIGN FILM</a>
+						<a href="javascript:void(0)" onclick="movePage(1);click_tracking('이동 CAMPAIGN FILM');gtag('event','메뉴이동',{'event_category':'메뉴이동','event_label':'campaign film'});">CAMPAIGN FILM</a>
 					</div>
 					<div class="row">
-						<a href="javascript:void(0)" onclick="movePage(2);click_tracking('이동 EVENT')">EVENT</a>
+						<a href="javascript:void(0)" onclick="movePage(2);click_tracking('이동 EVENT');gtag('event','메뉴이동',{'event_category':'메뉴이동','event_label':'event'});">EVENT</a>
 					</div>
 					<div class="row">
-						<a href="javascript:void(0)" onclick="movePage(3);click_tracking('이동 EXPLORE THE POSSIBILITIES')">EXPLORE THE POSSIBILITIES</a>
+						<a href="javascript:void(0)" onclick="movePage(3);click_tracking('이동 EXPLORE THE POSSIBILITIES');gtag('event','메뉴이동',{'event_category':'메뉴이동','event_label':'explore the possibilities'});">EXPLORE THE POSSIBILITIES</a>
 					</div>
 					<div class="row">
-						<a href="javascript:void(0)" onclick="movePage(4);click_tracking('이동 HYUNDAI MOTORSTUDIO')">HYUNDAI MOTORSTUDIO</a>
+						<a href="javascript:void(0)" onclick="movePage(4);click_tracking('이동 HYUNDAI MOTORSTUDIO');gtag('event','메뉴이동',{'event_category':'메뉴이동','event_label':'hyundai motorstudio'});">HYUNDAI MOTORSTUDIO</a>
 					</div>
 					<div class="row share">
-						<a href="javascript:void(0)" class="fb" onclick="click_tracking('공유 페이스북');sns_share('fb')"></a>
-						<a href="javascript:void(0)" class="kt" onclick="click_tracking('공유 카카오톡');sns_share('kt')"></a>
-						<a href="javascript:void(0)" class="ks" onclick="click_tracking('공유 카카오스토리');sns_share('ks')"></a>
-						<a href="javascript:void(0)" class="url" id="copyUrl" onclick="click_tracking('공유 URL');"></a>
+						<a href="javascript:void(0)" class="fb" onclick="click_tracking('공유 페이스북');sns_share('fb');gtag('event','공유',{'event_category':'메인공유','event_label':'페이스북'});"></a>
+						<a href="javascript:void(0)" class="kt" onclick="click_tracking('공유 카카오톡');sns_share('kt');gtag('event','공유',{'event_category':'메인공유','event_label':'카카오톡'});"></a>
+						<a href="javascript:void(0)" class="ks" onclick="click_tracking('공유 카카오스토리');sns_share('ks');gtag('event','공유',{'event_category':'메인공유','event_label':'카카오스토리'});"></a>
+						<a href="javascript:void(0)" class="url" id="copyUrl" onclick="click_tracking('공유 URL');gtag('event','공유',{'event_category':'메인공유','event_label':'URL 복사'});"></a>
 					</div>
 				</div>
 			</div>
@@ -118,7 +118,7 @@
 								<!-- <h3>당신의 가능성을 실험하라</h3> -->
 							</div>
 							<div class="button-wrap">
-								<button type="button" onclick="viewVideo();">
+								<button type="button" onclick="viewVideo();gtag('event','영상재생',{'event_category':'메인영상재생','event_label':'메인영상재생'});">
                                     <p>Watch</p>
 									<p>Full Version</p>
 								</button>
