@@ -127,7 +127,7 @@
 					</div>
 					<div class="video-layer">
 						<video id="video_html5_api" class="video-js" preload="auto" data-setup='{}'>
-							<source src='../images/hyundaimotorstudio.mp4' type='video/mp4' />
+							<source src='../images/hyundaimotorstudio_eng.mp4' type='video/mp4' />
 						</video>
 					</div>
 				</div>
@@ -575,7 +575,7 @@
 				$.ajax({
 					type   : "POST",
 					async  : false,
-					url    : "./main_exec.php",
+					url    : "../main_exec.php",
 					data:{
 						"exec" 			: "insert_click_info",
 						"click_name"	: click_name
