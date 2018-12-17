@@ -457,7 +457,7 @@
 
 		clipboard2.on('success', function(e) {
 			// e.clearSelection();
-			alert("URL이 복사되었습니다");
+			alert("URL Copied");
 		});
 		// $("#copyHashtag").on("click", function() {
 		// 	var textarea = document.createElement('textarea');
