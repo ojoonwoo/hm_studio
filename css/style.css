@@ -344,7 +344,7 @@ body > .wrap {
 }
 .section2-wrap .date-winner h3 {
 	font-size: 30px;
-	font-weight: bold;
+	font-weight: 500;
 	color: #1d191a;
 	display: block;
 	padding-bottom: 12px;
@@ -373,7 +373,7 @@ body > .wrap {
 }
 .section2-wrap .prize h3.tt {
 	font-size: 30px;
-	font-weight: bold;
+	font-weight: 500;
 	margin-bottom: 12px;
 }
 .section2-wrap .prize div img {
@@ -407,7 +407,7 @@ body > .wrap {
 }
 .section2-wrap .winner-ann h3.tt {
 	font-size: 30px;
-	font-weight: bold;
+	font-weight: 500;
 	display: block;
 	margin-bottom: 7px;
 }
@@ -421,9 +421,8 @@ body > .wrap {
 /*	margin: 0 0 91px;*/
 }
 .section2-wrap .how h3 {
-	font-family: 'Hyundai Sans Text KR';
 	font-size: 30px;
-	font-weight: bold;
+	font-weight: 500;
 	color: #1d191a;
 	padding-bottom: 14px;
 }
@@ -461,6 +460,7 @@ body > .wrap {
 }
 .section2-wrap .how .hashtags {
 	color: #67cfee;
+	font-weight: bold;
 }
 #copyHashtag {
 	font-family: 'Hyundai Sans Text KR';
