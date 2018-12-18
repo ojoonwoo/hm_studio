@@ -1,7 +1,7 @@
 html {height: 100%}
 body {font-family: 'Hyundai Sans Head KR', sans-serif; font-weight: normal; font-style: normal; color: #221e1f; line-height: 1;}
 input, button, pre {font-family: 'Hyundai Sans Head KR', sans-serif; font-weight: normal; font-style: normal;}
-
+::selection { background: #b2c2d1; }
 /* common */
 ._oh {
 	overflow: hidden;
