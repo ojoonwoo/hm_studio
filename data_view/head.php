@@ -13,7 +13,7 @@ if (isset($_SESSION['ss_mb_name']) == false)
     <meta name="description" content="">
     <meta name="author" content="">
 
-	<title>라이프플러스 - 시간을 선물합니다</title>
+	<title>현대모터스튜디오</title>
 	<!-- jQuery Version 1.11.0 -->
 	<script src="js/jquery-1.11.0.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
@@ -71,7 +71,7 @@ if (isset($_SESSION['ss_mb_name']) == false)
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="entry_list.php">라이프플러스 - 시간을 선물합니다</a>
+          <a class="navbar-brand" href="entry_list.php">현대모터스튜디오</a>
         </div>
         <!-- Top Menu Items -->
         <ul class="nav navbar-right top-nav">
@@ -90,13 +90,13 @@ if (isset($_SESSION['ss_mb_name']) == false)
               <li class="active">
                 <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Daily Count<i class="fa fa-fw fa-caret-down"></i></a>
                 <ul id="demo" class="collapse">
-                  <!-- <li>
-                    <a href="daily_tracking_count.php">일자별 사이트 유입자 수</a>
-                  </li> -->
-
                   <li>
-                    <a href="daily_media_count.php">일자별 이벤트 참여자 수</a>
+                    <a href="daily_tracking_count.php">일자별 사이트 유입자 수</a>
                   </li>
+
+                  <!-- <li>
+                    <a href="daily_media_count.php">일자별 이벤트 참여자 수</a>
+                  </li> -->
 				  <!-- <li>
 						<a href="daily_media_count2.php">일자별 이벤트 좋아요 참여자 수</a>
 				  </li> -->
@@ -122,9 +122,9 @@ if (isset($_SESSION['ss_mb_name']) == false)
                 </ul>
               </li>
 
-              <li>
+              <!-- <li>
                 <a href="entry_list.php"><i class="fa fa-fw fa-table"></i> 이벤트 참여자 목록</a>
-              </li>
+              </li> -->
 			  <!-- <li>
 					<a href="entry_list2.php"><i class="fa fa-fw fa-table"></i> 이벤트 좋아요 참여자 목록</a>
 			  </li> -->
