@@ -31,10 +31,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-		<meta property="og:title" content="현대 모터스튜디오 - Explore the possibilities." />
-		<meta property="og:url" content="http://www.hyundaimotorstudio.co.kr" />
+		<meta property="og:title" content="Hyundai Motorstudio – Explore the possibilities" />
+		<meta property="og:url" content="http://www.hyundaimotorstudio.co.kr/en/" />
 		<meta property="og:image" content="http://www.hyundaimotorstudio.co.kr/images/share_img.jpg" />
-		<meta property="og:description" content="가능성 없는 사람이 어딨어? 중요한 건, 그것을 발견하는가, 못 하는가. Explore the possibilities. 현대 모터스튜디오" />
+		<meta property="og:description" content="Possibilities? Who doesn’t have’em? But have you explored and discovered? Explore the Possibilities Hyundai Motorstudio" />
 		<title>HYUNDAI MOTOR STUDIO</title>
 		<link type="image/icon" rel="shortcut icon" href="http://www.hyundaimotorstudio.co.kr/images/favi_HMS.ico" />
 		<link rel="stylesheet" href="../css/reset.css">
@@ -524,7 +524,7 @@
 				selection.removeAllRanges();
 
 				document.body.removeChild(textarea);
-				alert("해시태그가 복사되었습니다");
+				alert("URL Copied");
 			});
 		
 			$("#copyYtUrl").on("click", function() {
@@ -543,7 +543,7 @@
 				selection.removeAllRanges();
 
 				document.body.removeChild(textarea);
-				alert("유튜브 링크가 복사되었습니다");
+				alert("Youtube Link Copied");
 			});
 			$('.js-burger-trigger').on('click', function() {
 				$('body').toggleClass('menu-open');
@@ -640,32 +640,32 @@
 			function sns_share(media) {
 				switch (media) {
 					case "fb" :
-						var newWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent('http://www.hyundaimotorstudio.co.kr/?utm_medium=self&utm_source=share&utm_campaign=&utm_content=facebook'),'sharer','toolbar=0,status=0,width=600,height=325');
+						var newWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent('http://www.hyundaimotorstudio.co.kr/en/?utm_medium=self&utm_source=share&utm_campaign=&utm_content=facebook'),'sharer','toolbar=0,status=0,width=600,height=325');
 					break;
 					case "ks" :
 						Kakao.Story.share({
-							url: 'http://www.hyundaimotorstudio.co.kr/?utm_medium=self&utm_source=share&utm_campaign=&utm_content=kakaostory',
-							text: '가능성 없는 사람이 어딨어? 중요한 건, 그것을 발견하는가, 못 하는가.\nExplore the possibilities.\n\n현대 모터스튜디오'
+							url: 'http://www.hyundaimotorstudio.co.kr/en/?utm_medium=self&utm_source=share&utm_campaign=&utm_content=kakaostory',
+							text: 'Possibilities? Who doesn’t have’em? But have you explored and discovered?\nExplore the Possibilities\nHyundai Motorstudio'
 						});
 					break;
 					case "kt" :
 						Kakao.Link.sendDefault({
 							objectType: 'feed',
 							content: {
-								title: "현대 모터스튜디오 - Explore the possibilities.",
-								description: "가능성 없는 사람이 어딨어? 중요한 건, 그것을 발견하는가, 못 하는가.\nExplore the possibilities.\n\n현대 모터스튜디오",
+								title: "Hyundai Motorstudio – Explore the possibilities",
+								description: "Possibilities? Who doesn’t have’em? But have you explored and discovered?\nExplore the Possibilities\nHyundai Motorstudio",
 								imageUrl: "http://www.hyundaimotorstudio.co.kr/images/share_kt_img.png",
 								link: {
-									mobileWebUrl: 'http://www.hyundaimotorstudio.co.kr/m/?utm_medium=self&utm_source=share&utm_campaign=&utm_content=kakaotalk',
-									webUrl: 'http://www.hyundaimotorstudio.co.kr/?utm_medium=self&utm_source=share&utm_campaign=&utm_content=kakaotalk'
+									mobileWebUrl: 'http://www.hyundaimotorstudio.co.kr/m/en/?utm_medium=self&utm_source=share&utm_campaign=&utm_content=kakaotalk',
+									webUrl: 'http://www.hyundaimotorstudio.co.kr/en/?utm_medium=self&utm_source=share&utm_campaign=&utm_content=kakaotalk'
 								}
 							},
 							buttons: [
 								{
-									title: '현대모터스튜디오',
+									title: 'Hyundai Motorstudio',
 									link: {
-										mobileWebUrl: 'http://www.hyundaimotorstudio.co.kr/m/?utm_medium=self&utm_source=share&utm_campaign=&utm_content=kakaotalk',
-										webUrl: 'http://www.hyundaimotorstudio.co.kr/?utm_medium=self&utm_source=share&utm_campaign=&utm_content=kakaotalk'
+										mobileWebUrl: 'http://www.hyundaimotorstudio.co.kr/m/en/?utm_medium=self&utm_source=share&utm_campaign=&utm_content=kakaotalk',
+										webUrl: 'http://www.hyundaimotorstudio.co.kr/en/?utm_medium=self&utm_source=share&utm_campaign=&utm_content=kakaotalk'
 									}
 								}
 							],
@@ -709,15 +709,15 @@
 					case "ks" :
 						Kakao.Story.share({
 							url: 'https://www.youtube.com/watch?v=4Qol9zfQ61w',
-							text: '가능성 없는 사람이 어딨어? 중요한 건, 그것을 발견하는가, 못 하는가.\nExplore the possibilities.\n\n현대 모터스튜디오'
+							text: 'Possibilities? Who doesn’t have’em? But have you explored and discovered?\nExplore the Possibilities\nHyundai Motorstudio'
 						});
 					break;
 					case "kt" :
 						Kakao.Link.sendDefault({
 							objectType: 'feed',
 							content: {
-								title: "현대 모터스튜디오 - Explore the possibilities.",
-								description: "가능성 없는 사람이 어딨어? 중요한 건, 그것을 발견하는가, 못 하는가.\nExplore the possibilities.\n\n현대 모터스튜디오",
+								title: "Hyundai Motorstudio – Explore the possibilities",
+								description: "Possibilities? Who doesn’t have’em? But have you explored and discovered?\nExplore the Possibilities\nHyundai Motorstudio",
 								imageUrl: "http://www.hyundaimotorstudio.co.kr/images/share_kt_img.png",
 								link: {
 									mobileWebUrl: 'https://www.youtube.com/watch?v=4Qol9zfQ61w',
@@ -726,7 +726,7 @@
 							},
 							buttons: [
 								{
-									title: '현대모터스튜디오',
+									title: 'Hyundai Motorstudio',
 									link: {
 										mobileWebUrl: 'https://www.youtube.com/watch?v=4Qol9zfQ61w',
 										webUrl: 'https://www.youtube.com/watch?v=4Qol9zfQ61w'
