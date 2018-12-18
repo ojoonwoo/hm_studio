@@ -451,7 +451,7 @@
 		});
 		var clipboard2 = new ClipboardJS('#copyUrl', {
 			text: function() {
-				return 'http://www.hyundaimotorstudio.co.kr';
+				return 'http://www.hyundaimotorstudio.co.kr/?utm_medium=self&utm_source=share&utm_campaign=&utm_content=url';
 			}
 		});
 		var clipboard3 = new ClipboardJS('#copyYtUrl', {
