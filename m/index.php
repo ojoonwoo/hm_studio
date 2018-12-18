@@ -143,25 +143,25 @@
 								<p>Watch</p>
 								<p>Full Version</p>
 							</button>
-							<!-- <div class="btn-video-share">
+							<div class="btn-video-share">
 								<div class="share-list">
-									<a href="javascript:void(0)">
+									<a href="javascript:void(0)" onclick="sns_yt_share('fb');gtag('event','공유',{'event_category':'유튜브공유','event_label':'페이스북'});">
 										<img src="./images/FB_icon.png" alt="">
 									</a>
-									<a href="javascript:void(0)">
+									<a href="javascript:void(0)" onclick="sns_yt_share('kt');gtag('event','공유',{'event_category':'유튜브공유','event_label':'카카오톡'});">
 										<img src="./images/kakaot_icon.png" alt="">
 									</a>
-									<a href="javascript:void(0)">
+									<a href="javascript:void(0)" onclick="sns_yt_share('ks');gtag('event','공유',{'event_category':'유튜브공유','event_label':'카카오스토리'});">
 										<img src="./images/kakaos_icon.png" alt="">
 									</a>
-									<a href="javascript:void(0)">
+									<a href="javascript:void(0)" id="copyYtUrl" onclick="gtag('event','공유',{'event_category':'유튜브공유','event_label':'URL 복사'});">
 										<img src="./images/URL_icon.png" alt="">
 									</a>
 								</div>
 								<button type="button" class="share-toggle">
 									<img src="./images/share_M.png" alt="">
 								</button>
-							</div> -->
+							</div>
 						</div>
 					</div>
 				</div>
@@ -454,6 +454,11 @@
 				return 'http://www.hyundaimotorstudio.co.kr';
 			}
 		});
+		var clipboard3 = new ClipboardJS('#copyYtUrl', {
+			text: function() {
+				return 'http://www.hyundaimotorstudio.co.kr';
+			}
+		});
 
 		clipboard.on('success', function(e) {
 			console.info('Action:', e.action);
@@ -467,6 +472,10 @@
 		clipboard2.on('success', function(e) {
 			// e.clearSelection();
 			alert("URL이 복사되었습니다");
+		});
+		clipboard3.on('success', function(e) {
+			// e.clearSelection();
+			alert("유튜브 링크가 복사되었습니다");
 		});
 		// $("#copyHashtag").on("click", function() {
 		// 	var textarea = document.createElement('textarea');
@@ -638,6 +647,70 @@
 								link: {
 									mobileWebUrl: 'http://www.hyundaimotorstudio.co.kr/m/?utm_medium=self&utm_source=share&utm_campaign=&utm_content=kakaotalk',
 									webUrl: 'http://www.hyundaimotorstudio.co.kr/?utm_medium=self&utm_source=share&utm_campaign=&utm_content=kakaotalk'
+								}
+							}
+						],
+						success: function(res) {
+							console.log("success");
+							console.log(res);
+						},
+						fail: function(res) {
+							console.log("fail");
+							console.log(res);
+						},
+						callback: function() {
+							// shareEnd();
+						}
+					});
+				break;
+				case "url" :
+					var textarea2 = document.createElement('textarea');
+					textarea2.textContent = 'http://www.hyundaimotorstudio.co.kr/?utm_medium=self&utm_source=share&utm_campaign=&utm_content=url';
+					document.body.appendChild(textarea2);
+
+					var selection = document.getSelection();
+					var range = document.createRange();
+					//  range.selectNodeContents(textarea);
+					range.selectNode(textarea2);
+					selection.removeAllRanges();
+					selection.addRange(range);
+
+					selection.removeAllRanges();
+
+					document.body.removeChild(textarea2);
+					alert("URL이 복사되었습니다");
+				break;
+			}
+		}
+		function sns_yt_share(media) {
+			switch (media) {
+				case "fb" :
+					var newWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent('https://www.youtube.com/watch?v=Ip7YqP2pc9w'),'sharer','toolbar=0,status=0,width=600,height=325');
+				break;
+				case "ks" :
+					Kakao.Story.share({
+						url: 'https://www.youtube.com/watch?v=Ip7YqP2pc9w',
+						text: '가능성 없는 사람이 어딨어? 중요한 건, 그것을 발견하는가, 못 하는가.\nExplore the possibilities.\n\n현대 모터스튜디오'
+					});
+				break;
+				case "kt" :
+					Kakao.Link.sendDefault({
+						objectType: 'feed',
+						content: {
+							title: "현대 모터스튜디오 - Explore the possibilities.",
+							description: "가능성 없는 사람이 어딨어? 중요한 건, 그것을 발견하는가, 못 하는가.\nExplore the possibilities.\n\n현대 모터스튜디오",
+							imageUrl: "http://www.hyundaimotorstudio.co.kr/images/share_kt_img.png",
+							link: {
+								mobileWebUrl: 'https://www.youtube.com/watch?v=Ip7YqP2pc9w',
+								webUrl: 'https://www.youtube.com/watch?v=Ip7YqP2pc9w'
+							}
+						},
+						buttons: [
+							{
+								title: '현대모터스튜디오',
+								link: {
+									mobileWebUrl: 'https://www.youtube.com/watch?v=Ip7YqP2pc9w',
+									webUrl: 'https://www.youtube.com/watch?v=Ip7YqP2pc9w'
 								}
 							}
 						],
