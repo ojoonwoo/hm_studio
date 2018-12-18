@@ -105,7 +105,7 @@
 		$media_cnt		= mysqli_num_rows($media_res);
 		// $unique_query	= "SELECT * FROM member_info WHERE 1 AND mb_regdate LIKE  '%".$daily_date."%' GROUP BY mb_ipaddr";
 		// $unique_count	= mysqli_num_rows(mysqli_query($my_db, $unique_query));
-
+print_r($media_query);
 		// unset($media_name);
 		// unset($media_cnt);
 		// unset($pc_cnt);
