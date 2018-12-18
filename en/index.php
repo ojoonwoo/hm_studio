@@ -125,20 +125,20 @@
 								<div class="btn-video-share">
 									<div class="share-list">
 										<a href="javascript:void(0)" onclick="sns_yt_share('fb');gtag('event','공유',{'event_category':'유튜브공유','event_label':'페이스북'});">
-											<img src="./images/FB_icon.png" alt="">
+											<img src="../images/FB_icon.png" alt="">
 										</a>
 										<a href="javascript:void(0)" onclick="sns_yt_share('kt');gtag('event','공유',{'event_category':'유튜브공유','event_label':'카카오톡'});">
-											<img src="./images/kakaot_icon.png" alt="">
+											<img src="../images/kakaot_icon.png" alt="">
 										</a>
 										<a href="javascript:void(0)" onclick="sns_yt_share('ks');gtag('event','공유',{'event_category':'유튜브공유','event_label':'카카오스토리'});">
-											<img src="./images/kakaos_icon.png" alt="">
+											<img src="../images/kakaos_icon.png" alt="">
 										</a>
 										<a href="javascript:void(0)" id="copyYtUrl" onclick="gtag('event','공유',{'event_category':'유튜브공유','event_label':'URL 복사'});">
-											<img src="./images/URL_icon.png" alt="">
+											<img src="../images/URL_icon.png" alt="">
 										</a>
 									</div>
 									<button type="button" class="share-toggle">
-										<img src="./images/shareicon_PC.png" alt="">
+										<img src="../images/shareicon_PC.png" alt="">
 									</button>
 								</div>
 							</div>
