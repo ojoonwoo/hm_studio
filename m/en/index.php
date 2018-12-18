@@ -159,7 +159,7 @@
 									</a>
 								</div>
 								<button type="button" class="share-toggle">
-									<img src="../images/shareicon_PC.png" alt="">
+									<img src="../images/share_M.png" alt="">
 								</button>
 							</div>
 						</div>
