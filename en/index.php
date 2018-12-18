@@ -527,6 +527,24 @@
 				alert("해시태그가 복사되었습니다");
 			});
 		
+			$("#copyYtUrl").on("click", function() {
+				var textarea = document.createElement('textarea');
+				textarea.textContent = 'https://www.youtube.com/watch?v=4Qol9zfQ61w';
+				document.body.appendChild(textarea);
+
+				var selection = document.getSelection();
+				var range = document.createRange();
+				//  range.selectNodeContents(textarea);
+				range.selectNode(textarea);
+				selection.removeAllRanges();
+				selection.addRange(range);
+
+				console.log('copy success', document.execCommand('copy'));
+				selection.removeAllRanges();
+
+				document.body.removeChild(textarea);
+				alert("유튜브 링크가 복사되었습니다");
+			});
 			$('.js-burger-trigger').on('click', function() {
 				$('body').toggleClass('menu-open');
 			});
@@ -686,11 +704,11 @@
 			function sns_yt_share(media) {
 				switch (media) {
 					case "fb" :
-						var newWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent('https://www.youtube.com/watch?v=Ip7YqP2pc9w'),'sharer','toolbar=0,status=0,width=600,height=325');
+						var newWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent('https://www.youtube.com/watch?v=4Qol9zfQ61w'),'sharer','toolbar=0,status=0,width=600,height=325');
 					break;
 					case "ks" :
 						Kakao.Story.share({
-							url: 'https://www.youtube.com/watch?v=Ip7YqP2pc9w',
+							url: 'https://www.youtube.com/watch?v=4Qol9zfQ61w',
 							text: '가능성 없는 사람이 어딨어? 중요한 건, 그것을 발견하는가, 못 하는가.\nExplore the possibilities.\n\n현대 모터스튜디오'
 						});
 					break;
@@ -702,16 +720,16 @@
 								description: "가능성 없는 사람이 어딨어? 중요한 건, 그것을 발견하는가, 못 하는가.\nExplore the possibilities.\n\n현대 모터스튜디오",
 								imageUrl: "http://www.hyundaimotorstudio.co.kr/images/share_kt_img.png",
 								link: {
-									mobileWebUrl: 'https://www.youtube.com/watch?v=Ip7YqP2pc9w',
-									webUrl: 'https://www.youtube.com/watch?v=Ip7YqP2pc9w'
+									mobileWebUrl: 'https://www.youtube.com/watch?v=4Qol9zfQ61w',
+									webUrl: 'https://www.youtube.com/watch?v=4Qol9zfQ61w'
 								}
 							},
 							buttons: [
 								{
 									title: '현대모터스튜디오',
 									link: {
-										mobileWebUrl: 'https://www.youtube.com/watch?v=Ip7YqP2pc9w',
-										webUrl: 'https://www.youtube.com/watch?v=Ip7YqP2pc9w'
+										mobileWebUrl: 'https://www.youtube.com/watch?v=4Qol9zfQ61w',
+										webUrl: 'https://www.youtube.com/watch?v=4Qol9zfQ61w'
 									}
 								}
 							],

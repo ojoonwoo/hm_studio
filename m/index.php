@@ -456,7 +456,7 @@
 		});
 		var clipboard3 = new ClipboardJS('#copyYtUrl', {
 			text: function() {
-				return 'http://www.hyundaimotorstudio.co.kr';
+				return 'https://www.youtube.com/watch?v=Ip7YqP2pc9w';
 			}
 		});
 
