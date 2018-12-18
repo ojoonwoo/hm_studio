@@ -11,7 +11,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>라이프플러스 - 시간을 선물합니다</title>
+	<title>현대모터스튜디오</title>
 
 	<!-- Bootstrap Core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -34,7 +34,7 @@
 	  <div class="container-fluid">
 		<div class="row">
 		  <div class="col-lg-6">
-	  		<h1 class="page-header">라이프플러스 - 시간을 선물합니다</h1>
+	  		<h1 class="page-header">현대모터스튜디오</h1>
 			<ol class="breadcrumb">
 			  <form name="login_frm" method="post" action="admin_exec.php">
 				<input type="hidden" name="exec" value="login">

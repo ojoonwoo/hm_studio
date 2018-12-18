@@ -7,34 +7,75 @@
 
 	include "./head.php";
 
-	if(isset($_REQUEST['targetmedia']) == false)
-		//		$eDate = "";
-		$media = "";
-	else
-		$media = $_REQUEST['targetmedia'];
+	if(isset($_REQUEST['targetmedia']) == false) {
+		$mediaWhere = "";
+	}else{
+		// $media = $_REQUEST['targetmedia'];
+		switch ($_REQUEST['targetmedia']) {
+			case "naver1" :
+				$mediaWhere = " AND click_source='naver' AND click_medium='display' AND click_content='740x120'";
+			break;
+			case "youtube1" :
+				$mediaWhere = " AND click_source='youtube' AND click_medium='video' AND click_content='time_1'";
+			break;
+			case "youtube2" :
+				$mediaWhere = " AND click_source='youtube' AND click_medium='video' AND click_content='time_2'";
+			break;
+			case "smr1" :
+				$mediaWhere = " AND click_source='smr' AND click_medium='video' AND click_content='time_1'";
+			break;
+			case "smr2" :
+				$mediaWhere = " AND click_source='smr' AND click_medium='video' AND click_content='time_2'";
+			break;
+			case "facebook" :
+				$mediaWhere = " AND click_source='facebook' AND click_medium='video' AND click_content='time_1'";
+			break;
+			case "facebook" :
+				$mediaWhere = " AND click_source='facebook' AND click_medium='video' AND click_content='time_2'";
+			break;
+			case "instagram" :
+				$mediaWhere = " AND click_source='instagram' AND click_medium='story' AND click_content='story'";
+			break;
+			case "page_fb" :
+				$mediaWhere = " AND click_source='share' AND click_medium='self' AND click_content='facebook'";
+			break;
+			case "page_kt" :
+				$mediaWhere = " AND click_source='share' AND click_medium='self' AND click_content='kakaotalk'";
+			break;
+			case "page_ks" :
+				$mediaWhere = " AND click_source='share' AND click_medium='self' AND click_content='kakaostory'";
+			break;
+			case "page_url" :
+				$mediaWhere = " AND click_source='share' AND click_medium='self' AND click_content='url'";
+			break;
+			default :
+				$mediaWhere = "";
+			break;
+		}
+	}
 
-	$media_list_query = "SELECT click_media FROM click_info WHERE 1 Group by click_media ORDER BY click_media DESC";
-	$media_query_res = mysqli_query($my_db, $media_list_query);
+	// $media_list_query = "SELECT click_media FROM click_info WHERE 1 Group by click_media ORDER BY click_media DESC";
+	// $media_query_res = mysqli_query($my_db, $media_list_query);
 	
 
-//	$options = array( 'jw', 'test' );
-	$options = array();
-	$i = 0;
-	$output = '';
-	while($media_array = mysqli_fetch_array($media_query_res)) {
-		if($media_array['click_media'] == '') {
-			$options[$i] = "----";
-		} else {
-			$options[$i] = $media_array['click_media'];
-		}
+// //	$options = array( 'jw', 'test' );
+// 	$options = array();
+// 	$i = 0;
+// 	$output = '';
+// 	while($media_array = mysqli_fetch_array($media_query_res)) {
+// 		if($media_array['click_media'] == '') {
+// 			$options[$i] = "----";
+// 		} else {
+// 			$options[$i] = $media_array['click_media'];
+// 		}
 		
-		$output .= '<option ' 
-			. ( $media == $options[$i] ? 'selected="selected"' : '' ) . '>' 
-			. $options[$i] 
-			. '</option>';
-		$i++;
-	}
-	print_r($options);
+// 		$output .= '<option ' 
+// 			. ( $media == $options[$i] ? 'selected="selected"' : '' ) . '>' 
+// 			. $options[$i] 
+// 			. '</option>';
+// 		$i++;
+// 	}
+// 	print_r($options);
 
 //	$output = '';
 //	for( $i=0; $i<count($options); $i++ ) {
@@ -60,8 +101,19 @@
 							<form id="frm_execute" name="frm_execute" method="POST" onsubmit="">
 								<span>미디어별 소팅 : </span>
 								<select name="targetmedia" id="targetmedia">
-									<option value="">전체</option>
-									<? echo $output; ?>
+									<option value="" <? if($_REQUEST['targetmedia'] == ""){?>selected<?}?>>전체</option>
+									<option value="naver1" <? if($_REQUEST['targetmedia'] == "naver1"){?>selected<?}?>>네이버-타임보드_오토플레이</option>
+									<option value="youtube1" <? if($_REQUEST['targetmedia'] == "youtube1"){?>selected<?}?>>유튜브-트루뷰 인스트림1</option>
+									<option value="youtube2" <? if($_REQUEST['targetmedia'] == "youtube2"){?>selected<?}?>>유튜브-트루뷰 인스트림2</option>
+									<option value="smr1" <? if($_REQUEST['targetmedia'] == "smr1"){?>selected<?}?>>SMR-프리롤1</option>
+									<option value="smr2" <? if($_REQUEST['targetmedia'] == "smr2"){?>selected<?}?>>SMR-프리롤2</option>
+									<option value="facebook1" <? if($_REQUEST['targetmedia'] == "facebook1"){?>selected<?}?>>페이스북-video1</option>
+									<option value="facebook2" <? if($_REQUEST['targetmedia'] == "facebook2"){?>selected<?}?>>페이스북-video2</option>
+									<option value="instagram" <? if($_REQUEST['targetmedia'] == "instagram"){?>selected<?}?>>인스타그램-스토리</option>
+									<option value="page_fb" <? if($_REQUEST['targetmedia'] == "page_fb"){?>selected<?}?>>페이지공유-공유페이스북</option>
+									<option value="page_kt" <? if($_REQUEST['targetmedia'] == "page_kt"){?>selected<?}?>>페이지공유-공유카카오톡</option>
+									<option value="page_ks" <? if($_REQUEST['targetmedia'] == "page_ks"){?>selected<?}?>>페이지공유-공유카카오스토리</option>
+									<option value="page_url" <? if($_REQUEST['targetmedia'] == "page_url"){?>selected<?}?>>페이지공유-공유URL</option>
 								</select>
 							</form>
 							<table class="table table-hover">
@@ -77,10 +129,10 @@
 								</thead>
 								<tbody>
 									<?php
-	$mediaWhere = "";
-	if($media != "") {
-		$mediaWhere = " AND click_media LIKE '".$media."'";
-	}
+	// $mediaWhere = "";
+	// if($media != "") {
+	// 	$mediaWhere = " AND click_media LIKE '".$media."'";
+	// }
 		
 	$daily_date_query	= "SELECT click_date FROM click_info WHERE 1 ".$mediaWhere." Group by substr(click_date,1,10) ORDER BY click_date DESC";
 //	$daily_date_query	= "SELECT click_date FROM click_info Group by substr(click_date,1,10) ORDER BY click_date DESC";
@@ -131,21 +183,6 @@
 		$i = 0;
 		foreach($click_name as $key => $val)
 		{
-				// $val = str_replace("AppDirect","앱바로가기",$val);
-				// $val = str_replace("FB","페이스북공유",$val);
-				// $val = str_replace("KS","페이스북공유",$val);
-				// $val = str_replace("TW","페이스북공유",$val);
-				// $val = str_replace("KT","페이스북공유",$val);
-				// $val = str_replace("AppInstall","앱설치하기",$val);
-				// $val = str_replace("DETAIL","자세히보기",$val);
-				// $val = str_replace("VIDEO","영상클릭",$val);
-				// $val = str_replace("REQUEST","신청하기",$val);
-				// $val = str_replace("FB","페이스북공유",$val);
-				// $val = str_replace("JOIN","가입하기",$val);
-				// $val = str_replace("AppDownload_Andro","안드로이드 다운로드",$val);
-				// $val = str_replace("AppDownload_Ios","아이폰 다운로드",$val);
-				// $val = str_replace("EventBanner","이벤트 배너",$val);
-				// $val = str_replace("MAIN_buddy_banner","메인 버디 배너",$val);
 ?>
 										<tr>
 											<?
@@ -154,9 +191,9 @@
 ?>
 												<td rowspan="<?=$rowspan_cnt?>">
 													<?php echo $daily_date?>				
-													<a id="excelDown" href="excel_download_click.php?date=<?=$daily_date?>&sort=<?=$_REQUEST["targetmedia"]?>">
+													<!-- <a id="excelDown" href="excel_download_click.php?date=<?=$daily_date?>&sort=<?=$_REQUEST["targetmedia"]?>">
 														<span>엑셀 다운로드</span>
-													</a>
+													</a> -->
 												</td>
 												<?
 			}

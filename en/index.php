@@ -69,7 +69,7 @@
 					</h1>
 					<div class="action-wrap">
 						<div class="lang-box">
-							<a href="../" onclick="click_tracking('영문/한국어사이트');gtag('event','언어변경',{'event_category':'언어변경','event_label':'kr'});">KR</a>
+							<a href="../?<?=$siteURL['query']?>" onclick="click_tracking('영문/한국어사이트');gtag('event','언어변경',{'event_category':'언어변경','event_label':'kr'});">KR</a>
 							<span>/</span>
 							<a href="javascript:void(0)" class="is-active" onclick="click_tracking('영문/영어사이트');gtag('event','언어변경',{'event_category':'언어변경','event_label':'en'});">EN</a>
 						</div>

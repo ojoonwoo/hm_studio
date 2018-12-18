@@ -92,7 +92,7 @@
 				<div class="lang-box">
 					<a href="javascript:void(0)" class="is-active" onclick="click_tracking('국문/한국어사이트');gtag('event','언어변경',{'event_category':'언어변경','event_label':'kr'});">KR</a>
 					<span>/</span>
-					<a href="./en/" onclick="click_tracking('국문/영어사이트');gtag('event','언어변경',{'event_category':'언어변경','event_label':'en'});">EN</a>
+					<a href="./en/?<?=$siteURL['query']?>" onclick="click_tracking('국문/영어사이트');gtag('event','언어변경',{'event_category':'언어변경','event_label':'en'});">EN</a>
 				</div>
 				<div class="js-burger-trigger"></div>
 				<div id="gnb" class="burger-ui">
