@@ -7,34 +7,75 @@
 
 	include "./head.php";
 
-	if(isset($_REQUEST['targetmedia']) == false)
-		//		$eDate = "";
-		$media = "";
-	else
-		$media = $_REQUEST['targetmedia'];
+	if(isset($_REQUEST['targetmedia']) == false) {
+		$mediaWhere = "";
+	}else{
+		// $media = $_REQUEST['targetmedia'];
+		switch ($_REQUEST['targetmedia']) {
+			case "naver1" :
+				$mediaWhere = " AND click_source='naver' AND click_medium='display' AND click_content='740x120'";
+			break;
+			case "youtube1" :
+				$mediaWhere = " AND click_source='youtube' AND click_medium='video' AND click_content='time_1'";
+			break;
+			case "youtube2" :
+				$mediaWhere = " AND click_source='youtube' AND click_medium='video' AND click_content='time_2'";
+			break;
+			case "smr1" :
+				$mediaWhere = " AND click_source='smr' AND click_medium='video' AND click_content='time_1'";
+			break;
+			case "smr2" :
+				$mediaWhere = " AND click_source='smr' AND click_medium='video' AND click_content='time_2'";
+			break;
+			case "facebook" :
+				$mediaWhere = " AND click_source='facebook' AND click_medium='video' AND click_content='time_1'";
+			break;
+			case "facebook" :
+				$mediaWhere = " AND click_source='facebook' AND click_medium='video' AND click_content='time_2'";
+			break;
+			case "instagram" :
+				$mediaWhere = " AND click_source='instagram' AND click_medium='story' AND click_content='story'";
+			break;
+			case "page_fb" :
+				$mediaWhere = " AND click_source='share' AND click_medium='self' AND click_content='facebook'";
+			break;
+			case "page_kt" :
+				$mediaWhere = " AND click_source='share' AND click_medium='self' AND click_content='kakaotalk'";
+			break;
+			case "page_ks" :
+				$mediaWhere = " AND click_source='share' AND click_medium='self' AND click_content='kakaostory'";
+			break;
+			case "page_url" :
+				$mediaWhere = " AND click_source='share' AND click_medium='self' AND click_content='url'";
+			break;
+			default :
+				$mediaWhere = "";
+			break;
+		}
+	}
 
-	$media_list_query = "SELECT click_media FROM click_info WHERE 1 Group by click_media ORDER BY click_media DESC";
-	$media_query_res = mysqli_query($my_db, $media_list_query);
+	// $media_list_query = "SELECT click_media FROM click_info WHERE 1 Group by click_media ORDER BY click_media DESC";
+	// $media_query_res = mysqli_query($my_db, $media_list_query);
 	
 
-//	$options = array( 'jw', 'test' );
-	$options = array();
-	$i = 0;
-	$output = '';
-	while($media_array = mysqli_fetch_array($media_query_res)) {
-		if($media_array['click_media'] == '') {
-			$options[$i] = "----";
-		} else {
-			$options[$i] = $media_array['click_media'];
-		}
+// //	$options = array( 'jw', 'test' );
+// 	$options = array();
+// 	$i = 0;
+// 	$output = '';
+// 	while($media_array = mysqli_fetch_array($media_query_res)) {
+// 		if($media_array['click_media'] == '') {
+// 			$options[$i] = "----";
+// 		} else {
+// 			$options[$i] = $media_array['click_media'];
+// 		}
 		
-		$output .= '<option ' 
-			. ( $media == $options[$i] ? 'selected="selected"' : '' ) . '>' 
-			. $options[$i] 
-			. '</option>';
-		$i++;
-	}
-	print_r($options);
+// 		$output .= '<option ' 
+// 			. ( $media == $options[$i] ? 'selected="selected"' : '' ) . '>' 
+// 			. $options[$i] 
+// 			. '</option>';
+// 		$i++;
+// 	}
+// 	print_r($options);
 
 //	$output = '';
 //	for( $i=0; $i<count($options); $i++ ) {
@@ -61,7 +102,18 @@
 								<span>미디어별 소팅 : </span>
 								<select name="targetmedia" id="targetmedia">
 									<option value="">전체</option>
-									<? echo $output; ?>
+									<option value="naver1">네이버-타임보드_오토플레이</option>
+									<option value="youtube1">유튜브-트루뷰 인스트림1</option>
+									<option value="youtube2">유튜브-트루뷰 인스트림2</option>
+									<option value="smr1">SMR-프리롤1</option>
+									<option value="smr2">SMR-프리롤2</option>
+									<option value="facebook1">페이스북-video1</option>
+									<option value="facebook2">페이스북-video2</option>
+									<option value="instagram">인스타그램-스토리</option>
+									<option value="page_fb">페이지공유-공유페이스북</option>
+									<option value="page_kt">페이지공유-공유카카오톡</option>
+									<option value="page_ks">페이지공유-공유카카오스토리</option>
+									<option value="page_url">페이지공유-공유URL</option>
 								</select>
 							</form>
 							<table class="table table-hover">
@@ -77,10 +129,10 @@
 								</thead>
 								<tbody>
 									<?php
-	$mediaWhere = "";
-	if($media != "") {
-		$mediaWhere = " AND click_media LIKE '".$media."'";
-	}
+	// $mediaWhere = "";
+	// if($media != "") {
+	// 	$mediaWhere = " AND click_media LIKE '".$media."'";
+	// }
 		
 	$daily_date_query	= "SELECT click_date FROM click_info WHERE 1 ".$mediaWhere." Group by substr(click_date,1,10) ORDER BY click_date DESC";
 //	$daily_date_query	= "SELECT click_date FROM click_info Group by substr(click_date,1,10) ORDER BY click_date DESC";
