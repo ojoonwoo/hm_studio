@@ -463,7 +463,7 @@
 		});
 		var clipboard2 = new ClipboardJS('#copyUrl', {
 			text: function() {
-				return 'http://www.hyundaimotorstudio.co.kr';
+				return 'http://www.hyundaimotorstudio.co.kr/en/';
 			}
 		});
 		var clipboard3 = new ClipboardJS('#copyYtUrl', {

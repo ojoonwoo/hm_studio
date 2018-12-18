@@ -510,7 +510,7 @@
 
 			$("#copyUrl").on("click", function() {
 				var textarea = document.createElement('textarea');
-				textarea.textContent = 'http://www.hyundaimotorstudio.co.kr';
+				textarea.textContent = 'http://www.hyundaimotorstudio.co.kr/en/';
 				document.body.appendChild(textarea);
 
 				var selection = document.getSelection();
