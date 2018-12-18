@@ -122,7 +122,7 @@
 									<p>Watch</p>
 									<p>Full Version</p>
 								</button>
-								<!-- <div class="btn-video-share">
+								<div class="btn-video-share">
 									<div class="share-list">
 										<a href="javascript:void(0)" onclick="sns_yt_share('fb');gtag('event','공유',{'event_category':'유튜브공유','event_label':'페이스북'});">
 											<img src="./images/FB_icon.png" alt="">
@@ -140,7 +140,7 @@
 									<button type="button" class="share-toggle">
 										<img src="./images/shareicon_PC.png" alt="">
 									</button>
-								</div> -->
+								</div>
 							</div>
 						</div>
 					</div>
@@ -494,7 +494,7 @@
 
 			$("#copyUrl").on("click", function() {
 				var textarea = document.createElement('textarea');
-				textarea.textContent = 'http://www.hyundaimotorstudio.co.kr';
+				textarea.textContent = 'http://www.hyundaimotorstudio.co.kr/?utm_medium=self&utm_source=share&utm_campaign=&utm_content=url';
 				document.body.appendChild(textarea);
 
 				var selection = document.getSelection();
@@ -513,7 +513,7 @@
 		
 			$("#copyYtUrl").on("click", function() {
 				var textarea = document.createElement('textarea');
-				textarea.textContent = 'http://www.hyundaimotorstudio.co.kr';
+				textarea.textContent = 'https://www.youtube.com/watch?v=Ip7YqP2pc9w';
 				document.body.appendChild(textarea);
 
 				var selection = document.getSelection();
@@ -668,11 +668,11 @@
 			function sns_yt_share(media) {
 				switch (media) {
 					case "fb" :
-						var newWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent('http://www.hyundaimotorstudio.co.kr/?utm_medium=self&utm_source=share&utm_campaign=&utm_content=facebook'),'sharer','toolbar=0,status=0,width=600,height=325');
+						var newWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent('https://www.youtube.com/watch?v=Ip7YqP2pc9w'),'sharer','toolbar=0,status=0,width=600,height=325');
 					break;
 					case "ks" :
 						Kakao.Story.share({
-							url: 'http://www.hyundaimotorstudio.co.kr/?utm_medium=self&utm_source=share&utm_campaign=&utm_content=kakaostory',
+							url: 'https://www.youtube.com/watch?v=Ip7YqP2pc9w',
 							text: '가능성 없는 사람이 어딨어? 중요한 건, 그것을 발견하는가, 못 하는가.\nExplore the possibilities.\n\n현대 모터스튜디오'
 						});
 					break;
@@ -684,16 +684,16 @@
 								description: "가능성 없는 사람이 어딨어? 중요한 건, 그것을 발견하는가, 못 하는가.\nExplore the possibilities.\n\n현대 모터스튜디오",
 								imageUrl: "http://www.hyundaimotorstudio.co.kr/images/share_kt_img.png",
 								link: {
-									mobileWebUrl: 'http://www.hyundaimotorstudio.co.kr/m/?utm_medium=self&utm_source=share&utm_campaign=&utm_content=kakaotalk',
-									webUrl: 'http://www.hyundaimotorstudio.co.kr/?utm_medium=self&utm_source=share&utm_campaign=&utm_content=kakaotalk'
+									mobileWebUrl: 'https://www.youtube.com/watch?v=Ip7YqP2pc9w',
+									webUrl: 'https://www.youtube.com/watch?v=Ip7YqP2pc9w'
 								}
 							},
 							buttons: [
 								{
 									title: '현대모터스튜디오',
 									link: {
-										mobileWebUrl: 'http://www.hyundaimotorstudio.co.kr/m/?utm_medium=self&utm_source=share&utm_campaign=&utm_content=kakaotalk',
-										webUrl: 'http://www.hyundaimotorstudio.co.kr/?utm_medium=self&utm_source=share&utm_campaign=&utm_content=kakaotalk'
+										mobileWebUrl: 'https://www.youtube.com/watch?v=Ip7YqP2pc9w',
+										webUrl: 'https://www.youtube.com/watch?v=Ip7YqP2pc9w'
 									}
 								}
 							],
