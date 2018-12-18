@@ -101,19 +101,19 @@
 							<form id="frm_execute" name="frm_execute" method="POST" onsubmit="">
 								<span>미디어별 소팅 : </span>
 								<select name="targetmedia" id="targetmedia">
-									<option value="">전체</option>
-									<option value="naver1">네이버-타임보드_오토플레이</option>
-									<option value="youtube1">유튜브-트루뷰 인스트림1</option>
-									<option value="youtube2">유튜브-트루뷰 인스트림2</option>
-									<option value="smr1">SMR-프리롤1</option>
-									<option value="smr2">SMR-프리롤2</option>
-									<option value="facebook1">페이스북-video1</option>
-									<option value="facebook2">페이스북-video2</option>
-									<option value="instagram">인스타그램-스토리</option>
-									<option value="page_fb">페이지공유-공유페이스북</option>
-									<option value="page_kt">페이지공유-공유카카오톡</option>
-									<option value="page_ks">페이지공유-공유카카오스토리</option>
-									<option value="page_url">페이지공유-공유URL</option>
+									<option value="" <? if($mediaWhere == ""){?>selected<?}?>>전체</option>
+									<option value="naver1" <? if($mediaWhere == "naver1"){?>selected<?}?>>네이버-타임보드_오토플레이</option>
+									<option value="youtube1" <? if($mediaWhere == "youtube1"){?>selected<?}?>>유튜브-트루뷰 인스트림1</option>
+									<option value="youtube2" <? if($mediaWhere == "youtube2"){?>selected<?}?>>유튜브-트루뷰 인스트림2</option>
+									<option value="smr1" <? if($mediaWhere == "smr1"){?>selected<?}?>>SMR-프리롤1</option>
+									<option value="smr2" <? if($mediaWhere == "smr2"){?>selected<?}?>>SMR-프리롤2</option>
+									<option value="facebook1" <? if($mediaWhere == "facebook1"){?>selected<?}?>>페이스북-video1</option>
+									<option value="facebook2" <? if($mediaWhere == "facebook2"){?>selected<?}?>>페이스북-video2</option>
+									<option value="instagram" <? if($mediaWhere == "instagram"){?>selected<?}?>>인스타그램-스토리</option>
+									<option value="page_fb" <? if($mediaWhere == "page_fb"){?>selected<?}?>>페이지공유-공유페이스북</option>
+									<option value="page_kt" <? if($mediaWhere == "page_kt"){?>selected<?}?>>페이지공유-공유카카오톡</option>
+									<option value="page_ks" <? if($mediaWhere == "page_ks"){?>selected<?}?>>페이지공유-공유카카오스토리</option>
+									<option value="page_url" <? if($mediaWhere == "page_url"){?>selected<?}?>>페이지공유-공유URL</option>
 								</select>
 							</form>
 							<table class="table table-hover">
