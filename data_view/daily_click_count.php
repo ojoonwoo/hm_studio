@@ -131,21 +131,6 @@
 		$i = 0;
 		foreach($click_name as $key => $val)
 		{
-				// $val = str_replace("AppDirect","앱바로가기",$val);
-				// $val = str_replace("FB","페이스북공유",$val);
-				// $val = str_replace("KS","페이스북공유",$val);
-				// $val = str_replace("TW","페이스북공유",$val);
-				// $val = str_replace("KT","페이스북공유",$val);
-				// $val = str_replace("AppInstall","앱설치하기",$val);
-				// $val = str_replace("DETAIL","자세히보기",$val);
-				// $val = str_replace("VIDEO","영상클릭",$val);
-				// $val = str_replace("REQUEST","신청하기",$val);
-				// $val = str_replace("FB","페이스북공유",$val);
-				// $val = str_replace("JOIN","가입하기",$val);
-				// $val = str_replace("AppDownload_Andro","안드로이드 다운로드",$val);
-				// $val = str_replace("AppDownload_Ios","아이폰 다운로드",$val);
-				// $val = str_replace("EventBanner","이벤트 배너",$val);
-				// $val = str_replace("MAIN_buddy_banner","메인 버디 배너",$val);
 ?>
 										<tr>
 											<?
@@ -154,9 +139,9 @@
 ?>
 												<td rowspan="<?=$rowspan_cnt?>">
 													<?php echo $daily_date?>				
-													<a id="excelDown" href="excel_download_click.php?date=<?=$daily_date?>&sort=<?=$_REQUEST["targetmedia"]?>">
+													<!-- <a id="excelDown" href="excel_download_click.php?date=<?=$daily_date?>&sort=<?=$_REQUEST["targetmedia"]?>">
 														<span>엑셀 다운로드</span>
-													</a>
+													</a> -->
 												</td>
 												<?
 			}
