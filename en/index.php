@@ -205,6 +205,9 @@
 						<span>the official Hyundai Motorstudio Instagram account (@hyundaimotorstudio)</span>
 					</div>
 					<div class="instagram">
+						<div class="guide">
+							Entries will be displayed on this web site, updated every weekday at 1PM (KST)
+						</div>
 						<!-- 어트랙트 API 적용해야 할 부분 -->
 						<script type="text/javascript">
 							(function(d, s) {

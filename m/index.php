@@ -227,6 +227,9 @@
 					<span>(@hyundaimotorstudio)에서 개별 DM을 드릴 예정입니다</span>
 				</div>
 				<div class="instagram">
+					<div class="guide">
+						참여하신 인스타그램 컨텐츠는 매일 오후 1시에 일괄 업데이트됩니다<br>(주말, 공휴일 제외)
+					</div>
 					<!-- 어트랙트 API 적용해야 할 부분 -->
 					<script type="text/javascript">
 						(function(d, s) {

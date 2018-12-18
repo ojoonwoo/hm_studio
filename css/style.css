@@ -442,7 +442,6 @@ body > .wrap {
 	background: rgba(29, 25, 26, 0.3);
 }
 .section2-wrap .winner-ann {
-/*	margin-bottom: 35px;*/
 	margin-bottom: 73px;
 }
 .section2-wrap .winner-ann h3.tt {
@@ -511,6 +510,23 @@ body > .wrap {
 	font-size: 30px;
 	font-weight: 500;
 	margin: 70px 0;
+}
+.section2-wrap .instagram .guide {
+	position: relative;
+	padding: 30px 0;
+	font-family: 'Hyundai Sans Text KR';
+	font-size: 19px;
+}
+.section2-wrap .instagram .guide:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -39px;
+	display: block;
+	width: 78px;
+	height: 1px;
+	background: rgba(29, 25, 26, 0.3);
 }
 .section2-wrap .instagram .notice {
 	width: 603px;
