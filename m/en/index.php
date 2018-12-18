@@ -399,7 +399,7 @@
 		</div>
 	</div>
 	<script>
-		Kakao.init('cf559a1b4265e66761ca6acfa705948f');
+		Kakao.init('4c427a5ce63de0aa9cd687ca856d3ab8');
 		// $(document).load(function(){
 		// 	$("#video_html5_api").height($(window).height());
 		// });
