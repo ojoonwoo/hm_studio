@@ -523,6 +523,23 @@ body.menu-open {
 	line-height: 17px;
 	display: block;
 }
+.section2-wrap .instagram .guide {
+	position: relative;
+	padding: 17px 0;
+	font-family: 'Hyundai Sans Text KR';
+	font-size: 11px;
+}
+.section2-wrap .instagram .guide:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -19px;
+	display: block;
+	width: 39px;
+	height: 1px;
+	background: rgba(29, 25, 26, 0.3);
+}
 .section2-wrap .instagram .insta-area {
 	width: 310px;
 	margin: 0 auto;
