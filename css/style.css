@@ -252,6 +252,7 @@ body > .wrap {
 	background: url(../images/main_image.png) center / cover no-repeat;
 	height: 100%;
 	text-align: center;
+	position: relative;
 }
 .section1-wrap .inner .video-thumb-layer .wrapper {
 /*	height: 100%;*/
@@ -264,6 +265,7 @@ body > .wrap {
 .section1-wrap .inner .video-layer {
 	height: 100%;
 	position: relative;
+	z-index: -1;
 }
 .video_html5_api-dimensions {
 	height: 100%;
@@ -299,17 +301,49 @@ body > .wrap {
 	color: #fff;
 	padding-top: 21px;
 }
-.section1-wrap .inner .button-wrap button {
+.section1-wrap .inner .button-wrap .btn-watch {
 	background: #fff;
 	width: 270px;
 	height: 70px;
 }
-.section1-wrap .inner .button-wrap button p {
+.section1-wrap .inner .button-wrap .btn-watch p {
 	font-family: 'Hyundai Sans Head KR';
 	font-weight: 500;
 	font-size: 22px;
 	color: #221e1f;
 	line-height: 21px;
+}
+.section1-wrap .inner .button-wrap .btn-video-share {
+	position: relative;
+	margin-top: 200px;
+}
+.section1-wrap .inner .button-wrap .btn-video-share .share-list {
+	position: absolute;
+	top: -50px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 0;
+}
+.section1-wrap .inner .button-wrap .btn-video-share .share-list a {
+	display: inline-block;
+	margin-right: 30px;
+	opacity: 0;
+	transform: translateY(5px);
+	transition: all 0.1s ease-in;
+}
+.section1-wrap .inner .button-wrap .btn-video-share .share-list a:nth-child(1) {transition-delay: 0s;}
+.section1-wrap .inner .button-wrap .btn-video-share .share-list a:nth-child(2) {transition-delay: 0.1s;}
+.section1-wrap .inner .button-wrap .btn-video-share .share-list a:nth-child(3) {transition-delay: 0.2s;}
+.section1-wrap .inner .button-wrap .btn-video-share .share-list a:nth-child(4) {transition-delay: 0.3s;}
+.section1-wrap .inner .button-wrap .btn-video-share .share-list a img {
+	width: 30px;
+}
+.section1-wrap .inner .button-wrap .btn-video-share .share-list a:last-child {
+	margin-right: 0;
+}
+.section1-wrap .inner .button-wrap .btn-video-share .share-list.visible a {
+	opacity: 1;
+	transform: translateY(0);
 }
 .section2-wrap {
 	position: relative;
@@ -718,4 +752,10 @@ body > .wrap {
 #btn-go-top img {
 	width: 49px;
 	/*	height: 49px;*/
+}
+
+@media only screen and (min-aspect-ratio: 1920/1080) {
+	.section1-wrap .inner .video-thumb-layer {
+		background: url(../images/main_image_wide.jpg) center / cover no-repeat;
+	}
 }

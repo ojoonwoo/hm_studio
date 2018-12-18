@@ -118,10 +118,29 @@
 								<h3>당신의 가능성을 탐험하라</h3>
 							</div>
 							<div class="button-wrap">
-								<button type="button" onclick="viewVideo();click_tracking('국문/풀 영상 보기');gtag('event','영상재생',{'event_category':'메인영상재생','event_label':'메인영상재생'});">
+								<button type="button" class="btn-watch" onclick="viewVideo();click_tracking('국문/풀 영상 보기');gtag('event','영상재생',{'event_category':'메인영상재생','event_label':'메인영상재생'});">
 									<p>Watch</p>
 									<p>Full Version</p>
 								</button>
+								<div class="btn-video-share">
+									<div class="share-list">
+										<a href="javascript:void(0)">
+											<img src="./images/FB_icon.png" alt="">
+										</a>
+										<a href="javascript:void(0)">
+											<img src="./images/kakaot_icon.png" alt="">
+										</a>
+										<a href="javascript:void(0)">
+											<img src="./images/kakaos_icon.png" alt="">
+										</a>
+										<a href="javascript:void(0)">
+											<img src="./images/URL_icon.png" alt="">
+										</a>
+									</div>
+									<button type="button" class="share-toggle">
+										<img src="./images/shareicon_PC.png" alt="">
+									</button>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -529,7 +548,7 @@
 			});
 			function viewVideo() {
 				$(".video-thumb-layer").hide();
-				$(".video-layer").show();
+				$(".video-layer").show().css('z-index', 1);
 				player.play();			
 			}
 			
@@ -624,6 +643,9 @@
 					break;
 				}
 			}
+			$('.share-toggle').off().on('click', function() {
+				$('.btn-video-share .share-list').toggleClass('visible');
+			});
 		</script>
 	</body>
 

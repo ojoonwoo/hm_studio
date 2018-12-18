@@ -299,8 +299,8 @@ body.menu-open {
 	font-weight: bold;
 	font-size: 47px;
 	color: #fff;
-	line-height: 53px;
-
+/*	line-height: 53px;*/
+	line-height: 51px;
 }
 .section1-wrap .inner .title-wrap h3 {
 	font-family: 'Hyundai Sans Head KR';
@@ -309,17 +309,52 @@ body.menu-open {
 	color: #fff;
 	padding-top: 16px;
 }
-.section1-wrap .inner .button-wrap button {
+.section1-wrap .inner .button-wrap .btn-watch {
 	background: #fff;
 	width: 242px;
 	height: 61px;
 }
-.section1-wrap .inner .button-wrap button p {
+.section1-wrap .inner .button-wrap .btn-watch p {
 	font-family: 'Hyundai Sans Head KR';
 	font-weight: 500;
 	font-size: 19px;
 	color: #221e1f;
 	line-height: 19px;
+}
+.section1-wrap .inner .button-wrap .btn-video-share {
+	position: relative;
+	margin-top: 47px;
+}
+.section1-wrap .inner .button-wrap .btn-video-share .share-toggle img {
+	width: 77px;
+}
+.section1-wrap .inner .button-wrap .btn-video-share .share-list {
+	position: absolute;
+	top: -28px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 0;
+}
+.section1-wrap .inner .button-wrap .btn-video-share .share-list a {
+	display: inline-block;
+	margin-right: 12px;
+	opacity: 0;
+	transform: translateY(5px);
+	transition: all 0.1s ease-in;
+}
+.section1-wrap .inner .button-wrap .btn-video-share .share-list a:nth-child(1) {transition-delay: 0s;}
+.section1-wrap .inner .button-wrap .btn-video-share .share-list a:nth-child(2) {transition-delay: 0.1s;}
+.section1-wrap .inner .button-wrap .btn-video-share .share-list a:nth-child(3) {transition-delay: 0.2s;}
+.section1-wrap .inner .button-wrap .btn-video-share .share-list a:nth-child(4) {transition-delay: 0.3s;}
+.section1-wrap .inner .button-wrap .btn-video-share .share-list a img {
+	width: 20px;
+}
+.section1-wrap .inner .button-wrap .btn-video-share .share-list a:last-child {
+	margin-right: 0;
+}
+.section1-wrap .inner .button-wrap .btn-video-share .share-list.visible a {
+	opacity: 1;
+	transform: translateY(0);
 }
 .section2-wrap {
 	position: relative;
@@ -661,7 +696,33 @@ body.menu-open {
 /*	height: 49px;*/
 }
 @media screen and (max-width: 340px) {
+	.section1-wrap .inner .title-wrap h1 {
+		font-size: 42px;
+		line-height: 42px;
+	}
+	.section1-wrap .inner .title-wrap h3 {
+		font-size: 18px;
+	}
+	.section1-wrap .inner .title-wrap {
+		padding: 35.4% 0 15.3%;
+	}
+	.section1-wrap .inner .button-wrap .btn-watch {
+		width: 218px;
+		height: 52px;
+	}
+	.section1-wrap .inner .button-wrap .btn-watch p {
+		font-size: 16px;
+		line-height: 18px;
+	}
 	.section2-wrap .how h4 {
 		font-size: 14px;
+	}
+}
+@media screen and (min-height: 700px) {
+	.section1-wrap .inner .title-wrap {
+		padding: 47.4% 0 29.3%;
+	}
+	.section1-wrap .inner .title-wrap h1 {
+		line-height: 53px;
 	}
 }

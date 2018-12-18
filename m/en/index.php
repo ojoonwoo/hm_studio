@@ -139,10 +139,29 @@
 							<!-- <h3>당신의 가능성을 실험하라</h3> -->
 						</div>
 						<div class="button-wrap">
-							<button type="button" onclick="click_tracking('영문/풀 영상 보기');viewVideo();gtag('event','영상재생',{'event_category':'메인영상재생','event_label':'메인영상재생'});">
+							<button type="button" class="btn-watch" onclick="click_tracking('영문/풀 영상 보기');viewVideo();gtag('event','영상재생',{'event_category':'메인영상재생','event_label':'메인영상재생'});">
 								<p>Watch</p>
 								<p>Full Version</p>
 							</button>
+							<div class="btn-video-share">
+								<div class="share-list">
+									<a href="javascript:void(0)">
+										<img src="../images/FB_icon.png" alt="">
+									</a>
+									<a href="javascript:void(0)">
+										<img src="../images/kakaot_icon.png" alt="">
+									</a>
+									<a href="javascript:void(0)">
+										<img src="../images/kakaos_icon.png" alt="">
+									</a>
+									<a href="javascript:void(0)">
+										<img src="../images/URL_icon.png" alt="">
+									</a>
+								</div>
+								<button type="button" class="share-toggle">
+									<img src="../images/share_M.png" alt="">
+								</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -678,7 +697,9 @@
 				moreFlag = 0;
 			}
 		});
-        
+		$('.share-toggle').off().on('click', function() {
+			$('.btn-video-share .share-list').toggleClass('visible');
+		});
 </script>
 </body>
 
