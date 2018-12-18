@@ -143,7 +143,7 @@
 								<p>Watch</p>
 								<p>Full Version</p>
 							</button>
-							<div class="btn-video-share">
+							<!-- <div class="btn-video-share">
 								<div class="share-list">
 									<a href="javascript:void(0)">
 										<img src="../images/FB_icon.png" alt="">
@@ -161,7 +161,7 @@
 								<button type="button" class="share-toggle">
 									<img src="../images/share_M.png" alt="">
 								</button>
-							</div>
+							</div> -->
 						</div>
 					</div>
 				</div>
