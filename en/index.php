@@ -124,16 +124,16 @@
 								</button>
 								<div class="btn-video-share">
 									<div class="share-list">
-										<a href="javascript:void(0)" onclick="sns_yt_share('fb');gtag('event','공유',{'event_category':'유튜브공유','event_label':'페이스북'});">
+										<a href="javascript:void(0)" onclick="sns_yt_share('fb');click_tracking('영문/공유 유튜브 페이스북');gtag('event','공유',{'event_category':'유튜브공유','event_label':'페이스북'});">
 											<img src="../images/FB_icon.png" alt="">
 										</a>
-										<a href="javascript:void(0)" onclick="sns_yt_share('kt');gtag('event','공유',{'event_category':'유튜브공유','event_label':'카카오톡'});">
+										<a href="javascript:void(0)" onclick="sns_yt_share('kt');click_tracking('영문/공유 유튜브 카카오톡');gtag('event','공유',{'event_category':'유튜브공유','event_label':'카카오톡'});">
 											<img src="../images/kakaot_icon.png" alt="">
 										</a>
-										<a href="javascript:void(0)" onclick="sns_yt_share('ks');gtag('event','공유',{'event_category':'유튜브공유','event_label':'카카오스토리'});">
+										<a href="javascript:void(0)" onclick="sns_yt_share('ks');click_tracking('영문/공유 유튜브 카카오스토리');gtag('event','공유',{'event_category':'유튜브공유','event_label':'카카오스토리'});">
 											<img src="../images/kakaos_icon.png" alt="">
 										</a>
-										<a href="javascript:void(0)" id="copyYtUrl" onclick="gtag('event','공유',{'event_category':'유튜브공유','event_label':'URL 복사'});">
+										<a href="javascript:void(0)" id="copyYtUrl" onclick="click_tracking('영문/공유 유튜브 URL');gtag('event','공유',{'event_category':'유튜브공유','event_label':'URL 복사'});">
 											<img src="../images/URL_icon.png" alt="">
 										</a>
 									</div>

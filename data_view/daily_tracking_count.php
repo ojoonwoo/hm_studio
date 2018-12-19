@@ -95,12 +95,12 @@
 	$mobile_total_all = 0;
 	$unique_total = 0;
 	$all_total = 0;
-	$daily_date_query	= "SELECT substr(tracking_date,1,10) FROM tracking_info WHERE 1 ".$where." Group by substr(tracking_date,1,10) ORDER BY tracking_date DESC";
+	$daily_date_query	= "SELECT substr(tracking_date,1,10) as t_date FROM tracking_info WHERE 1 ".$where." Group by substr(tracking_date,1,10) ORDER BY tracking_date DESC";
 	$date_res			= mysqli_query($my_db, $daily_date_query);
-
+// print_r($daily_date_query);
 	while($date_daily_data = mysqli_fetch_array($date_res))
 	{
-		$daily_date		= substr($date_daily_data['tracking_date'],0,10);
+		$daily_date		= $date_daily_data['t_date'];
 		$media_query	= "SELECT tracking_source, tracking_medium, tracking_campaign, tracking_content, COUNT(*) media_cnt FROM tracking_info WHERE 1 AND tracking_date LIKE  '%".$daily_date."%' GROUP BY tracking_source, tracking_medium, tracking_campaign, tracking_content";
 		$media_res		= mysqli_query($my_db, $media_query);
 		$media_cnt		= mysqli_num_rows($media_res);

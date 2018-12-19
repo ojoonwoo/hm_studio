@@ -17,7 +17,7 @@
 			{
 				// 회원아이디 세션 생성
 				$_SESSION['ss_mb_name'] = "admin";
-				echo "<script>location.href='./entry_list.php';</script>";
+				echo "<script>location.href='./daily_tracking_count.php';</script>";
 			}else{
 				echo "<script>alert('로그인에 실패하였습니다.');</script>";
 				echo "<script>history.back();</script>";
