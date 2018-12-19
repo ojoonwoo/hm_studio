@@ -428,7 +428,7 @@
 					break;
 				case 2:
 					$("#desc_txt h2").html("현대 모터스튜디오 하남");
-					$("#desc_txt h4").html("현대자동차의 무한 가능성과 혁신적 시도가 펼처집니다");
+					$("#desc_txt h4").html("현대자동차의 무한 가능성과 혁신적 시도가 펼쳐집니다");
 					break;
 				case 3:
 					$("#desc_txt h2").html("현대 모터스튜디오 디지털");
