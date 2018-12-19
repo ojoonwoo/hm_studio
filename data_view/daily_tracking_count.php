@@ -97,7 +97,7 @@
 	$all_total = 0;
 	$daily_date_query	= "SELECT substr(tracking_date,1,10) as t_date FROM tracking_info WHERE 1 ".$where." Group by substr(tracking_date,1,10) ORDER BY tracking_date DESC";
 	$date_res			= mysqli_query($my_db, $daily_date_query);
-print_r($daily_date_query);
+// print_r($daily_date_query);
 	while($date_daily_data = mysqli_fetch_array($date_res))
 	{
 		$daily_date		= $date_daily_data['t_date'];
