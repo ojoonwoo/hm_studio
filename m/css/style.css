@@ -502,6 +502,8 @@ body.menu-open {
 	font-weight: 500;
 	margin-bottom: 7px;
 	font-size: 17px;
+	padding: 0 10px;
+	line-height: 1.2;
 }
 .section2-wrap .prize span {
 	font-family: 'Hyundai Sans Text KR';

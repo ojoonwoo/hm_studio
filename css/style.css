@@ -406,7 +406,15 @@ body > .wrap {
 	margin-top: 38px;
 } */
 .section2-wrap .prize > div {
+	/* display: inline-block; */
+}
+.section2-wrap .prize .spread {
+	font-size: 0;
+	margin: 60px 0;
+}
+.section2-wrap .prize .spread > div {
 	display: inline-block;
+	vertical-align: top;
 }
 .section2-wrap .prize ._1 .img-wrap img {
 	width: 445px;
@@ -415,9 +423,11 @@ body > .wrap {
 	font-size: 30px;
 	font-weight: 500;
 	margin-bottom: 12px;
+	line-height: 1.2;
 }
 .section2-wrap .prize div img {
-	width: 100%;
+	/* width: 100%; */
+	width: 445px;
 }
 .section2-wrap .prize div span {
 	font-family: 'Hyundai Sans Text KR';
