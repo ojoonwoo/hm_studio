@@ -398,32 +398,45 @@ body > .wrap {
 }
 .section2-wrap .prize {
 	font-size: 0;
+	max-width: 1000px;
+	margin: 0 auto;
+	text-align: center;
 }
 .en .section2-wrap .prize > div {
-	vertical-align: top;
 }
 /* .en .section2-wrap .prize ._1 .img-wrap {
 	margin-top: 38px;
 } */
 .section2-wrap .prize > div {
-	/* display: inline-block; */
+	display: inline-block; 
+	vertical-align: top;
+	margin-right: 40px;
 }
+/*
 .section2-wrap .prize .spread {
 	font-size: 0;
 	margin: 60px 0;
 }
+*/
 .section2-wrap .prize .spread > div {
-	display: inline-block;
-	vertical-align: top;
+/*	display: inline-block;*/
+/*	vertical-align: top;*/
 }
 .section2-wrap .prize ._1 .img-wrap img {
 	width: 445px;
 }
+.en .section2-wrap .prize ._3 .img-wrap {
+	margin-top: 46px;
+}
 .section2-wrap .prize h3.tt {
-	font-size: 30px;
+	font-size: 27px;
 	font-weight: 500;
 	margin-bottom: 12px;
 	line-height: 1.2;
+}
+.section2-wrap .prize h3.tt b {
+	font-weight: 500;
+	text-decoration: underline;
 }
 .section2-wrap .prize div img {
 	/* width: 100%; */
@@ -436,19 +449,24 @@ body > .wrap {
 	font-weight: normal;
 	color: #221e1f;
 	line-height: 24px;
+	margin-top: 10px;
 /*	padding-bottom: 10px;*/
 }
-.section2-wrap .prize div._1 {
-	margin-right: 40px;
+.section2-wrap .prize > div:nth-child(2n) {
+	margin-right: 0;
+}
+.section2-wrap .prize > div:first-child {
+	margin-bottom: 40px;
 }
 .section2-wrap .prize .img-wrap {
 	margin-top: 14px;
 }
 .section2-wrap .prize .underline {
 	display: block;
-	width: 311px;
+/*	width: 311px;*/
+	width: 930px;
 	height: 1px;
-	margin: 40px auto;
+	margin: 80px auto 40px;
 	background: rgba(29, 25, 26, 0.3);
 }
 .section2-wrap .winner-ann {
@@ -519,7 +537,7 @@ body > .wrap {
 	color: #fff;
 	font-size: 30px;
 	font-weight: 500;
-	margin: 70px 0;
+	margin: 80px 0;
 }
 .section2-wrap .instagram .guide {
 	position: relative;

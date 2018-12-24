@@ -174,26 +174,30 @@
 					</div>
 					<button type="button" id="copyHashtag" onclick="click_tracking('영문/복사 해시태그');gtag('event','해시태그복사',{'event_category':'해시태그복사','event_label':'해시태그복사'});">Copy essential hashtags</button>
 					<div class="prize">
-						<div class="_1" style="margin-right:0">
-							<h3 class="tt">Winner<br>Flight tickets to Hyundai Motorstudio (5 Persons / 2 tickets per person)</h3>
+						<div class="_1">
+							<h3 class="tt"><b>Winner</b><br>Flight tickets to Hyundai Motorstudio<br>(5 Persons / 2 tickets per person)</h3>
 							<!-- <span>Flight tickets to one of three</span>
 							<span>Hyundai Motorstudio cities</span>
 							<span>(2 tickets per person)</span> -->
 							<div class="img-wrap">
-								<img src="../images/prize_img_1_en.png" alt="">
-							</div>
-						</div>
-						<div class="spread">
-							<div class="_1">
-								<h3 class="tt">2nd Place<br>iPad Pro<br>(3 Persons)</h3>
-							</div>
-							<div class="_2">
-								<h3 class="tt">3rd Place<br>Starbucks Gift Certificate<br>(30 Persons)</h3>
-								<span>*Korean market only</span>
+								<img src="../images/prize_img_1.png" alt="">
 							</div>
 						</div>
 						<div class="_2">
-							<h3 class="tt">Consolation Prize<br>An invitation for the main exhibit @ Hyundai Motorstudio GOYANG<br> (100 Persons / 2 tickets per person)</h3>
+							<h3 class="tt"><b>2nd Place</b><br>iPad Pro<br>(3 Persons)</h3>
+							<div class="img-wrap">
+								<img src="../images/prize_img_2.png" alt="">
+							</div>
+						</div>
+						<div class="_3">
+							<h3 class="tt"><b>3rd Place</b><br>Starbucks Gift Certificate<br>(30 Persons)</h3>
+							<div class="img-wrap">
+								<img src="../images/prize_img_3.png" alt="">
+							</div>
+							<span>*Korean market only</span>
+						</div>
+						<div class="_4">
+							<h3 class="tt"><b>Consolation Prize</b><br>An invitation for the main exhibit<br>@ Hyundai Motorstudio GOYANG<br> (100 Persons / 2 tickets per person)</h3>
 							<!-- <span>An invitation for the main exhibit</span>
 							<span>@ Hyundai Motorstudio GOYANG</span>
 							<span>(2 tickets per person)</span> -->

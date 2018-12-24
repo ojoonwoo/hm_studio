@@ -409,14 +409,15 @@ body.menu-open {
 	width: 225px;
 }
 .section2-wrap .prize > div {
-	margin-bottom: 28px;
+	margin-bottom: 15px;
 }
 .section2-wrap .prize > ._2 {
 	margin-bottom: 0;
 }
 .section2-wrap .prize .img-wrap {
 	width: 247px;
-	margin: 12px auto 0;
+/*	margin: 12px auto 0;*/
+	margin: 6px auto 0;
 }
 .section2-wrap .prize ._2 .img-wrap {
 	width: 225px;
@@ -428,16 +429,21 @@ body.menu-open {
 	width: 195px;
 	height: 1px;
 	background: rgba(187, 187, 187, 0.3);
-	margin: 20px 0;
+	margin: 75px 0 20px;
 	display: inline-block;
+}
+.section2-wrap .prize h3.tt b {
+	font-weight: 500;
+	text-decoration: underline;
 }
 .section2-wrap .prize div span {
 	display: block;
 	font-family: 'Hyundai Sans Text KR';
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: normal;
 	color: #221e1f;
 	line-height: 17px;
+	margin-top: 6px;
 }
 .section2-wrap .prize div .first {
 	padding: 6px 0 0 0;
@@ -496,12 +502,12 @@ body.menu-open {
 	color: #fff;
 	font-size: 19px;
 	font-weight: 500;
-	margin: 35px 0;
+	margin: 35px 0 75px;
 }
 .section2-wrap .prize h3.tt {
 	font-weight: 500;
 	margin-bottom: 7px;
-	font-size: 17px;
+	font-size: 16px;
 	padding: 0 10px;
 	line-height: 1.2;
 }
