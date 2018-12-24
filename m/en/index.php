@@ -199,17 +199,33 @@
 				<button type="button" id="copyHashtag" onclick="click_tracking('영문/복사 해시태그');gtag('event','해시태그복사',{'event_category':'해시태그복사','event_label':'해시태그복사'});">Copy essential hashtags</button>
 				<div class="prize">
 					<div class="_1">
-						<h3 class="tt">Winner (5 Persons)</h3>
+						<h3 class="tt">Winner<br>Flight tickets to Hyundai Motorstudio (5 Persons / 2 tickets per person)</h3>
                         <span>Flight tickets to one of three Hyundai Motorstudio cities</span>
                         <span>(2 tickets per person)</span>
 						<div class="img-wrap">
 							<img src="../images/prize_img_1_en.png" alt="">
 						</div>
 					</div>
+					<div class="_1">
+						<h3 class="tt">2nd Place<br>iPad Pro (3 Persons)</h3>
+						<!-- <span>가고 싶은 현대 모터스튜디오로 향하는</span>
+						<span>항공권 (1인 2매)</span> -->
+						<!-- <div class="img-wrap">
+							<img src="./images/prize_img_1.png" alt="">
+						</div> -->
+					</div>
+					<div class="_1">
+						<h3 class="tt">3rd Place<br>Starbucks Gift Certificate (30 Persons)</h3>
+						<span>* Korean market only</span>
+						<!-- <span>항공권 (1인 2매)</span> -->
+						<!-- <div class="img-wrap">
+							<img src="./images/prize_img_1.png" alt="">
+						</div> -->
+					</div>
 					<div class="_2">
-						<h3 class="tt">Runner-up (100 Persons)</h3>
-						<span>An invitation for the main exhibit</span>
-						<span>@ Hyundai Motorstudio GOYANG (2 tickets per person)</span>
+						<h3 class="tt">Consolation Prize<br>An invitation for the main exhibit @ Hyundai Motorstudio GOYANG (100 Persons / 2 tickets per person)</h3>
+						<!-- <span>An invitation for the main exhibit</span>
+						<span>@ Hyundai Motorstudio GOYANG (2 tickets per person)</span> -->
 						<div class="img-wrap">
 							<img src="../images/prize_img_2.jpg" alt="">
 						</div>

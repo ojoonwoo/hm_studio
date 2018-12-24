@@ -173,18 +173,27 @@
 					</div>
 					<button type="button" id="copyHashtag" onclick="click_tracking('국문/복사 해시태그');gtag('event','해시태그복사',{'event_category':'해시태그복사','event_label':'해시태그복사'});">필수 해시태그 복사하기</button>
 					<div class="prize">
-						<div class="_1">
-							<h3 class="tt">당첨자 (5명)</h3>
-							<span>가고 싶은 현대 모터스튜디오로 향하는</span>
-							<span>항공권 (1인 2매)</span>
+						<div class="_1" style="margin-right:0">
+							<h3 class="tt">1등<br>항공권 (5인/1인2매)</h3>
+							<!-- <span>가고 싶은 현대 모터스튜디오로 향하는</span>
+							<span>항공권 (1인 2매)</span> -->
 							<div class="img-wrap">
 								<img src="./images/prize_img_1.png" alt="">
 							</div>
 						</div>
+						<div class="spread">
+							<div class="_1">
+								<h3 class="tt">2등<br>아이패드 프로 (3명)</h3>
+							</div>
+							<div class="_2">
+								<h3 class="tt">3등<br>스타벅스 5만원 상품권 (30명)</h3>
+								<span>* 한국에서만 사용 가능</span>
+							</div>
+						</div>
 						<div class="_2">
-							<h3 class="tt">참여상 (100명)</h3>
-							<span>현대 모터스튜디오 고양</span>
-							<span>상설전시 관람권 (1인 2매)</span>
+							<h3 class="tt">참가상<br>고양 상설전시 관람권(100명/1인2매)</h3>
+							<!-- <span>현대 모터스튜디오 고양</span>
+							<span>상설전시 관람권 (1인 2매)</span> -->
 							<div class="img-wrap">
 								<img src="./images/prize_img_2.jpg" alt="">
 							</div>
