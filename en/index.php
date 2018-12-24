@@ -197,7 +197,8 @@
 							<span>*Korean market only</span>
 						</div>
 						<div class="_4">
-							<h3 class="tt"><b>Consolation Prize</b><br>An invitation for the main exhibit<br>@ Hyundai Motorstudio GOYANG<br> (100 Persons / 2 tickets per person)</h3>
+							<!-- <h3 class="tt"><b>Consolation Prize</b><br>An invitation for the main exhibit<br>@ Hyundai Motorstudio GOYANG<br> (100 Persons / 2 tickets per person)</h3> -->
+							<h3 class="tt"><b>Consolation Prize</b><br>Invitation ticket for the main exhibit<br>@ Hyundai Motorstudio GOYANG<br> (100 Persons / 2 tickets per person)</h3>
 							<!-- <span>An invitation for the main exhibit</span>
 							<span>@ Hyundai Motorstudio GOYANG</span>
 							<span>(2 tickets per person)</span> -->
