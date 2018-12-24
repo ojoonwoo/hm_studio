@@ -231,7 +231,7 @@
 						<!-- <span>An invitation for the main exhibit</span>
 						<span>@ Hyundai Motorstudio GOYANG (2 tickets per person)</span> -->
 						<div class="img-wrap">
-							<img src="../images/prize_img_4_m.png" alt="">
+							<img src="../images/prize_img_4_m.jpg" alt="">
 						</div>
 					</div>
 					<div class="underline"></div>
