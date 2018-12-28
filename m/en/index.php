@@ -208,6 +208,7 @@
 						<div class="img-wrap">
 							<img src="../images/prize_img_1_m.png" alt="">
 						</div>
+						<span style="font-size:10px;line-height:11px">* Flight schedule is limited to from February 11st to June 1st.<br>Further information and instruction will be followed.</span>
 					</div>
 					<div class="_1">
 						<h3 class="tt"><b>2nd Place</b><br>iPad Pro (3 Persons)</h3>

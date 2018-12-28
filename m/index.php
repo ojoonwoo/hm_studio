@@ -205,6 +205,7 @@
 						<div class="img-wrap">
 							<img src="./images/prize_img_1_m.png" alt="">
 						</div>
+						<span style="font-size:10px;line-height:11px">* 1등 항공권 당첨의 경우, 항공 일정은 2019년 2월 11일 이후 출국,<br>2019년 6월 1일 내 귀국해야 하며, 항공권 발급 관련하여 별도 안내가 있을 예정입니다.</span>
 					</div>
 					<div class="_1">
 						<h3 class="tt"><b>2등</b><br>아이패드 프로 (3명)</h3>
