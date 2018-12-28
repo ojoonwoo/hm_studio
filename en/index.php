@@ -182,7 +182,7 @@
 							<div class="img-wrap">
 								<img src="../images/prize_img_1.png" alt="">
 							</div>
-							<span style="font-size:15px;line-height:16px">* Flight schedule is limited to from February 11st to June 1st.<br>Further information and instruction will be followed.</span>
+							<!-- <span style="font-size:15px;line-height:16px">* Flight schedule is limited to from February 11st to June 1st.<br>Further information and instruction will be followed.</span> -->
 						</div>
 						<div class="_2">
 							<h3 class="tt"><b>2nd Place</b><br>iPad Pro<br>(3 Persons)</h3>
@@ -246,6 +246,7 @@
 									(b) to release, discharge & hold harmless Sponsor from any & all injuries, liability,
 									losses & damages of any kind to persons, including death, or property resulting from entrant’s participation in the contest or the acceptance or use of any prize;
 									and (c) to be financially responsible for any and all expenses, costs arising out of or resulting from the use of any prize.</h4>
+								<h4>· Flight schedule is limited to from February 11st to June 1st.Further information and instruction will be followed.</h4>
 								<h4>· All contest details all prize details(including flight ticket) are at Sponsor’s sole discretion.</h4>
 								<h4>· Entry must be entrant’s original work and not be offensive, hateful, inappropriate or disparage.</h4>
 								<h4>· Entry must not defame or violate or infringe upon the rights of any person or entity.</h4>
