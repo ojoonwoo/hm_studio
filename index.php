@@ -187,15 +187,16 @@
 							<div class="img-wrap">
 								<img src="./images/prize_img_2.jpg" alt="">
 							</div>
+							<span>* 12.9형 iPad Pro WiFi + Cellular 256GB</span>
 						</div>
-						<div class="_3">
+						<div class="_3" style="margin-top:10px">
 							<h3 class="tt" style="margin-bottom:46px"><b>3등</b><br>스타벅스 5만원 상품권 (30명)</h3>
 							<div class="img-wrap">
 								<img src="./images/prize_img_3.png" alt="">
 							</div>
 							<span>* 한국에서만 사용 가능</span>
 						</div>
-						<div class="_4">
+						<div class="_4" style="margin-top:10px">
 							<!-- <h3 class="tt"><b>참가상</b><br>고양 상설전시 관람권(100명/1인2매)</h3> -->
 							<h3 class="tt"><b>참가상</b><br>현대 모터스튜디오 고양<br>상설 전시 관람권 (100명 /1인2매)</h3>
 							<!-- <span>현대 모터스튜디오 고양</span>

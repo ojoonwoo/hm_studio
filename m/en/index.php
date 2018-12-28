@@ -216,6 +216,7 @@
 						<div class="img-wrap">
 							<img src="../images/prize_img_2_m.jpg" alt="">
 						</div> 
+						<span>* 12.9 iPad Pro WiFi + Cellular 256GB</span>
 					</div>
 					<div class="_1">
 						<h3 class="tt"><b>3rd Place</b><br>Starbucks Gift Certificate (30 Persons)</h3>

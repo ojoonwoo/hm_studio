@@ -188,15 +188,16 @@
 							<div class="img-wrap">
 								<img src="../images/prize_img_2.jpg" alt="">
 							</div>
+							<span>* 12.9 iPad Pro WiFi + Cellular 256GB</span>
 						</div>
-						<div class="_3">
+						<div class="_3" style="margin-top:10px">
 							<h3 class="tt"><b>3rd Place</b><br>Starbucks Gift Certificate<br>(30 Persons)</h3>
 							<div class="img-wrap">
 								<img src="../images/prize_img_3.png" alt="">
 							</div>
 							<span>*Korean market only</span>
 						</div>
-						<div class="_4">
+						<div class="_4" style="margin-top:10px">
 							<!-- <h3 class="tt"><b>Consolation Prize</b><br>An invitation for the main exhibit<br>@ Hyundai Motorstudio GOYANG<br> (100 Persons / 2 tickets per person)</h3> -->
 							<h3 class="tt"><b>Consolation Prize</b><br>Invitation ticket for the main exhibit<br>@ Hyundai Motorstudio GOYANG<br> (100 Persons / 2 tickets per person)</h3>
 							<!-- <span>An invitation for the main exhibit</span>
