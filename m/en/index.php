@@ -213,7 +213,7 @@
 						<!-- <span>가고 싶은 현대 모터스튜디오로 향하는</span>
 						<span>항공권 (1인 2매)</span> -->
 						<div class="img-wrap">
-							<img src="../images/prize_img_2_m.png" alt="">
+							<img src="../images/prize_img_2_m.jpg" alt="">
 						</div> 
 					</div>
 					<div class="_1">
@@ -229,7 +229,7 @@
 						<!-- <span>An invitation for the main exhibit</span>
 						<span>@ Hyundai Motorstudio GOYANG (2 tickets per person)</span> -->
 						<div class="img-wrap">
-							<img src="../images/prize_img_4_m.png" alt="">
+							<img src="../images/prize_img_4_m.jpg" alt="">
 						</div>
 					</div>
 					<div class="underline"></div>

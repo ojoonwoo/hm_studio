@@ -211,7 +211,7 @@
 						<!-- <span>가고 싶은 현대 모터스튜디오로 향하는</span>
 						<span>항공권 (1인 2매)</span> -->
 						<div class="img-wrap">
-							<img src="./images/prize_img_2_m.png" alt="">
+							<img src="./images/prize_img_2_m.jpg" alt="">
 						</div> 
 					</div>
 					<div class="_1">
@@ -227,7 +227,7 @@
 						<!-- <span>현대 모터스튜디오 고양</span>
 						<span>상설전시 관람권 (1인 2매)</span> -->
 						<div class="img-wrap">
-							<img src="./images/prize_img_4_m.png" alt="">
+							<img src="./images/prize_img_4_m.jpg" alt="">
 						</div>
 					</div>
 					<div class="underline"></div>

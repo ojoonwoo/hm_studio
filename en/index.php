@@ -186,7 +186,7 @@
 						<div class="_2">
 							<h3 class="tt"><b>2nd Place</b><br>iPad Pro<br>(3 Persons)</h3>
 							<div class="img-wrap">
-								<img src="../images/prize_img_2.png" alt="">
+								<img src="../images/prize_img_2.jpg" alt="">
 							</div>
 						</div>
 						<div class="_3">
@@ -202,7 +202,7 @@
 							<span>@ Hyundai Motorstudio GOYANG</span>
 							<span>(2 tickets per person)</span> -->
 							<div class="img-wrap">
-								<img src="../images/prize_img_2.jpg" alt="">
+								<img src="../images/prize_img_4.jpg" alt="">
 							</div>
 						</div>
 						<div class="underline"></div>

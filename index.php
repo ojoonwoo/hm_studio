@@ -184,7 +184,7 @@
 						<div class="_2">
 							<h3 class="tt"><b>2등</b><br>아이패드 프로 (3명)</h3>
 							<div class="img-wrap">
-								<img src="./images/prize_img_2.png" alt="">
+								<img src="./images/prize_img_2.jpg" alt="">
 							</div>
 						</div>
 						<div class="_3">
@@ -199,7 +199,7 @@
 							<!-- <span>현대 모터스튜디오 고양</span>
 							<span>상설전시 관람권 (1인 2매)</span> -->
 							<div class="img-wrap">
-								<img src="./images/prize_img_4.png" alt="">
+								<img src="./images/prize_img_4.jpg" alt="">
 							</div>
 						</div>
 						<div class="underline"></div>
