@@ -200,6 +200,7 @@
 				<div class="prize">
 					<div class="_1">
 						<h3 class="tt"><b>Winner</b><br>Flight tickets to Hyundai Motorstudio (5 Persons / 2 tickets per person)</h3>
+						<!-- <h3 class="tt"><b>Winner</b><br>Flight tickets to Hyundai Motorstudio (5  Persons / 2 tickers per person)</h3> -->
 <!--
                         <span>Flight tickets to one of three Hyundai Motorstudio cities</span>
                         <span>(2 tickets per person)</span>
@@ -225,7 +226,8 @@
 						<!-- <span>항공권 (1인 2매)</span> -->
 					</div>
 					<div class="_2">
-						<h3 class="tt"><b>Consolation Prize</b><br>An invitation for the main exhibit @ Hyundai Motorstudio GOYANG (100 Persons / 2 tickets per person)</h3>
+						<!-- <h3 class="tt"><b>Consolation Prize</b><br>An invitation for the main exhibit @ Hyundai Motorstudio GOYANG (100 Persons / 2 tickets per person)</h3> -->
+						<h3 class="tt"><b>Consolation Prize</b><br>Invitation ticket for the main exhibit @ Hyundai Motorstudio GOYANG (100 Persons / 2 tickets per person)</h3>
 						<!-- <span>An invitation for the main exhibit</span>
 						<span>@ Hyundai Motorstudio GOYANG (2 tickets per person)</span> -->
 						<div class="img-wrap">
