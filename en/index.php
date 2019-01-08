@@ -151,7 +151,6 @@
 					</div>
 				</div>
 			</div>
-			ㅁㄴㅇ
 			<div class="section2-wrap">
 				<div class="inner">
 					<div class="title-wrap">
