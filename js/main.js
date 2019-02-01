@@ -45,6 +45,7 @@ $(function(){
 			});
 		},
 		show : function($popup){
+			console.log($popup);
 			if ($popup.length){
 				var $wrap = $popup.parent(),
 					$html = $('html');

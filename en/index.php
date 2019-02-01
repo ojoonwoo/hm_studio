@@ -43,7 +43,7 @@
 		<link rel="stylesheet" href="../lib/videojs/videojs.css">
 		<link rel="stylesheet" href="../css/style.css">
 		<script src="../lib/jquery-3.3.1.min.js"></script>
-		<script src="./js/main.js"></script>
+		<script src="../js/main.js"></script>
 		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 		<script type="text/javascript" src="../js/clipboard.min.js"></script>
 		<script src="../lib/videojs/videojs.js"></script>
@@ -221,11 +221,17 @@
 						<span>* Winners will be notified via direct message from</span>
 						<span>the official Hyundai Motorstudio Instagram account (@hyundaimotorstudio)</span>
 					</div>
+					<button class="check-winner-btn" data-popup="#popup-winner-list">
+						Check Out Winners
+					</button>
 					<div class="instagram">
+<!--
 						<div class="guide">
 							Entries will be displayed on this web site, updated every weekday at 1PM (KST)
 						</div>
+-->
 						<!-- 어트랙트 API 적용해야 할 부분 -->
+<!--
 						<script type="text/javascript">
 							(function(d, s) {
 								var j, e = d.getElementsByTagName(s)[0], h = "https://cdn.attractt.com/embed/dist/js/tower/tower.min.js";
@@ -239,6 +245,7 @@
 						<div class="insta-area">
 							<div class="attractt-container" data-idx="0" data-code="Gh1lNqbvXUKBnab" data-board="grid"></div>
 						</div>
+-->
 						<div class="notice">
 							<h3>Official Rules</h3>
 							<div class="text-wrap">
@@ -426,6 +433,9 @@
 				</div>
 			</div>
 		</div>
+<?
+	include_once "./popup.html";
+?>
 		<script>
 			Kakao.init('4c427a5ce63de0aa9cd687ca856d3ab8');
 			var studioSlider = $('.slider-area');
@@ -787,6 +797,208 @@
 			$('.share-toggle').off().on('click', function() {
 				$('.btn-video-share .share-list').toggleClass('visible');
 			});
+			
+			$(document).ready(function() {
+				hm_studio.popup.show($('#popup-winner-list'));
+			});
+			$(document).on('popupOpened', function(popup) {
+				if(popup.target.id == 'popup-winner-list') {
+					$.each(winnerList, function(idx, val) {
+						winnerList[idx].sort(compStringIgnoreCase);
+					});
+					$('#popup-winner-list .list-box .inner').empty();
+					for(var i=0; i<winnerList[1].length; i++) {
+						$('#popup-winner-list .list-box .inner').append("<span>"+replaceAsterisk(winnerList[1][i], 2)+"</span>")
+					}
+					function compStringIgnoreCase(a, b) {
+						if (a.toLowerCase() < b.toLowerCase()) return -1;
+						if (b.toLowerCase() < a.toLowerCase()) return 1;
+						return 0;
+					}
+				}
+			});
+			$('#popup-winner-list .tab').on('click', function() {
+				var $this = $(this);
+				var idx = $(this).attr('data-idx');
+				if($this.parent().hasClass('is-active'))
+					return;
+
+				// 탭 상태변화
+				$this.parent().siblings().removeClass('is-active');
+				$this.parent().addClass('is-active');
+
+				// 등수 콘텐츠 변경
+				$('#popup-winner-list .list-box .inner').empty();
+				for(var i=0; i<winnerList[idx].length; i++) {
+					$('#popup-winner-list .list-box .inner').append("<span>"+replaceAsterisk(winnerList[idx][i], 2)+"</span>")
+				}
+			});
+			var winnerList = {
+				"1": [
+					"dorothy_ys",
+					"0slikelife",
+					"gundigi",
+					"eeg_g",
+					"flower_kjs"
+				],
+				"2": [
+					"2in5in5",
+					"cosmotic1214",
+					"kirukk"
+				],
+				"3": [
+					'dudwns13',
+					'padammin',
+					'cream.berry24',
+					'sky_gazer_8',
+					'__hoyanara__1231',
+					'jeon_jeon2',
+					'kim.heeyeon_becky',
+					'_minchic_',
+					'_yunanim',
+					'mysoo5743',
+					'Jun-45',
+					'butterfly84fly',
+					'hantastic.lee',
+					'hongjuhyeon9496',
+					'bibarot83',
+					'joongpro',
+					'archiensunmong',
+					'Y_universeee',
+					'coral0820',
+					'5n_ki',
+					'Skyblueberry7',
+					'kimseonsaengnim',
+					'byeoljhan',
+					'hyeree_cha',
+					'jayjaehan_kim',
+					'realmook_97',
+					'Corsa_882',
+					'cutiegoldfish',
+					'seungryol',
+					'_sorrrrra'
+				],
+				"4": [
+					'hohomom0821',
+					'binni337',
+					'eismfj',
+					'elenawj_hong',
+					'cometomecometome',
+					'hyoni00208',
+					'wwww0619',
+					'sangyeol_jeon',
+					'_dingsun_',
+					'yusonika',
+					'hermosojoe',
+					'kunho.yoo',
+					'soaksnf',
+					'deagle_awp',
+					'choieng82',
+					'kyeomi14',
+					'j_ggyu',
+					'pancake.photo',
+					'izigner',
+					'im__kej',
+					'bonnieworld94',
+					'ssolarism',
+					'ckhky',
+					'sshifeed',
+					'hyoni.style',
+					'travel_ynwa',
+					'chococho578',
+					'star_light0807',
+					'youn___',
+					'ccy20000',
+					'mas.quer.ade',
+					'treegraseo2018',
+					'royal__yy',
+					'bigsmc',
+					'jun0403072019',
+					'kes850913',
+					'alsrb789',
+					'Woowoo.89',
+					'rlagodyddl1234',
+					'z1.moon',
+					'happy.han1',
+					'roeun8',
+					'e0ezin',
+					'gakugo',
+					'wooyeongshin',
+					'janghomun',
+					'nonie21',
+					'sghxon',
+					'instar._.j',
+					'fridayfrietag',
+					'giwony_company',
+					'elisacho',
+					'ssongsister',
+					'roycequan',
+					'happy_jeung',
+					'jinsu0131',
+					'vanseojin',
+					'kimjuyeon9707',
+					'diver_longdaarii',
+					'speak_your_mind__champions',
+					'gsl4865',
+					'siyoung1315',
+					'ssolmi_net',
+					'daehobikeceo',
+					'malakhroim',
+					'laypark1',
+					'_yiyiyi_111',
+					'pinkyaa777',
+					'xkdis01',
+					'byeolllll',
+					'woepad',
+					'kim2132',
+					'happy_jthj',
+					'byu312',
+					'eksdhd01',
+					'nyang_vv',
+					'reddyo99',
+					'sukchuloh',
+					'greengreenoo',
+					'dohyungs',
+					'dragon0528',
+					'shinya17s',
+					'atelier_202',
+					'zhddl1233',
+					'hellogra__',
+					'eunjung0950599',
+					'thekznzl03',
+					'1013grace',
+					'love_minchan',
+					'hunz157',
+					'njellsol1',
+					'ruddlf1624',
+					'kcmoon73',
+					'geehoongwon',
+					'0928terry',
+					'baggan18',
+					'unnuni3',
+					'naksoojung',
+					'hyungjin___',
+					'creka_1108'
+				]
+			}
+			function replaceAsterisk(str, len) {
+				if(str.length<2) {
+					return;
+				}
+				var strLen = str.length,
+					position = Math.floor(strLen/2),
+					targetStrArr = str.split("");
+
+				if(strLen<6) {
+					position = str.length;
+					targetStrArr.splice(position, len, '*');
+				} else {
+					targetStrArr.splice(position, len, '*','*');
+				}
+				var	res = targetStrArr.join("");
+
+				return res;
+			}
 		</script>
 	</body>
 
