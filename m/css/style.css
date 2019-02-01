@@ -906,6 +906,7 @@ html.popup-opened body {
 }
 .popup.winner-list .tab-list li {
 	display: inline-block;
+	vertical-align: top;
 	width: 68px;
 	height: 23px;
 	margin-right: 2px;
@@ -925,7 +926,6 @@ html.popup-opened body {
 	letter-spacing: -0.04em;
 	font-weight: 500;
 	outline: none;
-	vertical-align: top;
 }
 .popup.winner-list._en i._up {
 	position: relative;

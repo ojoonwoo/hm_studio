@@ -955,6 +955,7 @@ html.popup-opened body {
 	width: 137px;
 	height: 47px;
 	margin-right: 4px;
+	vertical-align: top;
 	box-sizing: border-box;
 }
 .popup.winner-list .tab-list li:last-child {
@@ -970,7 +971,6 @@ html.popup-opened body {
 	line-height: 1;
 	font-weight: 500;
 	outline: none;
-	vertical-align: top;
 }
 .popup.winner-list._en i._up {
 	position: relative;
