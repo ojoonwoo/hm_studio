@@ -43,8 +43,10 @@
 		<link rel="stylesheet" href="./lib/videojs/videojs.css">
 		<link rel="stylesheet" href="./css/style.css">
 		<script src="./lib/jquery-3.3.1.min.js"></script>
+		<script src="./js/main.js"></script>
 		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 		<script type="text/javascript" src="./js/clipboard.min.js"></script>
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js?r=9009"></script>
 		<script src="./lib/videojs/videojs.js"></script>
 		<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -137,7 +139,7 @@
 											<img src="./images/URL_icon.png" alt="">
 										</a>
 									</div>
-									<button type="button" class="share-toggle">
+									<button type="button" class="share-toggle" data-popup="#popup-winner-list">
 										<img src="./images/shareicon_PC.png" alt="">
 									</button>
 								</div>
@@ -417,6 +419,9 @@
 				</div>
 			</div>
 		</div>
+<?
+	include_once "popup.html";
+?>
 		<script>
 			Kakao.init('cf559a1b4265e66761ca6acfa705948f');
 			var studioSlider = $('.slider-area');
