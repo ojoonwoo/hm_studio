@@ -63,6 +63,7 @@
 	<link rel="stylesheet" href="../lib/videojs/videojs.css">
 	<link rel="stylesheet" href="./css/style.css">
 	<script src="../lib/jquery-3.3.1.min.js"></script>
+	<script src="../js/main.js"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script type="text/javascript" src="../js/clipboard.min.js"></script>
 	<script src="../lib/videojs/videojs.js"></script>
@@ -205,6 +206,7 @@
 						<div class="img-wrap">
 							<img src="./images/prize_img_1_m.png" alt="">
 						</div>
+						<!-- <span style="font-size:10px;line-height:11px">* 1등 항공권 당첨의 경우, 항공 일정은 2019년 2월 11일 이후 출국,<br>2019년 6월 1일 내 귀국해야 하며, 항공권 발급 관련하여 별도 안내가 있을 예정입니다.</span> -->
 					</div>
 					<div class="_1">
 						<h3 class="tt"><b>2등</b><br>아이패드 프로 (3명)</h3>
@@ -213,6 +215,7 @@
 						<div class="img-wrap">
 							<img src="./images/prize_img_2_m.jpg" alt="">
 						</div> 
+						<span>* 12.9형 iPad Pro WiFi + Cellular 256GB</span>
 					</div>
 					<div class="_1">
 						<h3 class="tt"><b>3등</b><br>스타벅스 5만원 상품권 (30명)</h3>
@@ -264,6 +267,7 @@
 						<h3>유의사항</h3>
 						<div class="text-wrap">
 							<h4>· 이벤트 내용, 기간, 경품내용, 당첨자 발표일 등은 당사 사정에 의해 예고 없이 변동 또는 지연될 수 있습니다</h4>
+							<h4>· 1등 항공권 당첨의 경우, 항공 일정은 2019년 2월 11일 이후 출국, 2019년 6월 1일 내 귀국해야 하며, 항공권 발급 관련하여 별도 안내가 있을 예정입니다</h4>
 							<h4>· 현대자동차는 공지한 경품 외 여행 중 발생하는 비용은 지불하지 않으며 여행 중 발생한 사고에 대해 책임 지지 않습니다</h4>
 							<h4>· 참여방법을 지키지 않은 참여작, 타인 작품 도용, 비공개 계정, 개인정보 도용 및 부정한 방법으로 참여한 경우 당첨작 선발에서 제외됩니다</h4>
 							<h4>· 이벤트는 중복 참여가 가능하나 중복 당첨 (휴대폰 번호 기준)은 허용하지 않으며, 경품의 타인 양도 및 양수를 금지합니다</h4>

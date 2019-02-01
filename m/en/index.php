@@ -63,6 +63,7 @@
 	<link rel="stylesheet" href="../../lib/videojs/videojs.css">
 	<link rel="stylesheet" href="../css/style.css">
 	<script src="../../lib/jquery-3.3.1.min.js"></script>
+	<script src="../../js/main.js"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script type="text/javascript" src="../../js/clipboard.min.js"></script>
 	<script src="../../lib/videojs/videojs.js"></script>
@@ -208,6 +209,7 @@
 						<div class="img-wrap">
 							<img src="../images/prize_img_1_m.png" alt="">
 						</div>
+						<!-- <span style="font-size:10px;line-height:11px">* Flight schedule is limited to from February 11st to June 1st.<br>Further information and instruction will be followed.</span> -->
 					</div>
 					<div class="_1">
 						<h3 class="tt"><b>2nd Place</b><br>iPad Pro (3 Persons)</h3>
@@ -216,6 +218,7 @@
 						<div class="img-wrap">
 							<img src="../images/prize_img_2_m.jpg" alt="">
 						</div> 
+						<span>* 12.9 iPad Pro WiFi + Cellular 256GB</span>
 					</div>
 					<div class="_1">
 						<h3 class="tt"><b>3rd Place</b><br>Starbucks Gift Certificate (30 Persons)</h3>
@@ -272,6 +275,7 @@
 								(b) to release, discharge & hold harmless Sponsor from any & all injuries, liability,
 								losses & damages of any kind to persons, including death, or property resulting from entrant’s participation in the contest or the acceptance or use of any prize;
 								and (c) to be financially responsible for any and all expenses, costs arising out of or resulting from the use of any prize.</h4>
+							<h4>· Flight schedule is limited to from February 11st to June 1st. Further information and instruction will be followed.</h4>
 							<h4>· All contest details all prize details(including flight ticket) are at Sponsor’s sole discretion.</h4>
 							<h4>· Entry must be entrant’s original work and not be offensive, hateful, inappropriate or disparage.</h4>
 							<h4>· Entry must not defame or violate or infringe upon the rights of any person or entity.</h4>
