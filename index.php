@@ -764,7 +764,7 @@
 			});
 			
 			$(document).ready(function() {
-				hm_studio.popup.show($('#popup-winner-list'));
+				// hm_studio.popup.show($('#popup-winner-list'));
 			});
 			$(document).on('popupOpened', function(popup) {
 				if(popup.target.id == 'popup-winner-list') {
